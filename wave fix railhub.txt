@@ -1,0 +1,2122 @@
+
+
+-- ds: https://discord.gg/bvEQEUuCFQ
+
+-- tg: https://t.me/+FizXrGSg3B9jZTRi
+
+ -- ###############            ###           ###   ###              ###          ###   ###        ###   ############                      
+ -- ###          ###          #####          ###   ###              ###          ###   ###        ###   ###       ###                         
+ -- ###          ###         ### ###               ###              ###          ###   ###        ###   ###       ###              
+ -- ###        ###          ###   ###        ###   ###              ###          ###   ###        ###   ############                          
+ -- ############           ###     ###       ###   ###              ################   ###        ###   ###        ###                                  
+ -- ###       ###         #############      ###   ###              ################   ###        ###   ###         ###                   
+ -- ###        ###       ###         ###     ###   ###              ###          ###   ###        ###   ###         ###                              
+ -- ###         ###     ###           ###    ###   ##############   ###          ###    ############    ###         ###                         
+ -- ###          ###   ###             ###   ###   ##############   ###          ###     ##########     ##############                                               
+----------------------------------------------------------------------------------------------------------------------
+ ---------------------------------------------------------------------------------------------------------------------
+ ---------------------------------------------------------------------------------------------------------------------
+ ---------------------------------------------------------------------------------------------------------------------
+ ---------------------------------------------------------------------------------------------------------------------
+ ---------------------------------------------------------------------------------------------------------------------
+ ---------------------------------------------------------------------------------------------------------------------
+ ---------------------------------------------------------------------------------------------------------------------
+-- Ссылка на Библиотеку
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+-- Создать окно UI
+local Window = OrionLib:MakeWindow({Name = "RAILhub     Army Roblox RP RU", HidePremium = false, IntroText = "RAILhub", SaveConfig = false, ConfigFolder = "OrionTest"})
+
+---------------------------------------------------------------------------------------------------
+local Tab = Window:MakeTab({
+	Name = "Информация",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+-- Подсекция
+local Section = Tab:AddSection({
+	Name = "Последнее обновление : 21.10.2024!"
+})
+
+-- Подсекция
+local Section = Tab:AddSection({
+	Name = "v 0.5.0.3!"
+})
+
+local textToCopy = "https://discord.gg/bvEQEUuCFQ" -- Замените этот текст на нужный вам.
+
+Tab:AddButton({
+    Name = "Discord Link",
+    Callback = function()
+        -- Копирование текста в буфер обмена
+        setclipboard(textToCopy)
+        print("Ссылка была скопирована: " .. textToCopy) -- Печатает сообщение в консоль для подтверждения
+    end    
+})
+
+local textToCopy = "https://t.me/+FizXrGSg3B9jZTRi" -- Замените этот текст на нужный вам.
+
+Tab:AddButton({
+    Name = "Telegram Link",
+    Callback = function()
+        -- Копирование текста в буфер обмена
+        setclipboard(textToCopy)
+        print("Ссылка была скопирована: " .. textToCopy) -- Печатает сообщение в консоль для подтверждения
+    end    
+})
+
+
+
+
+
+
+
+
+-- Секция ----------------------------------------------------------------------------------------------
+local Tab = Window:MakeTab({
+	Name = "Тп",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+
+-- Подсекция
+local Section = Tab:AddSection({
+	Name = "Точки интереса"
+})
+
+-- Кнопка
+Tab:AddButton({
+	Name = "Кофейня",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1510.12548828125, 3, -50.033023834228516)
+  	end    
+})
+
+-- Кнопка
+Tab:AddButton({
+	Name = "Пост МВД",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1880.78711, 3.02372599, -79.1625366)
+  	end    
+})
+
+-- Кнопка
+Tab:AddButton({
+	Name = "Заправка",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1611.48291, 3.68000031, 193.309387)
+  	end    
+})
+
+-- Кнопка
+Tab:AddButton({
+	Name = "Пост ФСБ",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2594.14526, 2.96875048, -213.897064)
+  	end    
+})
+
+-- Кнопка
+Tab:AddButton({
+	Name = "КПП-1",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(345.38934326171875, 3.099998950958252, 3.619844436645508)
+  	end    
+})
+
+-- Кнопка
+Tab:AddButton({
+	Name = "КПП-2",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1305.15637, 16.7970123, -66.1204681)
+  	end    
+})
+
+-- Кнопка
+Tab:AddButton({
+	Name = "Деревня",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2578.659912109375, 3.050001621246338, 48.234134674072266)
+  	end    
+})
+
+-- Кнопка
+Tab:AddButton({
+	Name = "Плац",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(33.97133255004883, 3.0999984741210938, -13.471328735351562)
+  	end    
+})
+
+-- Кнопка
+Tab:AddButton({
+	Name = "ВДВ",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(214.971634, 2.96874952, -79.2867432, -0.999995053, -2.49700776e-08, -0.00313778711, -2.4921162e-08, 1, -1.56281175e-08, 0.00313778711, -1.55498441e-08, -0.999995053)
+  	end    
+})
+
+-- Кнопка
+Tab:AddButton({
+	Name = "Штаб ВЧ",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-365.19281, 3.06999874, 67.8806, 0.00635624724, 3.76294818e-09, -0.999979794, 1.77516082e-08, 1, 3.87586008e-09, 0.999979794, -1.77758857e-08, 0.00635624724)
+  	end    
+})
+
+-- Кнопка
+Tab:AddButton({
+	Name = "ВП",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-397.532074, 3.0687499, 334.057129, -0.999995351, 1.42848544e-09, 0.00304037798, 1.44236434e-09, 1, 4.56268046e-09, -0.00304037798, 4.56704452e-09, -0.999995351)
+  	end    
+})
+
+-- Кнопка
+Tab:AddButton({
+	Name = "Столовая",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(82.2273712, 2.96875, 233.073914, 0.999599397, -6.32963904e-08, -0.0283029545, 6.55864625e-08, 1, 7.99843747e-08, 0.0283029545, -8.18086221e-08, 0.999599397)
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Самолет",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1424.59888, 1363.37061, 421.928558)
+  	end    
+})
+
+-- Кнопка
+Tab:AddButton({
+	Name = "База кантробандистов",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(647.6337280273438, 18.26999282836914, -717.4557495117188)
+  	end    
+})
+
+-- Кнопка
+Tab:AddButton({
+	Name = "Кусты перед КПП-1",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(457.5315, 12.9999, -43.6891)
+  	end    
+})
+
+-- Кнопка
+Tab:AddButton({
+	Name = "База наёмников",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(848.868408203125, 3.019998550415039, -1238.0062255859375)
+  	end    
+})
+
+-- Кнопка
+Tab:AddButton({
+	Name = "Вышка у КПП-1",
+	Callback = function()
+      	    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(590.221, 140.583, 292.378)
+  	end    
+})
+
+-- Подсекция
+local Section = Tab:AddSection({
+	Name = "AFK"
+})
+
+-- Кнопка
+Tab:AddButton({
+	Name = "AFK зона",
+	Callback = function()
+      	    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1196.45837, -7.10957336, -2100.12256)
+  	end    
+})
+
+-- Секция-------------------------------------------------------------------------------------------------
+local Tab = Window:MakeTab({
+	Name = "Фарм",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+-- Подсекция
+local Section = Tab:AddSection({
+	Name = "Drop"
+})
+
+-- Кнопка для создания ESP
+Tab:AddButton({
+    Name = "Esp Drop",
+    Callback = function()
+        local Workspace = game:GetService("Workspace")
+        local CaseDrops = Workspace:FindFirstChild("CaseDrops")
+
+        -- Уровень звука (от 0 до 1)
+        local soundVolume = 10 -- Замените на нужное значение громкости от 0 до 1
+
+        -- Функция для создания ESP
+        local function createESP(model)
+            local unionPart = model:FindFirstChild("Union") -- Проверяем наличие части с именем "Union"
+
+            if unionPart and unionPart:IsA("BasePart") and unionPart.Transparency == 0 then
+                -- Воспроизводим звук
+                local sound = Instance.new("Sound") -- Создаем новый объект Sound
+                sound.SoundId = "rbxassetid://4590656842" -- Замените на ID вашего звука
+                sound.Volume = soundVolume -- Устанавливаем уровень громкости
+                sound.Parent = unionPart -- Устанавливаем родителем Union
+                sound:Play() -- Проигрываем звук
+
+                -- Отправляем уведомление
+                OrionLib:MakeNotification({
+                    Name = "Внимание!",
+                    Content = "Поблизости найден " .. model.Name,
+                    Image = "rbxassetid://4483345998",
+                    Time = 7
+                })
+
+                local billboardGui = Instance.new("BillboardGui")
+                billboardGui.Size = UDim2.new(0, 100, 0, 50)
+                billboardGui.Adornee = unionPart -- Прикрепляем к части Union
+                billboardGui.AlwaysOnTop = true -- Делает GUI всегда на переднем плане
+                billboardGui.Parent = model
+                
+                local textLabel = Instance.new("TextLabel")
+                textLabel.Size = UDim2.new(1, 0, 1, 0)
+                textLabel.BackgroundTransparency = 1
+                textLabel.Text = model.Name
+                textLabel.TextColor3 = Color3.new(1, 0, 0) -- Красный цвет текста
+                textLabel.Parent = billboardGui
+
+                -- Проверка прозрачности каждые 1 секунду
+                while wait(1) do
+                    if unionPart.Transparency >= 1 then
+                        billboardGui:Destroy() -- Удаляем BillboardGui, если Transparency >= 1
+                        break -- Прерываем цикл, так как BillboardGui был удален
+                    end
+                end
+            end
+        end
+
+        -- Проверка наличия папки CaseDrops и добавление ESP для всех моделей
+        if CaseDrops then
+            for _, model in ipairs(CaseDrops:GetChildren()) do
+                if model:IsA("Model") then
+                    createESP(model)
+                end
+            end
+
+            -- Подписка на событие, чтобы добавлять ESP для новых моделей
+            CaseDrops.ChildAdded:Connect(function(child)
+                if child:IsA("Model") then
+                    createESP(child)
+                end
+            end)
+        else
+            warn(" ")
+        end -- Закрывающая скобка для проверки CaseDrops
+    end -- Закрывающая скобка для Callback функции
+})
+
+
+
+
+
+-- Новая кнопка для телепортации к ближайшему дропу с ESP
+Tab:AddButton({
+    Name = "Tп до ближайшего ящика",
+    Callback = function()
+        local player = game.Players.LocalPlayer
+        local character = player.Character or player.CharacterAdded:Wait()
+        local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+        local Workspace = game:GetService("Workspace")
+        local CaseDrops = Workspace:FindFirstChild("CaseDrops")
+        
+        if CaseDrops then
+            local closestDrop = nil
+            local closestDistance = math.huge
+            
+            -- Поиск ближайшего дропа с ESP
+            for _, model in ipairs(CaseDrops:GetChildren()) do
+                if model:IsA("Model") then
+                    local unionPart = model:FindFirstChild("Union")
+                    if unionPart and unionPart:IsA("BasePart") and unionPart.Transparency == 0 then
+                        local distance = (humanoidRootPart.Position - unionPart.Position).magnitude
+                        if distance < closestDistance then
+                            closestDistance = distance
+                            closestDrop = unionPart
+                        end
+                    end
+                end
+            end
+
+            -- Телепортация к ближайшему дропу, если он найден
+            if closestDrop then
+                humanoidRootPart.CFrame = closestDrop.CFrame + Vector3.new(0, 5, 0) -- Добавляем высоту, чтобы не застрять в модели
+            else
+                print("Поблизасти ненайдены ящики")
+            end
+        else
+            print("Поблизасти ненайдены ящики")
+        end
+    end -- Закрывающая скобка для Callback функции телепортации
+})
+
+-- Подсекция
+local Section = Tab:AddSection({
+	Name = "trash"
+})
+
+
+Tab:AddToggle({
+    Name = "ESP trash (test)",
+    Default = false,
+    Callback = function(Value)
+        -- Получаем доступ к папке Dropable
+        local dropableFolder = workspace:WaitForChild("Dropable")
+
+        -- Функция для создания текстового вывода
+        local function createItemLabel(item)
+            local billboardGui = Instance.new("BillboardGui")
+            billboardGui.Adornee = item
+            billboardGui.Size = UDim2.new(0, 75, 0, 15) -- Увеличил размер для лучшей видимости
+            billboardGui.StudsOffset = Vector3.new(0, 0.4, 0) -- Увеличил смещение по вертикали
+            
+            local textLabel = Instance.new("TextLabel")
+            billboardGui.AlwaysOnTop = true
+            textLabel.Size = UDim2.new(1, 0, 1, 0)
+            textLabel.BackgroundTransparency = 1
+            textLabel.Text = item.Name
+            textLabel.TextColor3 = Color3.fromRGB(75, 184, 255) -- RGB формат
+            textLabel.TextScaled = true
+            textLabel.TextStrokeTransparency = 0.5 -- Небольшая прозрачность обводки для лучшей читаемости
+
+            -- Связываем текстовый лейбл с BillboardGui
+            textLabel.Parent = billboardGui
+            billboardGui.Parent = item
+        end
+
+        -- Проходим по всем моделям в папке Dropable и создаем текстовые лейблы
+        for _, item in ipairs(dropableFolder:GetChildren()) do
+            if item:IsA("Model") then
+                if Value then
+                    createItemLabel(item)  -- Создаём метку, если тумблер включен
+                    
+                else
+                    -- Удаляем BillboardGui, если тумблер выключен
+                    local billboardGui = item:FindFirstChildOfClass("BillboardGui")
+                    if billboardGui then
+                        billboardGui:Destroy()
+                    end
+                end
+            end
+        end
+    end
+})
+
+
+-- Подсекция
+local Section = Tab:AddSection({
+	Name = "Auto-Farm"
+})
+
+local Players = game:GetService("Players")
+local Teams = game:GetService("Teams")
+
+-- Create a variable to manage the farming state
+local running = false
+
+-- Add the toggle to start and stop auto farming
+Tab:AddToggle({
+    Name = "Auto Farm KB",
+    Default = false,
+    Callback = function(Value)
+        running = Value
+
+        -- Check if the player is in the correct team
+        local playerTeam = Players.LocalPlayer.Team
+        local requiredTeam = Teams:FindFirstChild("КОНТРАБАНДИСТЫ")
+
+        if not requiredTeam or playerTeam ~= requiredTeam then
+            OrionLib:MakeNotification({
+                Name = "Ошибка!",
+                Content = "Вы не в команде КОНТРАБАНДИСТЫ!",
+                Image = "rbxassetid://4483345998", -- Optional image
+                Time = 5
+            })
+            -- Stop the script if the player is not in the right team
+            running = false
+            return
+        end
+
+        if Value then
+            -- Run the farming logic in a new thread
+            spawn(function()
+                while running do
+                    -- Your main script logic
+                    Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(623.0984497070312, 3.999999523162842, -697.6439208984375)
+
+                    wait(0.5    )
+
+                    local torso = game.Workspace:FindFirstChild("NPC")
+                    if torso and torso:FindFirstChild("Вячеслав Викторович") and torso["Вячеслав Викторович"]:FindFirstChild("Torso") then
+                        local prompt = torso["Вячеслав Викторович"].Torso:FindFirstChild("ProximityPrompt")
+
+                        if prompt then
+                            -- Activate ProximityPrompt
+                            prompt:InputHoldBegin()
+
+                            -- Finish activation after a while
+                            wait(1) -- Change this wait time as needed
+                            prompt:InputHoldEnd()
+                        else
+                            warn("ProximityPrompt not found in Torso.")
+                        end
+                    else
+                        warn("NPC or Вячеслав Викторович not found.")
+                    end
+
+                    wait(0.5)
+
+                    Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(106.91151428222656, 3.2501282691955566, 113.99207305908203)
+                    wait(0.7)
+
+                    local interactable = game.Workspace:FindFirstChild("Interactable")
+                    if interactable then
+                        local targetObject = interactable:GetChildren()[11]
+                        if targetObject and targetObject:FindFirstChild("ProximityPrompt") then
+                            local prompt = targetObject:FindFirstChild("ProximityPrompt")
+
+                            if prompt then
+                                -- Simulate holding ProximityPrompt
+                                prompt:InputHoldBegin()
+
+                                -- Finish activation after 3 seconds
+                                wait(3)
+                                prompt:InputHoldEnd()
+                            else
+                                warn("ProximityPrompt not found in object at index 11.")
+                            end
+                        else
+                            warn("Object at index 11 not found in Interactable.")
+                        end
+                    else
+                        warn("Interactable not found.")
+                    end
+
+                    wait(0.3)
+
+                    -- Return to initial position
+                    Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(623.0984497070312, 3.999999523162842, -697.6439208984375)
+                    wait(0.5)
+
+                    -- Repeat the torso interaction
+                    torso = game.Workspace:FindFirstChild("NPC")
+                    if torso and torso:FindFirstChild("Вячеслав Викторович") and torso["Вячеслав Викторович"]:FindFirstChild("Torso") then
+                        local prompt = torso["Вячеслав Викторович"].Torso:FindFirstChild("ProximityPrompt")
+
+                        if prompt then
+                            -- Activate ProximityPrompt again
+                            prompt:InputHoldBegin()
+
+                            -- Finish activation after a while
+                            wait(1) -- Change this wait time as needed
+                            prompt:InputHoldEnd()
+                        else
+                            warn("ProximityPrompt not found in Torso.")
+                        end
+                    else
+                        warn("NPC or Вячеслав Викторович not found.")
+                    end
+                    
+                    -- Wait some time before checking the toggle state again
+                    wait(2.6)
+                end
+            end)
+        end
+    end    
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- Секция-------------------------------------------------------------------------------------------------
+local Tab = Window:MakeTab({
+	Name = "Pvp",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+-- Подсекция
+local Section = Tab:AddSection({
+	Name = "Hitbox"
+})
+
+
+local lastUpdateTime = 0
+local updateInterval = 0.1 -- Update every 0.1 seconds (10 times per second)
+
+Tab:AddSlider({
+    Name = "Hitbox",
+    Min = 2,
+    Max = 60,
+    Default = 2,
+    Color = Color3.fromRGB(161, 165, 162),
+    Increment = 1,
+    ValueName = "Hitbox",
+    Callback = function(Value)
+        _G.Size = Value
+        _G.Disabled = true
+
+        -- Clear any previous connections to avoid multiple connections stacking
+        if _G.RenderSteppedConnection then
+            _G.RenderSteppedConnection:Disconnect()
+        end
+
+        _G.RenderSteppedConnection = game:GetService('RunService').RenderStepped:Connect(function()
+            local currentTime = tick()
+
+            if _G.Disabled and (currentTime - lastUpdateTime >= updateInterval) then
+                lastUpdateTime = currentTime -- Update the time of the last update
+
+                for _, player in pairs(game:GetService('Players'):GetPlayers()) do
+                    if player.Name ~= game:GetService('Players').LocalPlayer.Name then
+                        local character = player.Character
+                        if character and character:FindFirstChild("HumanoidRootPart") then
+                            local humanoidRootPart = character.HumanoidRootPart
+                            pcall(function()
+                                humanoidRootPart.Size = Vector3.new(_G.Size, _G.Size, _G.Size)
+                                humanoidRootPart.Transparency = 0.9
+                                humanoidRootPart.BrickColor = BrickColor.new("Grey")
+                                humanoidRootPart.Material = Enum.Material.Neon
+                                humanoidRootPart.CanCollide = false
+                            end)
+                        end
+                    end
+                end
+            end
+        end)
+    end
+})
+
+-- Подсекция
+local Section = Tab:AddSection({
+	Name = "Esp"
+})
+
+local players = game:GetService("Players")
+local localPlayer = players.LocalPlayer
+local camera = game:GetService("Workspace").CurrentCamera
+
+local showESPBox = false
+local showESPName = false
+local showESPTeam = false
+local showHealthBar = false
+
+local function createESP(player)
+    local espBoxOutline = Drawing.new("Square")
+    espBoxOutline.Color = Color3.new(0, 0, 0)
+    espBoxOutline.Thickness = 0.5
+    espBoxOutline.Transparency = 1
+    espBoxOutline.Filled = false
+    espBoxOutline.Visible = false
+
+    local espBox = Drawing.new("Square")
+    espBox.Color = Color3.new(1, 1, 1)
+    espBox.Thickness = 1
+    espBox.Transparency = 1
+    espBox.Filled = false
+    espBox.Visible = false
+
+    local espName = Drawing.new("Text")
+    espName.Color = Color3.new(1, 1, 1)
+    espName.Size = 13
+    espName.Center = true
+    espName.Outline = true
+    espName.Text = player.Name
+    espName.Visible = false
+
+    local espTeam = Drawing.new("Text")
+    espTeam.Size = 16
+    espTeam.Center = true
+    espTeam.Outline = true
+    espTeam.Visible = false
+
+    local healthBarBackground = Drawing.new("Square")
+    healthBarBackground.Color = Color3.new(0, 0, 0)
+    healthBarBackground.Filled = true
+    healthBarBackground.Transparency = 0.7
+    healthBarBackground.Thickness = 1
+    healthBarBackground.Visible = false
+
+    local healthBar = Drawing.new("Square")
+    healthBar.Color = Color3.new(0, 1, 0)
+    healthBar.Filled = true
+    healthBar.Transparency = 0.8
+    healthBar.Thickness = 1
+    healthBar.Visible = false
+
+    local function updateESP()
+        if not showESPBox and not showESPName and not showESPTeam and not showHealthBar then
+            -- Hide all ESP elements if all toggles are off
+            espBoxOutline.Visible = false
+            espBox.Visible = false
+            espName.Visible = false
+            espTeam.Visible = false
+            healthBar.Visible = false
+            healthBarBackground.Visible = false
+            return
+        end
+
+        local character = player.Character
+        if character and character:FindFirstChild("HumanoidRootPart") and character:FindFirstChild("Head") and player.Team then
+            local rootPart = character:FindFirstChild("HumanoidRootPart")
+            local head = character:FindFirstChild("Head")
+            local humanoid = character:FindFirstChild("Humanoid")
+
+            -- Box ESP
+            local rootPos, onScreenRoot = camera:WorldToViewportPoint(rootPart.Position)
+            local headPos, onScreenHead = camera:WorldToViewportPoint(head.Position)
+            local legPos = rootPart.Position - Vector3.new(1, -5.5, 1) -- Approximate leg position
+
+            if onScreenRoot and onScreenHead then
+                -- Calculate height and width based on character's body
+                local height = (headPos.Y - camera:WorldToViewportPoint(legPos).Y)
+                local width = height / 2
+
+                if showESPBox then
+                    espBoxOutline.Size = Vector2.new(width + 4, height + 4)
+                    espBoxOutline.Position = Vector2.new(rootPos.X - width / 2 - 2, headPos.Y - 2)
+                    espBoxOutline.Visible = true
+
+                    espBox.Size = Vector2.new(width, height)
+                    espBox.Position = Vector2.new(rootPos.X - width / 2, headPos.Y)
+                    espBox.Visible = true
+                else
+                    espBoxOutline.Visible = false
+                    espBox.Visible = false
+                end
+
+                if showESPName then
+                    espName.Position = Vector2.new(rootPos.X, headPos.Y - 25)
+                    espName.Visible = true
+                else
+                    espName.Visible = false
+                end
+
+                if showESPTeam then
+                    local teamColor = player.Team.TeamColor.Color
+                    espTeam.Color = teamColor
+                    espTeam.Text = player.Team.Name
+                    espTeam.Position = Vector2.new(rootPos.X, headPos.Y - 45)
+                    espTeam.Visible = true
+                else
+                    espTeam.Visible = false
+                end
+
+                if showHealthBar and humanoid then
+                    local health = humanoid.Health
+                    local maxHealth = humanoid.MaxHealth
+                    healthBarBackground.Size = Vector2.new(5, height)
+                    healthBarBackground.Position = Vector2.new(rootPos.X - width / 2 - 10, headPos.Y)
+                    healthBarBackground.Visible = true
+
+                    healthBar.Size = Vector2.new(5, (health / maxHealth) * height)
+                    healthBar.Position = Vector2.new(rootPos.X - width / 2 - 10, headPos.Y + height - healthBar.Size.Y)
+                    healthBar.Visible = true
+                else
+                    healthBar.Visible = false
+                    healthBarBackground.Visible = false
+                end
+            else
+                espBoxOutline.Visible = false
+                espBox.Visible = false
+                espName.Visible = false
+                espTeam.Visible = false
+                healthBar.Visible = false
+                healthBarBackground.Visible = false
+            end
+        else
+            espBoxOutline.Visible = false
+            espBox.Visible = false
+            espName.Visible = false
+            espTeam.Visible = false
+            healthBar.Visible = false
+            healthBarBackground.Visible = false
+        end
+    end
+
+    local connection = game:GetService("RunService").RenderStepped:Connect(updateESP)
+
+    player.AncestryChanged:Connect(function()
+        if not player:IsDescendantOf(game) then
+            connection:Disconnect()
+            espBoxOutline:Remove()
+            espBox:Remove()
+            espName:Remove()
+            espTeam:Remove()
+            healthBar:Remove()
+            healthBarBackground:Remove()
+        end
+    end)
+end
+
+-- Add ESP for all current players
+for _, player in pairs(players:GetPlayers()) do
+    if player ~= localPlayer then
+        createESP(player)
+    end
+end
+
+-- Add ESP for players who join later
+players.PlayerAdded:Connect(function(player)
+    if player ~= localPlayer then
+        createESP(player)
+    end
+end)
+
+-- Toggle system using your provided Tab:AddToggle
+Tab:AddToggle({
+    Name = "ESP Box",
+    Default = false,
+    Callback = function(Value)
+        showESPBox = Value
+    end
+})
+
+Tab:AddToggle({
+    Name = "ESP Name",
+    Default = false,
+    Callback = function(Value)
+        showESPName = Value
+    end
+})
+
+Tab:AddToggle({
+    Name = "ESP Team",
+    Default = false,
+    Callback = function(Value)
+        showESPTeam = Value
+    end
+})
+
+Tab:AddToggle({
+    Name = "Health Bar",
+    Default = false,
+    Callback = function(Value)
+        showHealthBar = Value
+    end
+})
+
+
+
+
+
+
+
+
+
+-- Подсекция
+local Section = Tab:AddSection({
+	Name = "esp (старый)"
+})
+
+-- Кнопка
+Tab:AddButton({
+    Name = "Esp (старый)",
+    Callback = function()
+        while true do
+            -- Загружаем скрипт
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/Lucasfin000/SpaceHub/main/UESP'))()
+            -- Ждём 60 секунд перед следующей загрузкой
+            wait(60)
+        end
+    end
+})
+
+
+-- Подсекция
+local Section = Tab:AddSection({
+	Name = "Aim Bot"
+})
+
+
+
+
+
+
+
+
+
+
+local Camera = workspace.CurrentCamera
+local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+local UserInputService = game:GetService("UserInputService")
+local TweenService = game:GetService("TweenService")
+local LocalPlayer = Players.LocalPlayer
+local Holding = false
+
+_G.AimbotEnabled = false
+_G.AimbotActive = false -- For sticky aim
+_G.SilentAimEnabled = false -- For silent aim
+_G.TeamCheck = false
+_G.AimPart = "Head"
+_G.Sensitivity = 0.1
+_G.PredictionEnabled = false
+_G.PredictionStrength = 0 -- Default value for motion prediction
+
+_G.CircleSides = 10
+_G.CircleColor = Color3.fromRGB(255, 255, 255)
+_G.CircleTransparency = 1
+_G.CircleRadius = 0 -- Default Radius to find players
+_G.CircleFilled = false
+_G.CircleVisible = true
+_G.CircleThickness = 1
+
+local FOVCircle = Drawing.new("Circle")
+FOVCircle.Position = Vector2.new(Camera.ViewportSize.X / 2, Camera.ViewportSize.Y / 2)
+FOVCircle.Radius = _G.CircleRadius
+FOVCircle.Filled = _G.CircleFilled
+FOVCircle.Color = _G.CircleColor
+FOVCircle.Visible = _G.CircleVisible
+FOVCircle.Transparency = _G.CircleTransparency
+FOVCircle.NumSides = _G.CircleSides
+FOVCircle.Thickness = _G.CircleThickness
+
+local currentTarget = nil -- Variable to store the currently targeted player
+
+local function GetClosestPlayer()
+    local closestDistance = _G.CircleRadius
+    local target = nil
+    local centerPoint = Vector2.new(Camera.ViewportSize.X / 2, Camera.ViewportSize.Y / 2)
+
+    for _, player in pairs(Players:GetPlayers()) do
+        if player ~= LocalPlayer then
+            if not _G.TeamCheck or (player.Team ~= LocalPlayer.Team) then
+                local character = player.Character
+                if character and character:FindFirstChild("HumanoidRootPart") then
+                    local humanoid = character:FindFirstChild("Humanoid")
+                    if humanoid and humanoid.Health > 0 then
+                        local screenPoint = Camera:WorldToScreenPoint(character.HumanoidRootPart.Position)
+                        local vectorDistance = (centerPoint - Vector2.new(screenPoint.X, screenPoint.Y)).Magnitude
+
+                        -- Check if the player is within the FOV radius and closer to the center
+                        if vectorDistance < closestDistance then
+                            target = player
+                            closestDistance = vectorDistance
+                        end
+                    end
+                end
+            end
+        end
+    end
+
+    return target
+end
+
+local function PredictTargetPosition(target)
+    if target and target.Character and target.Character:FindFirstChild("HumanoidRootPart") then
+        local humanoidRootPart = target.Character.HumanoidRootPart
+        local velocity = humanoidRootPart.Velocity
+        local predictedPosition = humanoidRootPart.Position + (velocity * _G.PredictionStrength)
+        return predictedPosition
+    end
+    return nil
+end
+
+UserInputService.InputBegan:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseButton2 then
+        Holding = true
+
+        -- Lock onto the closest player when aiming is initiated
+        if _G.AimbotEnabled then
+            currentTarget = GetClosestPlayer()
+        end
+    end
+end)
+
+UserInputService.InputEnded:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseButton2 then
+        Holding = false
+        currentTarget = nil -- Release the target when aiming is stopped
+    end
+end)
+
+RunService.RenderStepped:Connect(function()
+    FOVCircle.Position = Vector2.new(UserInputService:GetMouseLocation().X, UserInputService:GetMouseLocation().Y)
+    FOVCircle.Radius = _G.CircleRadius
+    FOVCircle.Filled = _G.CircleFilled
+    FOVCircle.Color = _G.CircleColor
+    FOVCircle.Visible = _G.CircleVisible
+    FOVCircle.Transparency = _G.CircleTransparency
+    FOVCircle.NumSides = _G.CircleSides
+    FOVCircle.Thickness = _G.CircleThickness
+
+    if Holding and _G.AimbotEnabled then
+        local aimPosition
+
+        if currentTarget then
+            -- Predict the position if motion prediction is enabled
+            if _G.PredictionEnabled then
+                aimPosition = PredictTargetPosition(currentTarget)
+            else
+                aimPosition = currentTarget.Character[_G.AimPart].Position
+            end
+
+            -- Silent aim logic
+            if _G.SilentAimEnabled then
+                -- No need to move camera, just mark target for shooting accuracy
+                -- You can add silent aim shooting logic here if required
+            elseif _G.AimbotActive then
+                -- Sticky aim logic: moves camera towards the target
+                if aimPosition then
+                    TweenService:Create(Camera, TweenInfo.new(_G.Sensitivity, Enum.EasingStyle.Sine), {CFrame = CFrame.new(Camera.CFrame.Position, aimPosition)}):Play()
+                end
+            end
+        end
+    end
+end)
+
+-- Toggle Implementation for Aimbot
+Tab:AddToggle({
+    Name = "Enable aim",
+    Default = _G.AimbotEnabled,
+    Callback = function(aimbot)
+        _G.AimbotEnabled = aimbot
+    end    
+})
+
+-- Aimbot Active Toggle
+Tab:AddToggle({
+    Name = "sticky aim",
+    Default = _G.AimbotActive,
+    Callback = function(active)
+        _G.AimbotActive = active
+    end    
+})
+
+-- Silent Aim Toggle
+Tab:AddToggle({
+    Name = "silent aim (не работает)",
+    Default = _G.SilentAimEnabled,
+    Callback = function(active)
+        _G.SilentAimEnabled = active
+    end    
+})
+
+Tab:AddDropdown({
+    Name = "Aim Part",
+    Default = "Head",
+    Options = {"Head", "Torso"},
+    Callback = function(aim)
+        _G.AimPart = aim
+    end    
+})
+
+-- Slider Implementation for Sensitivity
+Tab:AddSlider({
+    Name = "Sensitivity",
+    Min = 0,
+    Max = 1,
+    Default = _G.Sensitivity,
+    Color = Color3.fromRGB(255, 255, 255),
+    Increment = 0.001,
+    ValueName = " ",
+    Callback = function(Sens)
+        _G.Sensitivity = Sens
+    end    
+})
+
+-- Slider Implementation for FOV
+Tab:AddSlider({
+    Name = "Aim FOV",
+    Min = 0,
+    Max = 1000,
+    Default = _G.CircleRadius,
+    Color = Color3.fromRGB(255, 255, 255),
+    Increment = 1,
+    ValueName = " ",
+    Callback = function(Value)
+        _G.CircleRadius = Value
+    end    
+})
+
+-- Toggle for Motion Prediction
+Tab:AddToggle({
+    Name = "Prediction",
+    Default = _G.PredictionEnabled,
+    Callback = function(value)
+        _G.PredictionEnabled = value
+    end    
+})
+
+-- Slider for Prediction Strength
+Tab:AddSlider({
+    Name = "Prediction Strength",
+    Min = 0,
+    Max = 2, -- Adjust max as needed for how much you want to predict movement
+    Default = _G.PredictionStrength,
+    Color = Color3.fromRGB(255, 255, 255),
+    Increment = 0.01,
+    ValueName = " ",
+    Callback = function(value)
+        _G.PredictionStrength = value
+    end    
+})
+
+Tab:AddColorpicker({
+    Name = "FOV Color",
+    Default = Color3.fromRGB(255, 255, 255),
+    Callback = function(color)
+        _G.CircleColor = color
+    end   
+})
+
+-- Toggle for Team Check
+Tab:AddToggle({
+    Name = "Team Check",
+    Default = _G.TeamCheck,
+    Callback = function(Value)
+        _G.TeamCheck = Value
+    end
+})
+
+-- Slider Implementation for Transparency
+Tab:AddSlider({
+    Name = "FOV Transparency",
+    Min = 0,
+    Max = 1,
+    Default = _G.CircleTransparency,
+    Color = Color3.fromRGB(255, 255, 255),
+    Increment = 0.001,
+    ValueName = " ",
+    Callback = function(trans)
+        _G.CircleTransparency = trans
+    end    
+})
+
+
+-- Секция-------------------------------------------------------------------------------------------------
+local Tab = Window:MakeTab({
+	Name = "Игрок",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+
+
+
+
+-- Подсекция
+local Section = Tab:AddSection({
+	Name = "Camera"
+})
+
+local savedFov = 70 -- Variable to hold the saved FOV value
+
+Tab:AddSlider({
+    Name = "Fov",
+    Min = 10,
+    Max = 120,
+    Default = 70,
+    Color = Color3.fromRGB(255, 255, 255),
+    Increment = 1,
+    ValueName = "Fov",
+    Callback = function(Value)
+        -- Change the camera's Field of View
+        local player = game.Players.LocalPlayer
+        local camera = workspace.CurrentCamera
+
+        -- Set the Field of View to the value from the slider
+        camera.FieldOfView = Value
+        savedFov = Value -- Save the new value
+    end    
+})
+
+-- Function to reset the FOV when the right mouse button is released
+local function onRightMouseButtonReleased()
+    wait(1) -- Wait for 0.5 seconds
+    local player = game.Players.LocalPlayer
+    local camera = workspace.CurrentCamera
+
+    -- Check if the current FOV matches the saved FOV
+    if camera.FieldOfView ~= savedFov then
+        camera.FieldOfView = savedFov -- Reset to saved FOV
+    end
+end
+
+-- Bind the right mouse button release event
+local userInputService = game:GetService("UserInputService")
+userInputService.InputEnded:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseButton2 then -- Right mouse button
+        onRightMouseButtonReleased()
+    end
+end)
+
+-- Кнопка
+Tab:AddButton({
+	Name = "Max zoom",
+	Callback = function()
+      	    game:GetService("Players").LocalPlayer.CameraMaxZoomDistance = 99999999
+  	end    
+})
+
+
+
+
+-- Кнопка
+Tab:AddButton({
+	Name = "free cam (shift + p)",
+	Callback = function()
+      	    loadstring(game:HttpGet('https://raw.githubusercontent.com/Rollimonster/Roblox-FreeCam-Script/refs/heads/main/Roblox-FreeCam-Script'))()
+  	end    
+})
+
+-- Подсекция
+local Section = Tab:AddSection({
+	Name = "Скорость"
+})
+
+-- Create a Slider for Speed Adjustment
+Tab:AddSlider({
+    Name = "Скорость",
+    Min = 0,
+    Max = 200,
+    Default = 0,
+    Color = Color3.fromRGB(56, 255, 0),
+    Increment = 0.5,
+    ValueName = "Скорость",
+    Callback = function(Value)
+        getgenv().Speed = Value -- Update the global speed based on slider value
+    end  
+})
+
+-- Get the Player service
+local player = game:GetService("Players").LocalPlayer
+local RunService = game:GetService("RunService")
+
+-- Global variables for teleport walking
+getgenv().TpWalking = true
+getgenv().Speed = 0 -- Initialize with default speed from the slider
+
+-- Function to set up teleport walking
+local function setupTeleportWalking(character)
+    local humanoid = character:FindFirstChildWhichIsA("Humanoid")
+
+    -- Ensure the loop only runs if humanoid exists
+    if humanoid then
+        RunService.Heartbeat:Connect(function()
+            -- Check if teleport walking is enabled and the humanoid exists
+            if getgenv().TpWalking and character and humanoid and humanoid.Parent then
+                -- If the player is moving, apply speed
+                if humanoid.MoveDirection.Magnitude > 0 then
+                    -- Calculate the movement vector based on speed
+                    local moveDirection = humanoid.MoveDirection.unit * getgenv().Speed * RunService.Heartbeat:Wait()
+                    character:TranslateBy(moveDirection) -- Teleport the character
+                end
+            end
+        end)
+    else
+        warn("Humanoid not found!")
+    end
+end
+
+-- Set up teleport walking for the initial character
+local initialCharacter = player.Character or player.CharacterAdded:Wait()
+setupTeleportWalking(initialCharacter)
+
+-- Reapply speed when the character respawns
+player.CharacterAdded:Connect(function(newCharacter)
+    setupTeleportWalking(newCharacter)
+end)
+
+
+-- Подсекция
+local Section = Tab:AddSection({
+	Name = "fly"
+})
+
+local Player = game.Players.LocalPlayer
+local UserInputService = game:GetService("UserInputService")
+
+local Flying = false
+local Speed = 50 -- Initial flight speed
+local bodyVelocity -- Определяем переменную для BodyVelocity
+
+local function stopFlight()
+    Flying = false
+    if bodyVelocity then
+        bodyVelocity:Destroy()
+        bodyVelocity = nil
+    end
+end
+
+local function toggleFlight(Character)
+    Flying = not Flying
+    if Flying then
+        bodyVelocity = Instance.new("BodyVelocity")
+        bodyVelocity.Velocity = Vector3.new(0, Speed, 0)
+        bodyVelocity.MaxForce = Vector3.new(100000, 100000, 100000)
+        bodyVelocity.Parent = Character.HumanoidRootPart
+
+        while Flying do
+            wait()
+            local direction = Vector3.new(0, 0, 0)
+
+            if UserInputService:IsKeyDown(Enum.KeyCode.W) then
+                direction = direction + workspace.CurrentCamera.CFrame.LookVector
+            end
+            if UserInputService:IsKeyDown(Enum.KeyCode.S) then
+                direction = direction - workspace.CurrentCamera.CFrame.LookVector
+            end
+            if UserInputService:IsKeyDown(Enum.KeyCode.A) then
+                direction = direction - workspace.CurrentCamera.CFrame.RightVector
+            end
+            if UserInputService:IsKeyDown(Enum.KeyCode.D) then
+                direction = direction + workspace.CurrentCamera.CFrame.RightVector
+            end
+            
+            -- Set the body velocity immediately based on user input
+            if UserInputService:IsKeyDown(Enum.KeyCode.Space) then
+                bodyVelocity.Velocity = Vector3.new(direction.X * Speed, Speed, direction.Z * Speed)
+            elseif UserInputService:IsKeyDown(Enum.KeyCode.LeftShift) then
+                bodyVelocity.Velocity = Vector3.new(direction.X * Speed, -Speed, direction.Z * Speed)
+            else
+                bodyVelocity.Velocity = Vector3.new(direction.X * Speed, 0, direction.Z * Speed)
+            end
+        end
+        stopFlight()
+    else
+        stopFlight()
+    end
+end
+
+local function onCharacterAdded(Character)
+    Character:WaitForChild("HumanoidRootPart")
+
+    Tab:AddToggle({
+        Name = "Fly",
+        Default = false,
+        Callback = function(Value)
+            if Value then
+                toggleFlight(Character)
+            else
+                stopFlight()
+            end
+        end    
+    })
+
+    Tab:AddSlider({
+        Name = "Fly Speed",
+        Min = 0,
+        Max = 500,
+        Default = 50,
+        Color = Color3.fromRGB(255,255,255),
+        Increment = 1,
+        ValueName = "speed",
+        Callback = function(Value)
+            Speed = Value -- Set the flight speed
+        end    
+    })
+
+    -- Останавливаем полет при смерти
+    Character:WaitForChild("Humanoid").Died:Connect(function()
+        stopFlight()
+    end)
+end
+
+-- Подключаем обработчик события CharacterAdded
+Player.CharacterAdded:Connect(onCharacterAdded)
+
+-- Инициализируем для текущего персонажа, если он уже существует
+if Player.Character then
+    onCharacterAdded(Player.Character)
+end
+
+
+
+-- Подсекция
+local Section = Tab:AddSection({
+	Name = "Прыжок"
+})
+
+Tab:AddSlider({
+    Name = "Сила прыжка",
+    Min = 1,
+    Max = 60,
+    Default = 45,
+    Color = Color3.fromRGB(66, 133, 180),
+    Increment = 1,
+    ValueName = "Сила прыжка",
+    Callback = function(Value)
+        local player = game.Players.LocalPlayer
+
+        -- Function to set jump power
+        local function setJumpPower(jumpPower)
+            if player.Character and player.Character:FindFirstChild("Humanoid") then
+                player.Character.Humanoid.JumpPower = jumpPower
+            end
+        end
+
+        -- Set initial jump power
+        setJumpPower(Value)
+        
+        -- Create a coroutine for continuous checking
+        coroutine.wrap(function()
+            while true do
+                wait(0.1) -- Check every 0.1 seconds
+                if player.Character and player.Character:FindFirstChild("Humanoid") then
+                    local currentJumpPower = player.Character.Humanoid.JumpPower
+                    -- If current jump power is different, update it
+                    if currentJumpPower ~= Value then
+                        setJumpPower(Value)
+                    end
+                else
+                    -- Wait for the character to be added
+                    player.CharacterAdded:Wait()
+                    -- Reset jump power when character respawns
+                    setJumpPower(Value)
+                end
+            end
+        end)() -- Immediately invoke the coroutine
+    end
+})
+
+-- Подсекция
+local Section = Tab:AddSection({
+	Name = "Бесконечные прыжки"
+})
+
+Tab:AddToggle({
+	Name = "Бесконечные прыжки",
+	Default = false,
+	Callback = function(Value)
+local Player = game:GetService('Players').LocalPlayer
+local UIS = game:GetService('UserInputService')
+
+-- Variable to control jump height functionality
+_G.JumpHeight = 50
+_G.IsJumpEnabled = Value -- This variable acts as a toggle
+
+function Action(Object, Function)
+    if Object ~= nil then
+        Function(Object)
+    end
+end
+
+-- Function to toggle jump functionality
+function ToggleJump()
+    _G.IsJumpEnabled = not _G.IsJumpEnabled
+    print("Jump functionality is now: " .. tostring(_G.IsJumpEnabled))
+end
+
+-- Connect the space key to the jump increase
+UIS.InputBegan:connect(function(UserInput)
+    if UserInput.UserInputType == Enum.UserInputType.Keyboard then
+        -- Check if the Space key is pressed
+        if UserInput.KeyCode == Enum.KeyCode.Space then
+            Action(Player.Character.Humanoid, function(self)
+                -- Only apply jump height if the toggle is enabled
+                if _G.IsJumpEnabled and (self:GetState() == Enum.HumanoidStateType.Jumping or self:GetState() == Enum.HumanoidStateType.Freefall) then
+                    Action(self.Parent.HumanoidRootPart, function(rootPart)
+                        rootPart.Velocity = Vector3.new(0, _G.JumpHeight, 0)
+                    end)
+                end
+            end)
+        end
+        
+        -- Check if the 'T' key is pressed to toggle jump functionality
+        if UserInput.KeyCode == Enum.KeyCode.T then
+            ToggleJump()
+        end
+    end
+end)
+	end    
+})
+
+-- Подсекция
+local Section = Tab:AddSection({
+	Name = "TpTool"
+})
+
+-- Кнопка
+Tab:AddButton({
+    Name = "TpTool",
+    Callback = function()
+        local LocalPlayer = game.Players.LocalPlayer
+        local rp = LocalPlayer.Character.HumanoidRootPart
+        local tool = Instance.new("Tool", LocalPlayer.Backpack)
+        local mouse = LocalPlayer:GetMouse()
+
+        tool.Name = "click tp"
+        tool.RequiresHandle = false
+        
+        tool.Activated:Connect(function()
+            rp.CFrame = CFrame.new(mouse.Hit.X, mouse.Hit.Y + 4, mouse.Hit.Z)
+        end)
+    end
+})
+
+-- Подсекция
+local Section = Tab:AddSection({
+	Name = "СtrlClickDelete"
+})
+
+-- Кнопка
+Tab:AddButton({
+    Name = "СtrlClickDelete",
+    Callback = function()
+--Hold CLTR and click to delete parts (you need to rejoin if you delete something wrong)
+local Plr = game:GetService("Players").LocalPlayer
+local Mouse = Plr:GetMouse()
+ 
+Mouse.Button1Down:connect(function()
+if not game:GetService("UserInputService"):IsKeyDown(Enum.KeyCode.LeftControl) then return end
+if not Mouse.Target then return end
+Mouse.Target:Destroy()
+end)
+end
+})
+
+-- Подсекция
+local Section = Tab:AddSection({
+	Name = "admin-gun"
+})
+
+-- Кнопка (Button)
+Tab:AddButton({
+    Name = "admin-gun (визуально)",
+    Callback = function()
+        -- Получаем текущего игрока
+        local player = game.Players.LocalPlayer -- Для LocalScript
+
+        -- Скрипт для добавления инструментов из ReplicatedStorage в инвентарь игрока
+        local ReplicatedStorage = game:GetService("ReplicatedStorage")
+
+        -- Функция для добавления инструментов в инвентарь игрока
+        local function giveToolsToPlayer(player)
+            local toolsFolder = ReplicatedStorage:FindFirstChild("Tools")
+            if toolsFolder then
+                for _, tool in pairs(toolsFolder:GetChildren()) do
+                    if tool:IsA("Tool") then
+                        -- Клонируем инструмент и добавляем его в инвентарь игрока
+                        local clonedTool = tool:Clone()
+                        clonedTool.Parent = player.Backpack
+                    end
+                end
+            else
+                warn("Папка Tools не найдена в ReplicatedStorage.")
+            end
+        end
+        
+        -- Вызываем функцию для добавления инструментов
+        giveToolsToPlayer(player)
+    end
+})
+
+---------------------------------------------------------------------------------------------------
+local Tab = Window:MakeTab({
+	Name = "Мир",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+-- Подсекция
+local Section = Tab:AddSection({
+	Name = "Карта"
+})
+
+-- Кнопка
+Tab:AddButton({
+    Name = "Все светло",
+    Callback = function()
+if not _G.FullBrightExecuted then
+
+	_G.FullBrightEnabled = false
+
+	_G.NormalLightingSettings = {
+		Brightness = game:GetService("Lighting").Brightness,
+		ClockTime = game:GetService("Lighting").ClockTime,
+		FogEnd = game:GetService("Lighting").FogEnd,
+		GlobalShadows = game:GetService("Lighting").GlobalShadows,
+		Ambient = game:GetService("Lighting").Ambient
+	}
+
+	game:GetService("Lighting"):GetPropertyChangedSignal("Brightness"):Connect(function()
+		if game:GetService("Lighting").Brightness ~= 1 and game:GetService("Lighting").Brightness ~= _G.NormalLightingSettings.Brightness then
+			_G.NormalLightingSettings.Brightness = game:GetService("Lighting").Brightness
+			if not _G.FullBrightEnabled then
+				repeat
+					wait()
+				until _G.FullBrightEnabled
+			end
+			game:GetService("Lighting").Brightness = 1
+		end
+	end)
+
+	game:GetService("Lighting"):GetPropertyChangedSignal("ClockTime"):Connect(function()
+		if game:GetService("Lighting").ClockTime ~= 13 and game:GetService("Lighting").ClockTime ~= _G.NormalLightingSettings.ClockTime then
+			_G.NormalLightingSettings.ClockTime = game:GetService("Lighting").ClockTime
+			if not _G.FullBrightEnabled then
+				repeat
+					wait()
+				until _G.FullBrightEnabled
+			end
+			game:GetService("Lighting").ClockTime = 13
+		end
+	end)
+
+	game:GetService("Lighting"):GetPropertyChangedSignal("FogEnd"):Connect(function()
+		if game:GetService("Lighting").FogEnd ~= 786543 and game:GetService("Lighting").FogEnd ~= _G.NormalLightingSettings.FogEnd then
+			_G.NormalLightingSettings.FogEnd = game:GetService("Lighting").FogEnd
+			if not _G.FullBrightEnabled then
+				repeat
+					wait()
+				until _G.FullBrightEnabled
+			end
+			game:GetService("Lighting").FogEnd = 786543
+		end
+	end)
+
+	game:GetService("Lighting"):GetPropertyChangedSignal("GlobalShadows"):Connect(function()
+		if game:GetService("Lighting").GlobalShadows ~= false and game:GetService("Lighting").GlobalShadows ~= _G.NormalLightingSettings.GlobalShadows then
+			_G.NormalLightingSettings.GlobalShadows = game:GetService("Lighting").GlobalShadows
+			if not _G.FullBrightEnabled then
+				repeat
+					wait()
+				until _G.FullBrightEnabled
+			end
+			game:GetService("Lighting").GlobalShadows = false
+		end
+	end)
+
+	game:GetService("Lighting"):GetPropertyChangedSignal("Ambient"):Connect(function()
+		if game:GetService("Lighting").Ambient ~= Color3.fromRGB(178, 178, 178) and game:GetService("Lighting").Ambient ~= _G.NormalLightingSettings.Ambient then
+			_G.NormalLightingSettings.Ambient = game:GetService("Lighting").Ambient
+			if not _G.FullBrightEnabled then
+				repeat
+					wait()
+				until _G.FullBrightEnabled
+			end
+			game:GetService("Lighting").Ambient = Color3.fromRGB(178, 178, 178)
+		end
+	end)
+
+	game:GetService("Lighting").Brightness = 1
+	game:GetService("Lighting").ClockTime = 13
+	game:GetService("Lighting").FogEnd = 786543
+	game:GetService("Lighting").GlobalShadows = false
+	game:GetService("Lighting").Ambient = Color3.fromRGB(178, 178, 178)
+
+	local LatestValue = true
+	spawn(function()
+		repeat
+			wait()
+		until _G.FullBrightEnabled
+		while wait() do
+			if _G.FullBrightEnabled ~= LatestValue then
+				if not _G.FullBrightEnabled then
+					game:GetService("Lighting").Brightness = _G.NormalLightingSettings.Brightness
+					game:GetService("Lighting").ClockTime = _G.NormalLightingSettings.ClockTime
+					game:GetService("Lighting").FogEnd = _G.NormalLightingSettings.FogEnd
+					game:GetService("Lighting").GlobalShadows = _G.NormalLightingSettings.GlobalShadows
+					game:GetService("Lighting").Ambient = _G.NormalLightingSettings.Ambient
+				else
+					game:GetService("Lighting").Brightness = 1
+					game:GetService("Lighting").ClockTime = 12
+					game:GetService("Lighting").FogEnd = 786543
+					game:GetService("Lighting").GlobalShadows = false
+					game:GetService("Lighting").Ambient = Color3.fromRGB(178, 178, 178)
+				end
+				LatestValue = not LatestValue
+			end
+		end
+	end)
+end
+
+_G.FullBrightExecuted = true
+_G.FullBrightEnabled = not _G.FullBrightEnabled
+end
+})
+
+-- Кнопка
+Tab:AddButton({
+    Name = "Удалить зелень",
+    Callback = function()
+        -- Запускаем бесконечный цикл
+        while true do
+            -- Получаем папку "map"
+            local mapFolder = game.Workspace:FindFirstChild("map") 
+
+            if mapFolder then
+                -- Удаляем папку "Trees", если она есть
+                local treesFolder = mapFolder:FindFirstChild("Trees") 
+                
+                if treesFolder then
+                    treesFolder:Destroy() -- Удаляем папку "Trees"
+                end
+
+                -- Удаляем все модели "Tree" из папки "map"
+                for _, model in pairs(mapFolder:GetChildren()) do
+                    if model:IsA("Model") and model.Name == "Tree" then
+                        model:Destroy() -- Удаляем модель "Tree"
+                    end
+                end
+            end
+
+            wait(3) -- Ждем 3 секунды перед следующим выполнением
+        end
+    end
+})
+
+
+
+-- Кнопка
+Tab:AddButton({
+    Name = "Удалить туман",
+    Callback = function()
+    -- Получаем папку Lighting
+    local lightingFolder = game:GetService("Lighting") 
+
+    -- Удаляем все объекты в Lighting
+    for _, child in ipairs(lightingFolder:GetChildren()) do
+        child:Destroy() -- Удаляем объект
+        print("Объект '" .. child.Name .. "' был удален из Lighting.") -- Выводим сообщение о удалении
+    end
+end
+})
+
+-- Подсекция
+local Section = Tab:AddSection({
+	Name = "небо"
+})
+
+
+-- Добавляем цветовой выбор для неба
+Tab:AddColorpicker({
+    Name = "Цвет облаков",
+    Default = Color3.fromRGB(150, 150, 150),
+    Callback = function(Value)
+        -- Проверяем, есть ли объект Clouds в Terrain
+        local terrain = game.Workspace.Terrain
+        if terrain:FindFirstChild("Clouds") then
+            local clouds = terrain.Clouds
+            
+            -- Устанавливаем цвет облаков
+            clouds.Color = Value -- Изменяем цвет облаков на выбранный
+        end
+    end
+})
+
+-- Проверка на наличие объекта Clouds при инициализации
+local terrain = game.Workspace.Terrain
+if not terrain:FindFirstChild("Clouds") then
+    warn("Объект Clouds не найден в Workspace.Terrain!")
+end
+
+
+Tab:AddToggle({
+    Name = "вкл-выкл",
+    Default = false,
+    Callback = function(Value)
+        if Value then
+            -- Если переключатель включен, устанавливаем плотность облаков на 1
+            game.Workspace.Terrain.Clouds.Cover = 1
+        else
+            -- Если переключатель выключен, устанавливаем плотность облаков на 0.5
+            game.Workspace.Terrain.Clouds.Cover = 0.5
+        end
+    end    
+})
+
+
+
+
+-- Подсекция
+local Section = Tab:AddSection({
+	Name = "Другое"
+})
+
+-- Кнопка
+Tab:AddButton({
+    Name = "Fps boost",
+    Callback = function()
+    local decalsyeeted = true 
+    local g = game
+    local w = g.Workspace
+    local l = g.Lighting
+    local t = w.Terrain
+
+    sethiddenproperty(l, "Technology", 2)
+    sethiddenproperty(t, "Decoration", false)
+    t.WaterWaveSize = 0
+    t.WaterWaveSpeed = 0
+    t.WaterReflectance = 0
+    t.WaterTransparency = 0
+    l.GlobalShadows = 0
+    l.FogEnd = 9e9
+    l.Brightness = 0
+    settings().Rendering.QualityLevel = "Level01"
+
+    for i, v in pairs(w:GetDescendants()) do
+        if v:IsA("BasePart") and not v:IsA("MeshPart") then
+            v.Material = "Plastic"
+            v.Reflectance = 0
+        elseif (v:IsA("Decal") or v:IsA("Texture")) and decalsyeeted then
+            v.Transparency = 1
+        elseif v:IsA("ParticleEmitter") or v:IsA("Trail") then
+            v.Lifetime = NumberRange.new(0)
+        elseif v:IsA("Explosion") then
+            v.BlastPressure = 1
+            v.BlastRadius = 1
+        elseif v:IsA("Fire") or v:IsA("SpotLight") or v:IsA("Smoke") or v:IsA("Sparkles") then
+            v.Enabled = false
+        elseif v:IsA("MeshPart") and decalsyeeted then
+            v.Material = "Plastic"
+            v.Reflectance = 0
+            v.TextureID = 10385902758728957 -- Make sure this texture ID is valid
+        elseif v:IsA("SpecialMesh") and decalsyeeted then
+            v.TextureId = 0
+        elseif v:IsA("ShirtGraphic") and decalsyeeted then
+            v.Graphic = 0
+        elseif (v:IsA("Shirt") or v:IsA("Pants")) and decalsyeeted then
+            v[v.ClassName .. "Template"] = 0
+        end
+    end
+
+    for i = 1, #l:GetChildren() do
+        local e = l:GetChildren()[i]
+        if e:IsA("BlurEffect") or e:IsA("SunRaysEffect") or e:IsA("ColorCorrectionEffect") or e:IsA("BloomEffect") or e:IsA("DepthOfFieldEffect") then
+            e.Enabled = false
+        end
+    end
+
+    w.DescendantAdded:Connect(function(v)
+        wait() -- prevent errors and allow time for properties to update
+        if v:IsA("BasePart") and not v:IsA("MeshPart") then
+            v.Material = "Plastic"
+            v.Reflectance = 0
+        elseif (v:IsA("Decal") or v:IsA("Texture")) and decalsyeeted then
+            v.Transparency = 1
+        elseif v:IsA("ParticleEmitter") or v:IsA("Trail") then
+            v.Lifetime = NumberRange.new(0)
+        elseif v:IsA("Explosion") then
+            v.BlastPressure = 1
+            v.BlastRadius = 1
+        elseif v:IsA("Fire") or v:IsA("SpotLight") or v:IsA("Smoke") or v:IsA("Sparkles") then
+            v.Enabled = false
+        elseif v:IsA("MeshPart") and decalsyeeted then
+            v.Material = "Plastic"
+            v.Reflectance = 0
+            v.TextureID = 10385902758728957 -- Make sure this texture ID is valid
+        elseif v:IsA("SpecialMesh") and decalsyeeted then
+            v.TextureId = 0
+        elseif v:IsA("ShirtGraphic") and decalsyeeted then
+            v.ShirtGraphic = 0
+        elseif (v:IsA("Shirt") or v:IsA("Pants")) and decalsyeeted then
+            v[v.ClassName .. "Template"] = 0
+        end
+    end)
+end
+})
+
+-- Кнопка
+Tab:AddButton({
+    Name = "RTX (lag) вкл-выкл",
+    Callback = function()
+local Lighting = game:GetService("Lighting")
+
+    if not isRtxEnabled then
+        -- Включить RTX настройки
+        Lighting.Technology = Enum.Technology.Future
+        Lighting.Ambient = Color3.fromRGB(25, 25, 25) 
+        Lighting.OutdoorAmbient = Color3.fromRGB(25, 25, 25) 
+        Lighting.ShadowSoftness = 0.1
+        Lighting.EnvironmentDiffuseScale = 0.7
+        Lighting.EnvironmentSpecularScale = 0.7
+        isRtxEnabled = true -- Изменяем состояние на включено
+    else
+        -- Вернуть настройки обратно
+        Lighting.Technology = Enum.Technology.ShadowMap -- Или другое значение по умолчанию
+        Lighting.Ambient = Color3.fromRGB(70, 70, 70) -- Белый цвет по умолчанию
+        Lighting.OutdoorAmbient = Color3.fromRGB(0, 0, 0) -- Белый цвет по умолчанию
+        Lighting.ShadowSoftness = 0 -- Значение по умолчанию
+        Lighting.EnvironmentDiffuseScale = 1 -- Значение по умолчанию
+        Lighting.EnvironmentSpecularScale = 0.425 -- Значение по умолчанию
+        isRtxEnabled = false -- Изменяем состояние на выключено
+    end
+end
+})
+
+-- Подсекция
+local Section = Tab:AddSection({
+	Name = "???"
+})
+
+-- Кнопка
+Tab:AddButton({
+    Name = "?̢ͬ̆̆ͯ͐̈́̄̒ͬ̆͢͏͇͙̰̯̘̖̘̭̟̠̥̝̞͎̟?̰̣̩̺͉̗̳͚̙̱̳̯̏͌̋̓͆͗͑̌͜͝?̵̠̞͎̝̲͕̗͕̝̖͉͚͕̗̰̿͋ͦ͊ͮ͗̉̃̄ͬ̾̈́̀͞͡͠?̷̵̶̱̝͚͙̖̯̻̳ͦ̏̿͐͌̇͗͘?̥̘̹̰͇͉̯͔̲̦ͭ̋͋̀̏͛͑̀͢͞   (beta)",
+    Callback = function()
+        local Lighting = game:GetService("Lighting")
+
+        -- Set lighting properties
+        Lighting.Technology = Enum.Technology.Future
+        Lighting.Ambient = Color3.fromRGB(0, 0, 0) 
+        Lighting.OutdoorAmbient = Color3.fromRGB(0, 0, 0) 
+        Lighting.ShadowSoftness = 0
+        Lighting.Brightness = 0
+        Lighting.EnvironmentDiffuseScale = 0
+        Lighting.EnvironmentSpecularScale = 0
+        
+        -- Atmosphere settings
+        local atmosphere = Lighting:FindFirstChild("Atmosphere")
+        if not atmosphere then
+            atmosphere = Instance.new("Atmosphere")
+            atmosphere.Name = "Atmosphere"
+            atmosphere.Color = Color3.fromRGB(0, 0, 0)
+            atmosphere.Decay = Color3.fromRGB(0, 0, 0) 
+            atmosphere.Density = 0.55 
+            atmosphere.Offset = 0 
+            atmosphere.Parent = Lighting
+        end
+        
+        -- Ensure atmosphere is applied
+        atmosphere.Density = 0.55
+        atmosphere.Color = Color3.fromRGB(0, 0, 0)
+        atmosphere.Decay = Color3.fromRGB(0, 0, 0)
+
+        local player = game.Players.LocalPlayer
+        local secretsHandlerFolder = player:WaitForChild("PlayerScripts"):WaitForChild("SecretsHandler")
+
+        -- Function to play a random sound
+        local function playRandomSound()
+            local sounds = {}
+            for _, sound in ipairs(secretsHandlerFolder:GetChildren()) do
+                if sound:IsA("Sound") then
+                    table.insert(sounds, sound)
+                end
+            end
+
+            if #sounds > 0 then
+                local randomIndex = math.random(1, #sounds)
+                local soundToPlay = sounds[randomIndex]
+                
+                soundToPlay.Volume = 0.2
+                soundToPlay:Play()
+            else
+                warn("Нет звуков в папке SecretsHandler!")
+            end
+        end
+
+        -- Function to start playing sounds at random intervals
+        local function startPlayingSounds()
+            while true do
+                playRandomSound()
+                local waitTime = math.random(80, 250) -- Adjusted wait time to be in seconds
+                wait(waitTime)
+            end
+        end
+
+        startPlayingSounds()
+    end
+})
+
+-- Секция ----------------------------------------------------------------------------------------------
+local Tab = Window:MakeTab({
+	Name = "Троллинг",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Открыть КПП",
+	Callback = function()
+      		local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+
+-- Запоминаем начальное местоположение игрока
+local initialPosition = character.HumanoidRootPart.Position
+
+-- Перемещаем персонажа на новое место
+character.HumanoidRootPart.CFrame = CFrame.new(289.480682, 4.2579999, 65.4795227, 0.999994755, 1.65117839e-08, 0.00324080419, -1.6472109e-08, 1, -1.22687247e-08, -0.00324080419, 1.22152777e-08, 0.999994755)
+wait(0.15)
+
+-- Находим кнопку-ворота
+local buttonGate = game.Workspace:FindFirstChild("map")
+if buttonGate then
+    local gate = buttonGate:FindFirstChild("Gate")
+    if gate then
+        local buttonGatePart = gate:FindFirstChild("ButtonGate")
+        if buttonGatePart then
+            local press = buttonGatePart:FindFirstChild("Press")
+            if press then
+                local prompt = press:FindFirstChild("Prompt")
+                if prompt then
+                    print("Активируем ProximityPrompt...")
+                    -- Активировать ProximityPrompt
+                    prompt:InputHoldBegin()
+
+                    -- Ждем 1 секунду для активации
+                    wait(0.15) -- Время ожидания можно изменить
+                    prompt:InputHoldEnd()
+                    print("ProximityPrompt активирован.")
+
+                    -- Ждем 0.2 секунды перед телепортацией обратно
+                    wait(0.01)
+
+                    -- Телепортируемся на начальную позицию
+                    character.HumanoidRootPart.Position = initialPosition
+                end
+            end
+        end
+    end
+end
+  	end    
+})
+
+
+---------------------------------------------------------------------------------------------------
+local Tab = Window:MakeTab({
+	Name = "Разное",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+-- Подсекция
+local Section = Tab:AddSection({
+	Name = "Infinite Yield"
+})
+
+Tab:AddButton({
+	Name = "Infinite Yield",
+	Callback = function()
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+  	end    
+})
+
+local Tab = YourTabObject -- Replace this with your actual tab object
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+OrionLib:Init()
+
+local modelName = "PyaterochkaPortal"
+local workspace = game:GetService("Workspace")
+
+local model = workspace:FindFirstChild(modelName)
+
+if model then
+    model:Destroy()
+    print(modelName .. " ")
+else
+    print(modelName .. " ")
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+local Players = game:GetService("Players")
+local player = Players.LocalPlayer
+
+OrionLib:MakeNotification({
+    Name = "Добро пожаловать, " .. player.Name .. "!",
+    Content = "Присоединяйтесь к нашему discord или telegram для получения уведомлений об обновлениях!",
+    Image = "rbxassetid://4483345998",
+    Time = 10
+})
