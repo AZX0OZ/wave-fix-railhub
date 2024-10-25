@@ -36,12 +36,17 @@ local Tab = Window:MakeTab({
 
 -- Подсекция
 local Section = Tab:AddSection({
-	Name = "Последнее обновление : 21.10.2024!"
+	Name = "Последнее обновление : 25.10.2024!"
 })
 
 -- Подсекция
 local Section = Tab:AddSection({
-	Name = "v 0.5.0.3!"
+	Name = "v 0.5.1.1!"
+})
+
+-- Подсекция
+local Section = Tab:AddSection({
+	Name = "версия для wave"
 })
 
 local textToCopy = "https://discord.gg/bvEQEUuCFQ" -- Замените этот текст на нужный вам.
