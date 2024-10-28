@@ -36,17 +36,12 @@ local Tab = Window:MakeTab({
 
 -- Подсекция
 local Section = Tab:AddSection({
-	Name = "Последнее обновление : 25.10.2024!"
+	Name = "Последнее обновление : 28.10.2024!"
 })
 
 -- Подсекция
 local Section = Tab:AddSection({
-	Name = "v 0.5.1.1!"
-})
-
--- Подсекция
-local Section = Tab:AddSection({
-	Name = "версия для wave"
+	Name = "v 0.5.3.1!"
 })
 
 local textToCopy = "https://discord.gg/bvEQEUuCFQ" -- Замените этот текст на нужный вам.
@@ -621,7 +616,7 @@ Tab:AddSlider({
                             local humanoidRootPart = character.HumanoidRootPart
                             pcall(function()
                                 humanoidRootPart.Size = Vector3.new(_G.Size, _G.Size, _G.Size)
-                                humanoidRootPart.Transparency = 0.9
+                                humanoidRootPart.Transparency = (Value == 2) and 1 or 0.9
                                 humanoidRootPart.BrickColor = BrickColor.new("Grey")
                                 humanoidRootPart.Material = Enum.Material.Neon
                                 humanoidRootPart.CanCollide = false
@@ -634,6 +629,247 @@ Tab:AddSlider({
     end
 })
 
+-- Подсекция
+local Section = Tab:AddSection({
+	Name = "Esp"
+})
+
+local players = game:GetService("Players")
+local localPlayer = players.LocalPlayer
+local camera = game:GetService("Workspace").CurrentCamera
+
+local showESPBox = false
+local showESPName = false
+local showESPTeam = false
+local showHealthBar = false
+local showDistance = false
+
+-- Задержка обновления (в секундах) для снижения нагрузки
+local updateInterval = 0.045  -- Вы можете изменить значение на большее для лучшей производительности
+
+local function createESP(player)
+    local espBoxOutline = Drawing.new("Square")
+    espBoxOutline.Color = Color3.new(0, 0, 0)
+    espBoxOutline.Thickness = 0.2
+    espBoxOutline.Transparency = 1
+    espBoxOutline.Filled = false
+    espBoxOutline.Visible = false
+
+    local espBox = Drawing.new("Square")
+    espBox.Color = Color3.new(1, 1, 1)
+    espBox.Thickness = 0.7
+    espBox.Transparency = 1
+    espBox.Filled = false
+    espBox.Visible = false
+
+    local espName = Drawing.new("Text")
+    espName.Color = Color3.new(1, 1, 1)
+    espName.Size = 10
+    espName.Center = true
+    espName.Outline = true
+    espName.Text = player.Name
+    espName.Visible = false
+
+    local espTeam = Drawing.new("Text")
+    espTeam.Size = 11
+    espTeam.Center = true
+    espTeam.Outline = true
+    espTeam.Visible = false
+
+    local healthBarBackground = Drawing.new("Square")
+    healthBarBackground.Color = Color3.new(0, 0, 0)
+    healthBarBackground.Filled = true
+    healthBarBackground.Transparency = 0.6
+    healthBarBackground.Thickness = 1
+    healthBarBackground.Visible = false
+
+    local healthBar = Drawing.new("Square")
+    healthBar.Color = Color3.new(0, 1, 0)
+    healthBar.Filled = true
+    healthBar.Transparency = 0.5
+    healthBar.Thickness = 1
+    healthBar.Visible = false
+
+    local distanceLabel = Drawing.new("Text")
+    distanceLabel.Color = Color3.new(1, 1, 1)
+    distanceLabel.Size = 9
+    distanceLabel.Center = true
+    distanceLabel.Outline = true
+    distanceLabel.Visible = false
+
+    local lastUpdate = 0
+
+    local function updateESP()
+        -- Проверяем задержку обновления
+        if tick() - lastUpdate < updateInterval then return end
+        lastUpdate = tick()
+        
+        if not showESPBox and not showESPName and not showESPTeam and not showHealthBar and not showDistance then
+            espBoxOutline.Visible = false
+            espBox.Visible = false
+            espName.Visible = false
+            espTeam.Visible = false
+            healthBar.Visible = false
+            healthBarBackground.Visible = false
+            distanceLabel.Visible = false
+            return
+        end
+
+        local character = player.Character
+        if character and character:FindFirstChild("HumanoidRootPart") and character:FindFirstChild("Head") and player.Team then
+            local rootPart = character:FindFirstChild("HumanoidRootPart")
+            local head = character:FindFirstChild("Head")
+            local humanoid = character:FindFirstChild("Humanoid")
+
+            local rootPos, onScreenRoot = camera:WorldToViewportPoint(rootPart.Position)
+            local headPos, onScreenHead = camera:WorldToViewportPoint(head.Position)
+            local legPos = rootPart.Position - Vector3.new(1, -5.51, 1)
+
+            if onScreenRoot and onScreenHead then
+                local height = (headPos.Y - camera:WorldToViewportPoint(legPos).Y)
+                local width = height / 2
+
+                if showESPBox then
+                    espBoxOutline.Size = Vector2.new(width + 4, height + 4)
+                    espBoxOutline.Position = Vector2.new(rootPos.X - width / 2 - 2, headPos.Y - 2)
+                    espBoxOutline.Visible = true
+
+                    espBox.Size = Vector2.new(width, height)
+                    espBox.Position = Vector2.new(rootPos.X - width / 2, headPos.Y)
+                    espBox.Visible = true
+                else
+                    espBoxOutline.Visible = false
+                    espBox.Visible = false
+                end
+
+                if showESPName then
+                    espName.Position = Vector2.new(rootPos.X, headPos.Y - 20)
+                    espName.Visible = true
+                else
+                    espName.Visible = false
+                end
+
+                if showESPTeam then
+                    local teamColor = player.Team.TeamColor.Color
+                    espTeam.Color = teamColor
+                    espTeam.Text = player.Team.Name
+                    espTeam.Position = Vector2.new(rootPos.X, headPos.Y - 34)
+                    espTeam.Visible = true
+                else
+                    espTeam.Visible = false
+                end
+
+                if showHealthBar and humanoid then
+                    local health = humanoid.Health
+                    local maxHealth = humanoid.MaxHealth
+                    healthBarBackground.Size = Vector2.new(5, height)
+                    healthBarBackground.Position = Vector2.new(rootPos.X - width / 2 - 10, headPos.Y)
+                    healthBarBackground.Visible = true
+
+                    healthBar.Size = Vector2.new(5, (health / maxHealth) * height)
+                    healthBar.Position = Vector2.new(rootPos.X - width / 2 - 10, headPos.Y + height - healthBar.Size.Y)
+                    healthBar.Visible = true
+                else
+                    healthBar.Visible = false
+                    healthBarBackground.Visible = false
+                end
+
+                local distance = (rootPart.Position - localPlayer.Character.HumanoidRootPart.Position).magnitude
+                if showDistance and distance < 500 then  -- Ограничение на отображение дальних объектов
+                    distanceLabel.Text = string.format("%.2f m", distance)
+                    distanceLabel.Position = Vector2.new(rootPos.X, headPos.Y - 48)
+                    distanceLabel.Visible = true
+                else
+                    distanceLabel.Visible = false
+                end
+
+            else
+                espBoxOutline.Visible = false
+                espBox.Visible = false
+                espName.Visible = false
+                espTeam.Visible = false
+                healthBar.Visible = false
+                healthBarBackground.Visible = false
+                distanceLabel.Visible = false
+            end
+        else
+            espBoxOutline.Visible = false
+            espBox.Visible = false
+            espName.Visible = false
+            espTeam.Visible = false
+            healthBar.Visible = false
+            healthBarBackground.Visible = false
+            distanceLabel.Visible = false
+        end
+    end
+
+    local connection = game:GetService("RunService").RenderStepped:Connect(updateESP)
+
+    player.AncestryChanged:Connect(function()
+        if not player:IsDescendantOf(game) then
+            connection:Disconnect()
+            espBoxOutline:Remove()
+            espBox:Remove()
+            espName:Remove()
+            espTeam:Remove()
+            healthBar:Remove()
+            healthBarBackground:Remove()
+            distanceLabel:Remove()
+        end
+    end)
+end
+
+for _, player in pairs(players:GetPlayers()) do
+    if player ~= localPlayer then
+        createESP(player)
+    end
+end
+
+players.PlayerAdded:Connect(function(player)
+    if player ~= localPlayer then
+        createESP(player)
+    end
+end)
+
+Tab:AddToggle({
+    Name = "ESP Box",
+    Default = false,
+    Callback = function(Value)
+        showESPBox = Value
+    end
+})
+
+Tab:AddToggle({
+    Name = "ESP Name",
+    Default = false,
+    Callback = function(Value)
+        showESPName = Value
+    end
+})
+
+Tab:AddToggle({
+    Name = "ESP Team",
+    Default = false,
+    Callback = function(Value)
+        showESPTeam = Value
+    end
+})
+
+Tab:AddToggle({
+    Name = "Health Bar",
+    Default = false,
+    Callback = function(Value)
+        showHealthBar = Value
+    end
+})
+
+Tab:AddToggle({
+    Name = "ESP Distance",
+    Default = false,
+    Callback = function(Value)
+        showDistance = Value
+    end
+})
 
 
 
@@ -964,7 +1200,7 @@ Tab:AddSlider({
 
 -- Function to reset the FOV when the right mouse button is released
 local function onRightMouseButtonReleased()
-    wait(1) -- Wait for 0.5 seconds
+    wait(1.1) -- Wait for 0.5 seconds
     local player = game.Players.LocalPlayer
     local camera = workspace.CurrentCamera
 
@@ -1070,8 +1306,9 @@ local UserInputService = game:GetService("UserInputService")
 
 local Flying = false
 local Speed = 50 -- Initial flight speed
-local bodyVelocity -- Определяем переменную для BodyVelocity
+local bodyVelocity -- BodyVelocity variable
 
+-- Function to stop flight
 local function stopFlight()
     Flying = false
     if bodyVelocity then
@@ -1080,6 +1317,7 @@ local function stopFlight()
     end
 end
 
+-- Function to start or stop flying
 local function toggleFlight(Character)
     Flying = not Flying
     if Flying then
@@ -1088,7 +1326,8 @@ local function toggleFlight(Character)
         bodyVelocity.MaxForce = Vector3.new(100000, 100000, 100000)
         bodyVelocity.Parent = Character.HumanoidRootPart
 
-        while Flying do
+        -- Flight loop
+        while Flying and Character.Parent do
             wait()
             local direction = Vector3.new(0, 0, 0)
 
@@ -1105,7 +1344,6 @@ local function toggleFlight(Character)
                 direction = direction + workspace.CurrentCamera.CFrame.RightVector
             end
             
-            -- Set the body velocity immediately based on user input
             if UserInputService:IsKeyDown(Enum.KeyCode.Space) then
                 bodyVelocity.Velocity = Vector3.new(direction.X * Speed, Speed, direction.Z * Speed)
             elseif UserInputService:IsKeyDown(Enum.KeyCode.LeftShift) then
@@ -1120,9 +1358,9 @@ local function toggleFlight(Character)
     end
 end
 
-local function onCharacterAdded(Character)
-    Character:WaitForChild("HumanoidRootPart")
-
+-- Toggle and Slider UI functions
+local function setupUI(Character)
+    -- Add fly toggle
     Tab:AddToggle({
         Name = "Fly",
         Default = false,
@@ -1135,6 +1373,7 @@ local function onCharacterAdded(Character)
         end    
     })
 
+    -- Add fly speed slider
     Tab:AddSlider({
         Name = "Fly Speed",
         Min = 0,
@@ -1147,17 +1386,25 @@ local function onCharacterAdded(Character)
             Speed = Value -- Set the flight speed
         end    
     })
-
-    -- Останавливаем полет при смерти
-    Character:WaitForChild("Humanoid").Died:Connect(function()
-        stopFlight()
-    end)
 end
 
--- Подключаем обработчик события CharacterAdded
+-- On Character Added
+local function onCharacterAdded(Character)
+    Character:WaitForChild("HumanoidRootPart")
+
+    -- Reset fly toggle on death
+    Character:FindFirstChildOfClass("Humanoid").Died:Connect(function()
+        stopFlight()
+        Tab:SetToggleState("Fly", false) -- Reset the toggle in UI to "off"
+    end)
+
+    setupUI(Character)
+end
+
+-- Monitor character changes
 Player.CharacterAdded:Connect(onCharacterAdded)
 
--- Инициализируем для текущего персонажа, если он уже существует
+-- For initial spawn
 if Player.Character then
     onCharacterAdded(Player.Character)
 end
@@ -1804,6 +2051,9 @@ end
 })
 
 
+
+
+
 ---------------------------------------------------------------------------------------------------
 local Tab = Window:MakeTab({
 	Name = "Разное",
@@ -1822,6 +2072,98 @@ Tab:AddButton({
       		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
   	end    
 })
+
+-- Подсекция
+local Section = Tab:AddSection({
+	Name = "Сервер"
+})
+
+Tab:AddButton({
+	Name = "ReJoin Server",
+	Callback = function()
+      		local ts = game:GetService("TeleportService")
+
+local p = game:GetService("Players").LocalPlayer
+
+
+
+ts:TeleportToPlaceInstance(game.PlaceId, game.JobId, p)
+  	end    
+})
+
+
+
+
+
+
+
+
+-- Подсекция
+local Section = Tab:AddSection({
+	Name = "ammo"
+})
+
+local teleporting = false -- Flag to track if teleportation should occur
+local ammoBox = workspace.map:GetChildren()[1257]["AmmoBox (Limited Use)"]
+
+-- Set CanCollide to false so players can walk through the AmmoBox
+ammoBox.CanCollide = false 
+
+Tab:AddToggle({
+    Name = "inf ammo",
+    Default = false,
+    Callback = function(Value)
+        local player = game.Players.LocalPlayer
+        local character = player.Character or player.CharacterAdded:Wait()
+
+        if Value then
+            -- Remove SurfaceGui and CurrentRefill when the toggle is enabled
+            local surfaceGui = ammoBox:FindFirstChild("SurfaceGui")
+            local currentRefill = ammoBox:FindFirstChild("CurrentRefill")
+
+            if surfaceGui then
+                surfaceGui:Destroy() -- Remove SurfaceGui if it exists
+            end
+
+            if currentRefill then
+                currentRefill:Destroy() -- Remove CurrentRefill if it exists
+            end
+
+            teleporting = true -- Set the flag to true when the toggle is on
+
+            while teleporting do
+                local playerPosition = character.HumanoidRootPart.Position
+                -- Set the position slightly below the player's feet
+                ammoBox.Position = Vector3.new(playerPosition.X, playerPosition.Y - 3, playerPosition.Z) -- Adjust the height as needed
+                wait(0.001) -- Wait for 1 second before teleporting again
+            end
+        else
+            teleporting = false -- Set the flag to false when the toggle is off
+        end
+    end    
+})
+
+-- Optional: Reset the teleporting status when the game ends or the player leaves
+game.Players.PlayerRemoving:Connect(function(player)
+    if player == game.Players.LocalPlayer then
+        teleporting = false
+    end
+end)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 local Tab = YourTabObject -- Replace this with your actual tab object
 
