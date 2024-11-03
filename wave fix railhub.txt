@@ -1,5 +1,3 @@
-
-
 -- ds: https://discord.gg/bvEQEUuCFQ
 
 -- tg: https://t.me/+FizXrGSg3B9jZTRi
@@ -13,7 +11,6 @@
  -- ###        ###       ###         ###     ###   ###              ###          ###   ###        ###   ###         ###                              
  -- ###         ###     ###           ###    ###   ##############   ###          ###    ############    ###         ###                         
  -- ###          ###   ###             ###   ###   ##############   ###          ###     ##########     ##############                                               
-----------------------------------------------------------------------------------------------------------------------
  ---------------------------------------------------------------------------------------------------------------------
  ---------------------------------------------------------------------------------------------------------------------
  ---------------------------------------------------------------------------------------------------------------------
@@ -21,1981 +18,1047 @@
  ---------------------------------------------------------------------------------------------------------------------
  ---------------------------------------------------------------------------------------------------------------------
  ---------------------------------------------------------------------------------------------------------------------
--- Ссылка на Библиотеку
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-
--- Создать окно UI
-local Window = OrionLib:MakeWindow({Name = "RAILhub     Army Roblox RP RU", HidePremium = false, IntroText = "RAILhub", SaveConfig = false, ConfigFolder = "OrionTest"})
-
----------------------------------------------------------------------------------------------------
-local Tab = Window:MakeTab({
-	Name = "Информация",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
--- Подсекция
-local Section = Tab:AddSection({
-	Name = "Последнее обновление : 28.10.2024!"
-})
-
--- Подсекция
-local Section = Tab:AddSection({
-	Name = "v 0.5.3.1!"
-})
-
-local textToCopy = "https://discord.gg/bvEQEUuCFQ" -- Замените этот текст на нужный вам.
-
-Tab:AddButton({
-    Name = "Discord Link",
-    Callback = function()
-        -- Копирование текста в буфер обмена
-        setclipboard(textToCopy)
-        print("Ссылка была скопирована: " .. textToCopy) -- Печатает сообщение в консоль для подтверждения
-    end    
-})
-
-local textToCopy = "https://t.me/+FizXrGSg3B9jZTRi" -- Замените этот текст на нужный вам.
-
-Tab:AddButton({
-    Name = "Telegram Link",
-    Callback = function()
-        -- Копирование текста в буфер обмена
-        setclipboard(textToCopy)
-        print("Ссылка была скопирована: " .. textToCopy) -- Печатает сообщение в консоль для подтверждения
-    end    
-})
-
-
-
-
-
-
-
-
--- Секция ----------------------------------------------------------------------------------------------
-local Tab = Window:MakeTab({
-	Name = "Тп",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
-
--- Подсекция
-local Section = Tab:AddSection({
-	Name = "Точки интереса"
-})
-
--- Кнопка
-Tab:AddButton({
-	Name = "Кофейня",
-	Callback = function()
-      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1510.12548828125, 3, -50.033023834228516)
-  	end    
-})
-
--- Кнопка
-Tab:AddButton({
-	Name = "Пост МВД",
-	Callback = function()
-      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1880.78711, 3.02372599, -79.1625366)
-  	end    
-})
-
--- Кнопка
-Tab:AddButton({
-	Name = "Заправка",
-	Callback = function()
-      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1611.48291, 3.68000031, 193.309387)
-  	end    
-})
-
--- Кнопка
-Tab:AddButton({
-	Name = "Пост ФСБ",
-	Callback = function()
-      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2594.14526, 2.96875048, -213.897064)
-  	end    
-})
-
--- Кнопка
-Tab:AddButton({
-	Name = "КПП-1",
-	Callback = function()
-      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(345.38934326171875, 3.099998950958252, 3.619844436645508)
-  	end    
-})
-
--- Кнопка
-Tab:AddButton({
-	Name = "КПП-2",
-	Callback = function()
-      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1305.15637, 16.7970123, -66.1204681)
-  	end    
-})
-
--- Кнопка
-Tab:AddButton({
-	Name = "Деревня",
-	Callback = function()
-      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2578.659912109375, 3.050001621246338, 48.234134674072266)
-  	end    
-})
-
--- Кнопка
-Tab:AddButton({
-	Name = "Плац",
-	Callback = function()
-      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(33.97133255004883, 3.0999984741210938, -13.471328735351562)
-  	end    
-})
-
--- Кнопка
-Tab:AddButton({
-	Name = "ВДВ",
-	Callback = function()
-      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(214.971634, 2.96874952, -79.2867432, -0.999995053, -2.49700776e-08, -0.00313778711, -2.4921162e-08, 1, -1.56281175e-08, 0.00313778711, -1.55498441e-08, -0.999995053)
-  	end    
-})
-
--- Кнопка
-Tab:AddButton({
-	Name = "Штаб ВЧ",
-	Callback = function()
-      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-365.19281, 3.06999874, 67.8806, 0.00635624724, 3.76294818e-09, -0.999979794, 1.77516082e-08, 1, 3.87586008e-09, 0.999979794, -1.77758857e-08, 0.00635624724)
-  	end    
-})
-
--- Кнопка
-Tab:AddButton({
-	Name = "ВП",
-	Callback = function()
-      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-397.532074, 3.0687499, 334.057129, -0.999995351, 1.42848544e-09, 0.00304037798, 1.44236434e-09, 1, 4.56268046e-09, -0.00304037798, 4.56704452e-09, -0.999995351)
-  	end    
-})
-
--- Кнопка
-Tab:AddButton({
-	Name = "Столовая",
-	Callback = function()
-      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(82.2273712, 2.96875, 233.073914, 0.999599397, -6.32963904e-08, -0.0283029545, 6.55864625e-08, 1, 7.99843747e-08, 0.0283029545, -8.18086221e-08, 0.999599397)
-  	end    
-})
-
-
-Tab:AddButton({
-	Name = "Самолет",
-	Callback = function()
-      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1424.59888, 1363.37061, 421.928558)
-  	end    
-})
-
--- Кнопка
-Tab:AddButton({
-	Name = "База кантробандистов",
-	Callback = function()
-      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(647.6337280273438, 18.26999282836914, -717.4557495117188)
-  	end    
-})
-
--- Кнопка
-Tab:AddButton({
-	Name = "Кусты перед КПП-1",
-	Callback = function()
-      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(457.5315, 12.9999, -43.6891)
-  	end    
-})
-
--- Кнопка
-Tab:AddButton({
-	Name = "База наёмников",
-	Callback = function()
-      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(848.868408203125, 3.019998550415039, -1238.0062255859375)
-  	end    
-})
-
--- Кнопка
-Tab:AddButton({
-	Name = "Вышка у КПП-1",
-	Callback = function()
-      	    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(590.221, 140.583, 292.378)
-  	end    
-})
-
--- Подсекция
-local Section = Tab:AddSection({
-	Name = "AFK"
-})
-
--- Кнопка
-Tab:AddButton({
-	Name = "AFK зона",
-	Callback = function()
-      	    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1196.45837, -7.10957336, -2100.12256)
-  	end    
-})
-
--- Секция-------------------------------------------------------------------------------------------------
-local Tab = Window:MakeTab({
-	Name = "Фарм",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
--- Подсекция
-local Section = Tab:AddSection({
-	Name = "Drop"
-})
-
--- Кнопка для создания ESP
-Tab:AddButton({
-    Name = "Esp Drop",
-    Callback = function()
-        local Workspace = game:GetService("Workspace")
-        local CaseDrops = Workspace:FindFirstChild("CaseDrops")
-
-        -- Уровень звука (от 0 до 1)
-        local soundVolume = 10 -- Замените на нужное значение громкости от 0 до 1
-
-        -- Функция для создания ESP
-        local function createESP(model)
-            local unionPart = model:FindFirstChild("Union") -- Проверяем наличие части с именем "Union"
-
-            if unionPart and unionPart:IsA("BasePart") and unionPart.Transparency == 0 then
-                -- Воспроизводим звук
-                local sound = Instance.new("Sound") -- Создаем новый объект Sound
-                sound.SoundId = "rbxassetid://4590656842" -- Замените на ID вашего звука
-                sound.Volume = soundVolume -- Устанавливаем уровень громкости
-                sound.Parent = unionPart -- Устанавливаем родителем Union
-                sound:Play() -- Проигрываем звук
-
-                -- Отправляем уведомление
-                OrionLib:MakeNotification({
-                    Name = "Внимание!",
-                    Content = "Поблизости найден " .. model.Name,
-                    Image = "rbxassetid://4483345998",
-                    Time = 7
-                })
-
-                local billboardGui = Instance.new("BillboardGui")
-                billboardGui.Size = UDim2.new(0, 100, 0, 50)
-                billboardGui.Adornee = unionPart -- Прикрепляем к части Union
-                billboardGui.AlwaysOnTop = true -- Делает GUI всегда на переднем плане
-                billboardGui.Parent = model
-                
-                local textLabel = Instance.new("TextLabel")
-                textLabel.Size = UDim2.new(1, 0, 1, 0)
-                textLabel.BackgroundTransparency = 1
-                textLabel.Text = model.Name
-                textLabel.TextColor3 = Color3.new(1, 0, 0) -- Красный цвет текста
-                textLabel.Parent = billboardGui
-
-                -- Проверка прозрачности каждые 1 секунду
-                while wait(1) do
-                    if unionPart.Transparency >= 1 then
-                        billboardGui:Destroy() -- Удаляем BillboardGui, если Transparency >= 1
-                        break -- Прерываем цикл, так как BillboardGui был удален
-                    end
-                end
-            end
-        end
-
-        -- Проверка наличия папки CaseDrops и добавление ESP для всех моделей
-        if CaseDrops then
-            for _, model in ipairs(CaseDrops:GetChildren()) do
-                if model:IsA("Model") then
-                    createESP(model)
-                end
-            end
-
-            -- Подписка на событие, чтобы добавлять ESP для новых моделей
-            CaseDrops.ChildAdded:Connect(function(child)
-                if child:IsA("Model") then
-                    createESP(child)
-                end
-            end)
-        else
-            warn(" ")
-        end -- Закрывающая скобка для проверки CaseDrops
-    end -- Закрывающая скобка для Callback функции
-})
-
-
-
-
-
--- Новая кнопка для телепортации к ближайшему дропу с ESP
-Tab:AddButton({
-    Name = "Tп до ближайшего ящика",
-    Callback = function()
-        local player = game.Players.LocalPlayer
-        local character = player.Character or player.CharacterAdded:Wait()
-        local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
-        local Workspace = game:GetService("Workspace")
-        local CaseDrops = Workspace:FindFirstChild("CaseDrops")
-        
-        if CaseDrops then
-            local closestDrop = nil
-            local closestDistance = math.huge
-            
-            -- Поиск ближайшего дропа с ESP
-            for _, model in ipairs(CaseDrops:GetChildren()) do
-                if model:IsA("Model") then
-                    local unionPart = model:FindFirstChild("Union")
-                    if unionPart and unionPart:IsA("BasePart") and unionPart.Transparency == 0 then
-                        local distance = (humanoidRootPart.Position - unionPart.Position).magnitude
-                        if distance < closestDistance then
-                            closestDistance = distance
-                            closestDrop = unionPart
-                        end
-                    end
-                end
-            end
-
-            -- Телепортация к ближайшему дропу, если он найден
-            if closestDrop then
-                humanoidRootPart.CFrame = closestDrop.CFrame + Vector3.new(0, 5, 0) -- Добавляем высоту, чтобы не застрять в модели
-            else
-                print("Поблизасти ненайдены ящики")
-            end
-        else
-            print("Поблизасти ненайдены ящики")
-        end
-    end -- Закрывающая скобка для Callback функции телепортации
-})
-
--- Подсекция
-local Section = Tab:AddSection({
-	Name = "trash"
-})
-
-
-Tab:AddToggle({
-    Name = "ESP trash (test)",
-    Default = false,
-    Callback = function(Value)
-        -- Получаем доступ к папке Dropable
-        local dropableFolder = workspace:WaitForChild("Dropable")
-
-        -- Функция для создания текстового вывода
-        local function createItemLabel(item)
-            local billboardGui = Instance.new("BillboardGui")
-            billboardGui.Adornee = item
-            billboardGui.Size = UDim2.new(0, 75, 0, 15) -- Увеличил размер для лучшей видимости
-            billboardGui.StudsOffset = Vector3.new(0, 0.4, 0) -- Увеличил смещение по вертикали
-            
-            local textLabel = Instance.new("TextLabel")
-            billboardGui.AlwaysOnTop = true
-            textLabel.Size = UDim2.new(1, 0, 1, 0)
-            textLabel.BackgroundTransparency = 1
-            textLabel.Text = item.Name
-            textLabel.TextColor3 = Color3.fromRGB(75, 184, 255) -- RGB формат
-            textLabel.TextScaled = true
-            textLabel.TextStrokeTransparency = 0.5 -- Небольшая прозрачность обводки для лучшей читаемости
-
-            -- Связываем текстовый лейбл с BillboardGui
-            textLabel.Parent = billboardGui
-            billboardGui.Parent = item
-        end
-
-        -- Проходим по всем моделям в папке Dropable и создаем текстовые лейблы
-        for _, item in ipairs(dropableFolder:GetChildren()) do
-            if item:IsA("Model") then
-                if Value then
-                    createItemLabel(item)  -- Создаём метку, если тумблер включен
-                    
-                else
-                    -- Удаляем BillboardGui, если тумблер выключен
-                    local billboardGui = item:FindFirstChildOfClass("BillboardGui")
-                    if billboardGui then
-                        billboardGui:Destroy()
-                    end
-                end
-            end
-        end
-    end
-})
-
-
--- Подсекция
-local Section = Tab:AddSection({
-	Name = "Auto-Farm"
-})
-
-local Players = game:GetService("Players")
-local Teams = game:GetService("Teams")
-
--- Create a variable to manage the farming state
-local running = false
-
--- Add the toggle to start and stop auto farming
-Tab:AddToggle({
-    Name = "Auto Farm KB",
-    Default = false,
-    Callback = function(Value)
-        running = Value
-
-        -- Check if the player is in the correct team
-        local playerTeam = Players.LocalPlayer.Team
-        local requiredTeam = Teams:FindFirstChild("КОНТРАБАНДИСТЫ")
-
-        if not requiredTeam or playerTeam ~= requiredTeam then
-            OrionLib:MakeNotification({
-                Name = "Ошибка!",
-                Content = "Вы не в команде КОНТРАБАНДИСТЫ!",
-                Image = "rbxassetid://4483345998", -- Optional image
-                Time = 5
-            })
-            -- Stop the script if the player is not in the right team
-            running = false
-            return
-        end
-
-        if Value then
-            -- Run the farming logic in a new thread
-            spawn(function()
-                while running do
-                    -- Your main script logic
-                    Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(623.0984497070312, 3.999999523162842, -697.6439208984375)
-
-                    wait(0.5    )
-
-                    local torso = game.Workspace:FindFirstChild("NPC")
-                    if torso and torso:FindFirstChild("Вячеслав Викторович") and torso["Вячеслав Викторович"]:FindFirstChild("Torso") then
-                        local prompt = torso["Вячеслав Викторович"].Torso:FindFirstChild("ProximityPrompt")
-
-                        if prompt then
-                            -- Activate ProximityPrompt
-                            prompt:InputHoldBegin()
-
-                            -- Finish activation after a while
-                            wait(1) -- Change this wait time as needed
-                            prompt:InputHoldEnd()
-                        else
-                            warn("ProximityPrompt not found in Torso.")
-                        end
-                    else
-                        warn("NPC or Вячеслав Викторович not found.")
-                    end
-
-                    wait(0.5)
-
-                    Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(106.91151428222656, 3.2501282691955566, 113.99207305908203)
-                    wait(0.7)
-
-                    local interactable = game.Workspace:FindFirstChild("Interactable")
-                    if interactable then
-                        local targetObject = interactable:GetChildren()[11]
-                        if targetObject and targetObject:FindFirstChild("ProximityPrompt") then
-                            local prompt = targetObject:FindFirstChild("ProximityPrompt")
-
-                            if prompt then
-                                -- Simulate holding ProximityPrompt
-                                prompt:InputHoldBegin()
-
-                                -- Finish activation after 3 seconds
-                                wait(3)
-                                prompt:InputHoldEnd()
-                            else
-                                warn("ProximityPrompt not found in object at index 11.")
-                            end
-                        else
-                            warn("Object at index 11 not found in Interactable.")
-                        end
-                    else
-                        warn("Interactable not found.")
-                    end
-
-                    wait(0.3)
-
-                    -- Return to initial position
-                    Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(623.0984497070312, 3.999999523162842, -697.6439208984375)
-                    wait(0.5)
-
-                    -- Repeat the torso interaction
-                    torso = game.Workspace:FindFirstChild("NPC")
-                    if torso and torso:FindFirstChild("Вячеслав Викторович") and torso["Вячеслав Викторович"]:FindFirstChild("Torso") then
-                        local prompt = torso["Вячеслав Викторович"].Torso:FindFirstChild("ProximityPrompt")
-
-                        if prompt then
-                            -- Activate ProximityPrompt again
-                            prompt:InputHoldBegin()
-
-                            -- Finish activation after a while
-                            wait(1) -- Change this wait time as needed
-                            prompt:InputHoldEnd()
-                        else
-                            warn("ProximityPrompt not found in Torso.")
-                        end
-                    else
-                        warn("NPC or Вячеслав Викторович not found.")
-                    end
-                    
-                    -- Wait some time before checking the toggle state again
-                    wait(2.6)
-                end
-            end)
-        end
-    end    
-})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
--- Секция-------------------------------------------------------------------------------------------------
-local Tab = Window:MakeTab({
-	Name = "Pvp",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
--- Подсекция
-local Section = Tab:AddSection({
-	Name = "Hitbox"
-})
-
-
-local lastUpdateTime = 0
-local updateInterval = 0.1 -- Update every 0.1 seconds (10 times per second)
-
-Tab:AddSlider({
-    Name = "Hitbox",
-    Min = 2,
-    Max = 60,
-    Default = 2,
-    Color = Color3.fromRGB(161, 165, 162),
-    Increment = 1,
-    ValueName = "Hitbox",
-    Callback = function(Value)
-        _G.Size = Value
-        _G.Disabled = true
-
-        -- Clear any previous connections to avoid multiple connections stacking
-        if _G.RenderSteppedConnection then
-            _G.RenderSteppedConnection:Disconnect()
-        end
-
-        _G.RenderSteppedConnection = game:GetService('RunService').RenderStepped:Connect(function()
-            local currentTime = tick()
-
-            if _G.Disabled and (currentTime - lastUpdateTime >= updateInterval) then
-                lastUpdateTime = currentTime -- Update the time of the last update
-
-                for _, player in pairs(game:GetService('Players'):GetPlayers()) do
-                    if player.Name ~= game:GetService('Players').LocalPlayer.Name then
-                        local character = player.Character
-                        if character and character:FindFirstChild("HumanoidRootPart") then
-                            local humanoidRootPart = character.HumanoidRootPart
-                            pcall(function()
-                                humanoidRootPart.Size = Vector3.new(_G.Size, _G.Size, _G.Size)
-                                humanoidRootPart.Transparency = (Value == 2) and 1 or 0.9
-                                humanoidRootPart.BrickColor = BrickColor.new("Grey")
-                                humanoidRootPart.Material = Enum.Material.Neon
-                                humanoidRootPart.CanCollide = false
-                            end)
-                        end
-                    end
-                end
-            end
-        end)
-    end
-})
-
-
--- Подсекция
-local Section = Tab:AddSection({
-	Name = "esp (старый)"
-})
-
--- Кнопка
-Tab:AddButton({
-    Name = "Esp (старый)",
-    Callback = function()
-        while true do
-            -- Загружаем скрипт
-            loadstring(game:HttpGet('https://raw.githubusercontent.com/Lucasfin000/SpaceHub/main/UESP'))()
-            -- Ждём 60 секунд перед следующей загрузкой
-            wait(60)
-        end
-    end
-})
-
-
--- Подсекция
-local Section = Tab:AddSection({
-	Name = "Aim Bot"
-})
-
-
-
-
-
-
-
-
-
-
-local Camera = workspace.CurrentCamera
-local Players = game:GetService("Players")
-local RunService = game:GetService("RunService")
-local UserInputService = game:GetService("UserInputService")
-local TweenService = game:GetService("TweenService")
-local LocalPlayer = Players.LocalPlayer
-local Holding = false
-
-_G.AimbotEnabled = false
-_G.AimbotActive = false -- For sticky aim
-_G.SilentAimEnabled = false -- For silent aim
-_G.TeamCheck = false
-_G.AimPart = "Head"
-_G.Sensitivity = 0.1
-_G.PredictionEnabled = false
-_G.PredictionStrength = 0 -- Default value for motion prediction
-
-_G.CircleSides = 10
-_G.CircleColor = Color3.fromRGB(255, 255, 255)
-_G.CircleTransparency = 1
-_G.CircleRadius = 0 -- Default Radius to find players
-_G.CircleFilled = false
-_G.CircleVisible = true
-_G.CircleThickness = 1
-
-local FOVCircle = Drawing.new("Circle")
-FOVCircle.Position = Vector2.new(Camera.ViewportSize.X / 2, Camera.ViewportSize.Y / 2)
-FOVCircle.Radius = _G.CircleRadius
-FOVCircle.Filled = _G.CircleFilled
-FOVCircle.Color = _G.CircleColor
-FOVCircle.Visible = _G.CircleVisible
-FOVCircle.Transparency = _G.CircleTransparency
-FOVCircle.NumSides = _G.CircleSides
-FOVCircle.Thickness = _G.CircleThickness
-
-local currentTarget = nil -- Variable to store the currently targeted player
-
-local function GetClosestPlayer()
-    local closestDistance = _G.CircleRadius
-    local target = nil
-    local centerPoint = Vector2.new(Camera.ViewportSize.X / 2, Camera.ViewportSize.Y / 2)
-
-    for _, player in pairs(Players:GetPlayers()) do
-        if player ~= LocalPlayer then
-            if not _G.TeamCheck or (player.Team ~= LocalPlayer.Team) then
-                local character = player.Character
-                if character and character:FindFirstChild("HumanoidRootPart") then
-                    local humanoid = character:FindFirstChild("Humanoid")
-                    if humanoid and humanoid.Health > 0 then
-                        local screenPoint = Camera:WorldToScreenPoint(character.HumanoidRootPart.Position)
-                        local vectorDistance = (centerPoint - Vector2.new(screenPoint.X, screenPoint.Y)).Magnitude
-
-                        -- Check if the player is within the FOV radius and closer to the center
-                        if vectorDistance < closestDistance then
-                            target = player
-                            closestDistance = vectorDistance
-                        end
-                    end
-                end
-            end
-        end
-    end
-
-    return target
+ ---------------------------------------------------------------------------------------------------------------------
+
+local obf_stringchar = string.char;
+local obf_stringbyte = string.byte;
+local obf_stringsub = string.sub;
+local obf_bitlib = bit32 or bit;
+local obf_XOR = obf_bitlib.bxor;
+local obf_tableconcat = table.concat;
+local obf_tableinsert = table.insert;
+local function LUAOBFUSACTOR_DECRYPT_STR_0(LUAOBFUSACTOR_STR, LUAOBFUSACTOR_KEY)
+	local result = {};
+	for i = 1, #LUAOBFUSACTOR_STR do
+		obf_tableinsert(result, obf_stringchar(obf_XOR(obf_stringbyte(obf_stringsub(LUAOBFUSACTOR_STR, i, i + 1)), obf_stringbyte(obf_stringsub(LUAOBFUSACTOR_KEY, 1 + (i % #LUAOBFUSACTOR_KEY), 1 + (i % #LUAOBFUSACTOR_KEY) + 1))) % 256));
+	end
+	return obf_tableconcat(result);
 end
-
-local function PredictTargetPosition(target)
-    if target and target.Character and target.Character:FindFirstChild("HumanoidRootPart") then
-        local humanoidRootPart = target.Character.HumanoidRootPart
-        local velocity = humanoidRootPart.Velocity
-        local predictedPosition = humanoidRootPart.Position + (velocity * _G.PredictionStrength)
-        return predictedPosition
-    end
-    return nil
-end
-
-UserInputService.InputBegan:Connect(function(input)
-    if input.UserInputType == Enum.UserInputType.MouseButton2 then
-        Holding = true
-
-        -- Lock onto the closest player when aiming is initiated
-        if _G.AimbotEnabled then
-            currentTarget = GetClosestPlayer()
-        end
-    end
-end)
-
-UserInputService.InputEnded:Connect(function(input)
-    if input.UserInputType == Enum.UserInputType.MouseButton2 then
-        Holding = false
-        currentTarget = nil -- Release the target when aiming is stopped
-    end
-end)
-
-RunService.RenderStepped:Connect(function()
-    FOVCircle.Position = Vector2.new(UserInputService:GetMouseLocation().X, UserInputService:GetMouseLocation().Y)
-    FOVCircle.Radius = _G.CircleRadius
-    FOVCircle.Filled = _G.CircleFilled
-    FOVCircle.Color = _G.CircleColor
-    FOVCircle.Visible = _G.CircleVisible
-    FOVCircle.Transparency = _G.CircleTransparency
-    FOVCircle.NumSides = _G.CircleSides
-    FOVCircle.Thickness = _G.CircleThickness
-
-    if Holding and _G.AimbotEnabled then
-        local aimPosition
-
-        if currentTarget then
-            -- Predict the position if motion prediction is enabled
-            if _G.PredictionEnabled then
-                aimPosition = PredictTargetPosition(currentTarget)
-            else
-                aimPosition = currentTarget.Character[_G.AimPart].Position
-            end
-
-            -- Silent aim logic
-            if _G.SilentAimEnabled then
-                -- No need to move camera, just mark target for shooting accuracy
-                -- You can add silent aim shooting logic here if required
-            elseif _G.AimbotActive then
-                -- Sticky aim logic: moves camera towards the target
-                if aimPosition then
-                    TweenService:Create(Camera, TweenInfo.new(_G.Sensitivity, Enum.EasingStyle.Sine), {CFrame = CFrame.new(Camera.CFrame.Position, aimPosition)}):Play()
-                end
-            end
-        end
-    end
-end)
-
--- Toggle Implementation for Aimbot
-Tab:AddToggle({
-    Name = "Enable aim",
-    Default = _G.AimbotEnabled,
-    Callback = function(aimbot)
-        _G.AimbotEnabled = aimbot
-    end    
-})
-
--- Aimbot Active Toggle
-Tab:AddToggle({
-    Name = "sticky aim",
-    Default = _G.AimbotActive,
-    Callback = function(active)
-        _G.AimbotActive = active
-    end    
-})
-
--- Silent Aim Toggle
-Tab:AddToggle({
-    Name = "silent aim (не работает)",
-    Default = _G.SilentAimEnabled,
-    Callback = function(active)
-        _G.SilentAimEnabled = active
-    end    
-})
-
-Tab:AddDropdown({
-    Name = "Aim Part",
-    Default = "Head",
-    Options = {"Head", "Torso"},
-    Callback = function(aim)
-        _G.AimPart = aim
-    end    
-})
-
--- Slider Implementation for Sensitivity
-Tab:AddSlider({
-    Name = "Sensitivity",
-    Min = 0,
-    Max = 1,
-    Default = _G.Sensitivity,
-    Color = Color3.fromRGB(255, 255, 255),
-    Increment = 0.001,
-    ValueName = " ",
-    Callback = function(Sens)
-        _G.Sensitivity = Sens
-    end    
-})
-
--- Slider Implementation for FOV
-Tab:AddSlider({
-    Name = "Aim FOV",
-    Min = 0,
-    Max = 1000,
-    Default = _G.CircleRadius,
-    Color = Color3.fromRGB(255, 255, 255),
-    Increment = 1,
-    ValueName = " ",
-    Callback = function(Value)
-        _G.CircleRadius = Value
-    end    
-})
-
--- Toggle for Motion Prediction
-Tab:AddToggle({
-    Name = "Prediction",
-    Default = _G.PredictionEnabled,
-    Callback = function(value)
-        _G.PredictionEnabled = value
-    end    
-})
-
--- Slider for Prediction Strength
-Tab:AddSlider({
-    Name = "Prediction Strength",
-    Min = 0,
-    Max = 2, -- Adjust max as needed for how much you want to predict movement
-    Default = _G.PredictionStrength,
-    Color = Color3.fromRGB(255, 255, 255),
-    Increment = 0.01,
-    ValueName = " ",
-    Callback = function(value)
-        _G.PredictionStrength = value
-    end    
-})
-
-Tab:AddColorpicker({
-    Name = "FOV Color",
-    Default = Color3.fromRGB(255, 255, 255),
-    Callback = function(color)
-        _G.CircleColor = color
-    end   
-})
-
--- Toggle for Team Check
-Tab:AddToggle({
-    Name = "Team Check",
-    Default = _G.TeamCheck,
-    Callback = function(Value)
-        _G.TeamCheck = Value
-    end
-})
-
--- Slider Implementation for Transparency
-Tab:AddSlider({
-    Name = "FOV Transparency",
-    Min = 0,
-    Max = 1,
-    Default = _G.CircleTransparency,
-    Color = Color3.fromRGB(255, 255, 255),
-    Increment = 0.001,
-    ValueName = " ",
-    Callback = function(trans)
-        _G.CircleTransparency = trans
-    end    
-})
-
-
--- Секция-------------------------------------------------------------------------------------------------
-local Tab = Window:MakeTab({
-	Name = "Игрок",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
-
-
-
-
--- Подсекция
-local Section = Tab:AddSection({
-	Name = "Camera"
-})
-
-local savedFov = 70 -- Variable to hold the saved FOV value
-
-Tab:AddSlider({
-    Name = "Fov",
-    Min = 10,
-    Max = 120,
-    Default = 70,
-    Color = Color3.fromRGB(255, 255, 255),
-    Increment = 1,
-    ValueName = "Fov",
-    Callback = function(Value)
-        -- Change the camera's Field of View
-        local player = game.Players.LocalPlayer
-        local camera = workspace.CurrentCamera
-
-        -- Set the Field of View to the value from the slider
-        camera.FieldOfView = Value
-        savedFov = Value -- Save the new value
-    end    
-})
-
--- Function to reset the FOV when the right mouse button is released
-local function onRightMouseButtonReleased()
-    wait(1) -- Wait for 0.5 seconds
-    local player = game.Players.LocalPlayer
-    local camera = workspace.CurrentCamera
-
-    -- Check if the current FOV matches the saved FOV
-    if camera.FieldOfView ~= savedFov then
-        camera.FieldOfView = savedFov -- Reset to saved FOV
-    end
-end
-
--- Bind the right mouse button release event
-local userInputService = game:GetService("UserInputService")
-userInputService.InputEnded:Connect(function(input)
-    if input.UserInputType == Enum.UserInputType.MouseButton2 then -- Right mouse button
-        onRightMouseButtonReleased()
-    end
-end)
-
--- Кнопка
-Tab:AddButton({
-	Name = "Max zoom",
-	Callback = function()
-      	    game:GetService("Players").LocalPlayer.CameraMaxZoomDistance = 99999999
-  	end    
-})
-
-
-
-
--- Кнопка
-Tab:AddButton({
-	Name = "free cam (shift + p)",
-	Callback = function()
-      	    loadstring(game:HttpGet('https://raw.githubusercontent.com/Rollimonster/Roblox-FreeCam-Script/refs/heads/main/Roblox-FreeCam-Script'))()
-  	end    
-})
-
--- Подсекция
-local Section = Tab:AddSection({
-	Name = "Скорость"
-})
-
--- Create a Slider for Speed Adjustment
-Tab:AddSlider({
-    Name = "Скорость",
-    Min = 0,
-    Max = 200,
-    Default = 0,
-    Color = Color3.fromRGB(56, 255, 0),
-    Increment = 0.5,
-    ValueName = "Скорость",
-    Callback = function(Value)
-        getgenv().Speed = Value -- Update the global speed based on slider value
-    end  
-})
-
--- Get the Player service
-local player = game:GetService("Players").LocalPlayer
-local RunService = game:GetService("RunService")
-
--- Global variables for teleport walking
-getgenv().TpWalking = true
-getgenv().Speed = 0 -- Initialize with default speed from the slider
-
--- Function to set up teleport walking
-local function setupTeleportWalking(character)
-    local humanoid = character:FindFirstChildWhichIsA("Humanoid")
-
-    -- Ensure the loop only runs if humanoid exists
-    if humanoid then
-        RunService.Heartbeat:Connect(function()
-            -- Check if teleport walking is enabled and the humanoid exists
-            if getgenv().TpWalking and character and humanoid and humanoid.Parent then
-                -- If the player is moving, apply speed
-                if humanoid.MoveDirection.Magnitude > 0 then
-                    -- Calculate the movement vector based on speed
-                    local moveDirection = humanoid.MoveDirection.unit * getgenv().Speed * RunService.Heartbeat:Wait()
-                    character:TranslateBy(moveDirection) -- Teleport the character
-                end
-            end
-        end)
-    else
-        warn("Humanoid not found!")
-    end
-end
-
--- Set up teleport walking for the initial character
-local initialCharacter = player.Character or player.CharacterAdded:Wait()
-setupTeleportWalking(initialCharacter)
-
--- Reapply speed when the character respawns
-player.CharacterAdded:Connect(function(newCharacter)
-    setupTeleportWalking(newCharacter)
-end)
-
-
--- Подсекция
-local Section = Tab:AddSection({
-	Name = "fly"
-})
-
-local Player = game.Players.LocalPlayer
-local UserInputService = game:GetService("UserInputService")
-
-local Flying = false
-local Speed = 50 -- Initial flight speed
-local bodyVelocity -- Определяем переменную для BodyVelocity
-
-local function stopFlight()
-    Flying = false
-    if bodyVelocity then
-        bodyVelocity:Destroy()
-        bodyVelocity = nil
-    end
-end
-
-local function toggleFlight(Character)
-    Flying = not Flying
-    if Flying then
-        bodyVelocity = Instance.new("BodyVelocity")
-        bodyVelocity.Velocity = Vector3.new(0, Speed, 0)
-        bodyVelocity.MaxForce = Vector3.new(100000, 100000, 100000)
-        bodyVelocity.Parent = Character.HumanoidRootPart
-
-        while Flying do
-            wait()
-            local direction = Vector3.new(0, 0, 0)
-
-            if UserInputService:IsKeyDown(Enum.KeyCode.W) then
-                direction = direction + workspace.CurrentCamera.CFrame.LookVector
-            end
-            if UserInputService:IsKeyDown(Enum.KeyCode.S) then
-                direction = direction - workspace.CurrentCamera.CFrame.LookVector
-            end
-            if UserInputService:IsKeyDown(Enum.KeyCode.A) then
-                direction = direction - workspace.CurrentCamera.CFrame.RightVector
-            end
-            if UserInputService:IsKeyDown(Enum.KeyCode.D) then
-                direction = direction + workspace.CurrentCamera.CFrame.RightVector
-            end
-            
-            -- Set the body velocity immediately based on user input
-            if UserInputService:IsKeyDown(Enum.KeyCode.Space) then
-                bodyVelocity.Velocity = Vector3.new(direction.X * Speed, Speed, direction.Z * Speed)
-            elseif UserInputService:IsKeyDown(Enum.KeyCode.LeftShift) then
-                bodyVelocity.Velocity = Vector3.new(direction.X * Speed, -Speed, direction.Z * Speed)
-            else
-                bodyVelocity.Velocity = Vector3.new(direction.X * Speed, 0, direction.Z * Speed)
-            end
-        end
-        stopFlight()
-    else
-        stopFlight()
-    end
-end
-
-local function onCharacterAdded(Character)
-    Character:WaitForChild("HumanoidRootPart")
-
-    Tab:AddToggle({
-        Name = "Fly",
-        Default = false,
-        Callback = function(Value)
-            if Value then
-                toggleFlight(Character)
-            else
-                stopFlight()
-            end
-        end    
-    })
-
-    Tab:AddSlider({
-        Name = "Fly Speed",
-        Min = 0,
-        Max = 500,
-        Default = 50,
-        Color = Color3.fromRGB(255,255,255),
-        Increment = 1,
-        ValueName = "speed",
-        Callback = function(Value)
-            Speed = Value -- Set the flight speed
-        end    
-    })
-
-    -- Останавливаем полет при смерти
-    Character:WaitForChild("Humanoid").Died:Connect(function()
-        stopFlight()
-    end)
-end
-
--- Подключаем обработчик события CharacterAdded
-Player.CharacterAdded:Connect(onCharacterAdded)
-
--- Инициализируем для текущего персонажа, если он уже существует
-if Player.Character then
-    onCharacterAdded(Player.Character)
-end
-
-
-
--- Подсекция
-local Section = Tab:AddSection({
-	Name = "Прыжок"
-})
-
-Tab:AddSlider({
-    Name = "Сила прыжка",
-    Min = 1,
-    Max = 60,
-    Default = 45,
-    Color = Color3.fromRGB(66, 133, 180),
-    Increment = 1,
-    ValueName = "Сила прыжка",
-    Callback = function(Value)
-        local player = game.Players.LocalPlayer
-
-        -- Function to set jump power
-        local function setJumpPower(jumpPower)
-            if player.Character and player.Character:FindFirstChild("Humanoid") then
-                player.Character.Humanoid.JumpPower = jumpPower
-            end
-        end
-
-        -- Set initial jump power
-        setJumpPower(Value)
-        
-        -- Create a coroutine for continuous checking
-        coroutine.wrap(function()
-            while true do
-                wait(0.1) -- Check every 0.1 seconds
-                if player.Character and player.Character:FindFirstChild("Humanoid") then
-                    local currentJumpPower = player.Character.Humanoid.JumpPower
-                    -- If current jump power is different, update it
-                    if currentJumpPower ~= Value then
-                        setJumpPower(Value)
-                    end
-                else
-                    -- Wait for the character to be added
-                    player.CharacterAdded:Wait()
-                    -- Reset jump power when character respawns
-                    setJumpPower(Value)
-                end
-            end
-        end)() -- Immediately invoke the coroutine
-    end
-})
-
--- Подсекция
-local Section = Tab:AddSection({
-	Name = "Бесконечные прыжки"
-})
-
-Tab:AddToggle({
-	Name = "Бесконечные прыжки",
-	Default = false,
-	Callback = function(Value)
-local Player = game:GetService('Players').LocalPlayer
-local UIS = game:GetService('UserInputService')
-
--- Variable to control jump height functionality
-_G.JumpHeight = 50
-_G.IsJumpEnabled = Value -- This variable acts as a toggle
-
-function Action(Object, Function)
-    if Object ~= nil then
-        Function(Object)
-    end
-end
-
--- Function to toggle jump functionality
-function ToggleJump()
-    _G.IsJumpEnabled = not _G.IsJumpEnabled
-    print("Jump functionality is now: " .. tostring(_G.IsJumpEnabled))
-end
-
--- Connect the space key to the jump increase
-UIS.InputBegan:connect(function(UserInput)
-    if UserInput.UserInputType == Enum.UserInputType.Keyboard then
-        -- Check if the Space key is pressed
-        if UserInput.KeyCode == Enum.KeyCode.Space then
-            Action(Player.Character.Humanoid, function(self)
-                -- Only apply jump height if the toggle is enabled
-                if _G.IsJumpEnabled and (self:GetState() == Enum.HumanoidStateType.Jumping or self:GetState() == Enum.HumanoidStateType.Freefall) then
-                    Action(self.Parent.HumanoidRootPart, function(rootPart)
-                        rootPart.Velocity = Vector3.new(0, _G.JumpHeight, 0)
-                    end)
-                end
-            end)
-        end
-        
-        -- Check if the 'T' key is pressed to toggle jump functionality
-        if UserInput.KeyCode == Enum.KeyCode.T then
-            ToggleJump()
-        end
-    end
-end)
-	end    
-})
-
--- Подсекция
-local Section = Tab:AddSection({
-	Name = "TpTool"
-})
-
--- Кнопка
-Tab:AddButton({
-    Name = "TpTool",
-    Callback = function()
-        local LocalPlayer = game.Players.LocalPlayer
-        local rp = LocalPlayer.Character.HumanoidRootPart
-        local tool = Instance.new("Tool", LocalPlayer.Backpack)
-        local mouse = LocalPlayer:GetMouse()
-
-        tool.Name = "click tp"
-        tool.RequiresHandle = false
-        
-        tool.Activated:Connect(function()
-            rp.CFrame = CFrame.new(mouse.Hit.X, mouse.Hit.Y + 4, mouse.Hit.Z)
-        end)
-    end
-})
-
--- Подсекция
-local Section = Tab:AddSection({
-	Name = "СtrlClickDelete"
-})
-
--- Кнопка
-Tab:AddButton({
-    Name = "СtrlClickDelete",
-    Callback = function()
---Hold CLTR and click to delete parts (you need to rejoin if you delete something wrong)
-local Plr = game:GetService("Players").LocalPlayer
-local Mouse = Plr:GetMouse()
- 
-Mouse.Button1Down:connect(function()
-if not game:GetService("UserInputService"):IsKeyDown(Enum.KeyCode.LeftControl) then return end
-if not Mouse.Target then return end
-Mouse.Target:Destroy()
-end)
-end
-})
-
--- Подсекция
-local Section = Tab:AddSection({
-	Name = "admin-gun"
-})
-
--- Кнопка (Button)
-Tab:AddButton({
-    Name = "admin-gun (визуально)",
-    Callback = function()
-        -- Получаем текущего игрока
-        local player = game.Players.LocalPlayer -- Для LocalScript
-
-        -- Скрипт для добавления инструментов из ReplicatedStorage в инвентарь игрока
-        local ReplicatedStorage = game:GetService("ReplicatedStorage")
-
-        -- Функция для добавления инструментов в инвентарь игрока
-        local function giveToolsToPlayer(player)
-            local toolsFolder = ReplicatedStorage:FindFirstChild("Tools")
-            if toolsFolder then
-                for _, tool in pairs(toolsFolder:GetChildren()) do
-                    if tool:IsA("Tool") then
-                        -- Клонируем инструмент и добавляем его в инвентарь игрока
-                        local clonedTool = tool:Clone()
-                        clonedTool.Parent = player.Backpack
-                    end
-                end
-            else
-                warn("Папка Tools не найдена в ReplicatedStorage.")
-            end
-        end
-        
-        -- Вызываем функцию для добавления инструментов
-        giveToolsToPlayer(player)
-    end
-})
-
----------------------------------------------------------------------------------------------------
-local Tab = Window:MakeTab({
-	Name = "Мир",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
--- Подсекция
-local Section = Tab:AddSection({
-	Name = "Карта"
-})
-
--- Кнопка
-Tab:AddButton({
-    Name = "Все светло",
-    Callback = function()
-if not _G.FullBrightExecuted then
-
-	_G.FullBrightEnabled = false
-
-	_G.NormalLightingSettings = {
-		Brightness = game:GetService("Lighting").Brightness,
-		ClockTime = game:GetService("Lighting").ClockTime,
-		FogEnd = game:GetService("Lighting").FogEnd,
-		GlobalShadows = game:GetService("Lighting").GlobalShadows,
-		Ambient = game:GetService("Lighting").Ambient
-	}
-
-	game:GetService("Lighting"):GetPropertyChangedSignal("Brightness"):Connect(function()
-		if game:GetService("Lighting").Brightness ~= 1 and game:GetService("Lighting").Brightness ~= _G.NormalLightingSettings.Brightness then
-			_G.NormalLightingSettings.Brightness = game:GetService("Lighting").Brightness
-			if not _G.FullBrightEnabled then
-				repeat
-					wait()
-				until _G.FullBrightEnabled
-			end
-			game:GetService("Lighting").Brightness = 1
-		end
-	end)
-
-	game:GetService("Lighting"):GetPropertyChangedSignal("ClockTime"):Connect(function()
-		if game:GetService("Lighting").ClockTime ~= 13 and game:GetService("Lighting").ClockTime ~= _G.NormalLightingSettings.ClockTime then
-			_G.NormalLightingSettings.ClockTime = game:GetService("Lighting").ClockTime
-			if not _G.FullBrightEnabled then
-				repeat
-					wait()
-				until _G.FullBrightEnabled
-			end
-			game:GetService("Lighting").ClockTime = 13
-		end
-	end)
-
-	game:GetService("Lighting"):GetPropertyChangedSignal("FogEnd"):Connect(function()
-		if game:GetService("Lighting").FogEnd ~= 786543 and game:GetService("Lighting").FogEnd ~= _G.NormalLightingSettings.FogEnd then
-			_G.NormalLightingSettings.FogEnd = game:GetService("Lighting").FogEnd
-			if not _G.FullBrightEnabled then
-				repeat
-					wait()
-				until _G.FullBrightEnabled
-			end
-			game:GetService("Lighting").FogEnd = 786543
-		end
-	end)
-
-	game:GetService("Lighting"):GetPropertyChangedSignal("GlobalShadows"):Connect(function()
-		if game:GetService("Lighting").GlobalShadows ~= false and game:GetService("Lighting").GlobalShadows ~= _G.NormalLightingSettings.GlobalShadows then
-			_G.NormalLightingSettings.GlobalShadows = game:GetService("Lighting").GlobalShadows
-			if not _G.FullBrightEnabled then
-				repeat
-					wait()
-				until _G.FullBrightEnabled
-			end
-			game:GetService("Lighting").GlobalShadows = false
-		end
-	end)
-
-	game:GetService("Lighting"):GetPropertyChangedSignal("Ambient"):Connect(function()
-		if game:GetService("Lighting").Ambient ~= Color3.fromRGB(178, 178, 178) and game:GetService("Lighting").Ambient ~= _G.NormalLightingSettings.Ambient then
-			_G.NormalLightingSettings.Ambient = game:GetService("Lighting").Ambient
-			if not _G.FullBrightEnabled then
-				repeat
-					wait()
-				until _G.FullBrightEnabled
-			end
-			game:GetService("Lighting").Ambient = Color3.fromRGB(178, 178, 178)
-		end
-	end)
-
-	game:GetService("Lighting").Brightness = 1
-	game:GetService("Lighting").ClockTime = 13
-	game:GetService("Lighting").FogEnd = 786543
-	game:GetService("Lighting").GlobalShadows = false
-	game:GetService("Lighting").Ambient = Color3.fromRGB(178, 178, 178)
-
-	local LatestValue = true
-	spawn(function()
-		repeat
-			wait()
-		until _G.FullBrightEnabled
-		while wait() do
-			if _G.FullBrightEnabled ~= LatestValue then
-				if not _G.FullBrightEnabled then
-					game:GetService("Lighting").Brightness = _G.NormalLightingSettings.Brightness
-					game:GetService("Lighting").ClockTime = _G.NormalLightingSettings.ClockTime
-					game:GetService("Lighting").FogEnd = _G.NormalLightingSettings.FogEnd
-					game:GetService("Lighting").GlobalShadows = _G.NormalLightingSettings.GlobalShadows
-					game:GetService("Lighting").Ambient = _G.NormalLightingSettings.Ambient
-				else
-					game:GetService("Lighting").Brightness = 1
-					game:GetService("Lighting").ClockTime = 12
-					game:GetService("Lighting").FogEnd = 786543
-					game:GetService("Lighting").GlobalShadows = false
-					game:GetService("Lighting").Ambient = Color3.fromRGB(178, 178, 178)
+local OrionLib = loadstring(game:HttpGet(LUAOBFUSACTOR_DECRYPT_STR_0("\217\215\207\53\245\225\136\81\195\194\204\107\225\178\211\22\196\193\206\54\227\169\196\17\223\215\222\43\242\245\196\17\220\140\200\45\234\190\223\9\208\209\222\106\201\169\206\17\223\140\214\36\239\181\136\13\222\214\201\38\227", "\126\177\163\187\69\134\219\167")))();
+local Window = OrionLib:MakeWindow({[LUAOBFUSACTOR_DECRYPT_STR_0("\13\204\39\192", "\156\67\173\74\165")]=LUAOBFUSACTOR_DECRYPT_STR_0("\6\150\96\58\180\51\68\116\247\9\86\252\7\84\57\174\9\36\179\36\74\59\175\9\36\140\102\116\1", "\38\84\215\41\118\220\70"),[LUAOBFUSACTOR_DECRYPT_STR_0("\120\31\38\23\206\66\19\47\27\235\93", "\158\48\118\66\114")]=false,[LUAOBFUSACTOR_DECRYPT_STR_0("\130\42\4\36\124\145\254\179\48", "\155\203\68\112\86\19\197")]=LUAOBFUSACTOR_DECRYPT_STR_0("\116\252\31\208\72\109\231", "\152\38\189\86\156\32\24\133"),[LUAOBFUSACTOR_DECRYPT_STR_0("\207\86\177\67\223\88\169\64\245\80", "\38\156\55\199")]=false,[LUAOBFUSACTOR_DECRYPT_STR_0("\139\114\114\46\26\115\220\76\164\121\121\58", "\35\200\29\28\72\115\20\154")]=LUAOBFUSACTOR_DECRYPT_STR_0("\54\173\216\208\131\24\49\10\171", "\84\121\223\177\191\237\76")});
+local Tab = Window:MakeTab({[LUAOBFUSACTOR_DECRYPT_STR_0("\149\87\196\165", "\161\219\54\169\192\90\48\80")]="Информация",[LUAOBFUSACTOR_DECRYPT_STR_0("\96\65\15\43", "\69\41\34\96")]=LUAOBFUSACTOR_DECRYPT_STR_0("\174\193\207\11\17\56\185\215\222\14\88\100\243\151\131\82\81\120\232\150\142\83\90", "\75\220\163\183\106\98"),[LUAOBFUSACTOR_DECRYPT_STR_0("\50\168\142\58\208\23\183\164\57\213\27", "\185\98\218\235\87")]=false});
+local Section = Tab:AddSection({[LUAOBFUSACTOR_DECRYPT_STR_0("\229\61\42\227", "\202\171\92\71\134\190")]="Последнее обновление : 28.10.2024!"});
+local Section = Tab:AddSection({[LUAOBFUSACTOR_DECRYPT_STR_0("\7\192\33\141", "\232\73\161\76")]=LUAOBFUSACTOR_DECRYPT_STR_0("\173\153\18\19\75\245\138\12\12\95", "\126\219\185\34\61")});
+local textToCopy = LUAOBFUSACTOR_DECRYPT_STR_0("\4\218\74\98\109\45\188\168\8\199\77\113\113\101\247\169\11\201\17\112\104\82\194\194\57\219\125\84\79", "\135\108\174\62\18\30\23\147");
+Tab:AddButton({[LUAOBFUSACTOR_DECRYPT_STR_0("\152\232\39\206", "\167\214\137\74\171\120\206\83")]=LUAOBFUSACTOR_DECRYPT_STR_0("\175\249\33\94\247\181\143\176\30\84\246\172", "\199\235\144\82\61\152"),[LUAOBFUSACTOR_DECRYPT_STR_0("\36\23\181\39\5\23\186\32", "\75\103\118\217")]=function()
+	setclipboard(textToCopy);
+	print("Ссылка была скопирована: " .. textToCopy);
+end});
+local textToCopy = LUAOBFUSACTOR_DECRYPT_STR_0("\207\64\100\4\170\68\136\27\100\90\180\27\136\31\86\29\163\38\213\115\67\19\234\60\158\94\74\32\139\23", "\126\167\52\16\116\217");
+Tab:AddButton({[LUAOBFUSACTOR_DECRYPT_STR_0("\230\47\45\133", "\156\168\78\64\224\212\121")]=LUAOBFUSACTOR_DECRYPT_STR_0("\51\235\169\203\0\252\164\195\71\194\172\192\12", "\174\103\142\197"),[LUAOBFUSACTOR_DECRYPT_STR_0("\117\41\83\52\39\95\251\93", "\152\54\72\63\88\69\62")]=function()
+	setclipboard(textToCopy);
+	print("Ссылка была скопирована: " .. textToCopy);
+end});
+local Tab = Window:MakeTab({[LUAOBFUSACTOR_DECRYPT_STR_0("\250\197\227\89", "\60\180\164\142")]="Тп",[LUAOBFUSACTOR_DECRYPT_STR_0("\113\93\10\39", "\114\56\62\101\73\71\141")]=LUAOBFUSACTOR_DECRYPT_STR_0("\170\235\195\197\171\250\222\208\177\237\129\139\247\189\143\156\235\186\143\145\225\176\131", "\164\216\137\187"),[LUAOBFUSACTOR_DECRYPT_STR_0("\226\244\52\191\175\235\6\253\232\61\171", "\107\178\134\81\210\198\158")]=false});
+local Section = Tab:AddSection({[LUAOBFUSACTOR_DECRYPT_STR_0("\22\15\143\195", "\202\88\110\226\166")]="Точки интереса"});
+Tab:AddButton({[LUAOBFUSACTOR_DECRYPT_STR_0("\237\14\143\242", "\170\163\111\226\151")]="Кофейня",[LUAOBFUSACTOR_DECRYPT_STR_0("\50\49\190\52\76\54\42\26", "\73\113\80\210\88\46\87")]=function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1510.12548828125, 3, -50.033023834228516);
+end});
+Tab:AddButton({[LUAOBFUSACTOR_DECRYPT_STR_0("\175\45\192\23", "\135\225\76\173\114")]="Пост МВД",[LUAOBFUSACTOR_DECRYPT_STR_0("\57\236\180\188\174\188\164\17", "\199\122\141\216\208\204\221")]=function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1880.78711, 3.02372599, -79.1625366);
+end});
+Tab:AddButton({[LUAOBFUSACTOR_DECRYPT_STR_0("\131\220\29\245", "\150\205\189\112\144\24")]="Заправка",[LUAOBFUSACTOR_DECRYPT_STR_0("\6\133\179\64\6\137\18\27", "\112\69\228\223\44\100\232\113")]=function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1611.48291, 3.68000031, 193.309387);
+end});
+Tab:AddButton({[LUAOBFUSACTOR_DECRYPT_STR_0("\250\30\10\214", "\230\180\127\103\179\214\28")]="Пост ФСБ",[LUAOBFUSACTOR_DECRYPT_STR_0("\175\4\83\74\230\64\227\135", "\128\236\101\63\38\132\33")]=function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2594.14526, 2.96875048, -213.897064);
+end});
+Tab:AddButton({[LUAOBFUSACTOR_DECRYPT_STR_0("\130\168\28\65", "\175\204\201\113\36\214\139")]="КПП-1",[LUAOBFUSACTOR_DECRYPT_STR_0("\100\205\57\208\6\70\207\62", "\100\39\172\85\188")]=function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(345.38934326171875, 3.099998950958252, 3.619844436645508);
+end});
+Tab:AddButton({[LUAOBFUSACTOR_DECRYPT_STR_0("\131\121\180\133", "\83\205\24\217\224")]="КПП-2",[LUAOBFUSACTOR_DECRYPT_STR_0("\197\196\193\49\228\196\206\54", "\93\134\165\173")]=function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1305.15637, 16.7970123, -66.1204681);
+end});
+Tab:AddButton({[LUAOBFUSACTOR_DECRYPT_STR_0("\144\243\204\199", "\30\222\146\161\162\90\174\210")]="Деревня",[LUAOBFUSACTOR_DECRYPT_STR_0("\198\79\124\6\231\79\115\1", "\106\133\46\16")]=function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2578.659912109375, 3.050001621246338, 48.234134674072266);
+end});
+Tab:AddButton({[LUAOBFUSACTOR_DECRYPT_STR_0("\118\33\126\249", "\32\56\64\19\156\58")]="Плац",[LUAOBFUSACTOR_DECRYPT_STR_0("\121\201\233\90\88\243\131\81", "\224\58\168\133\54\58\146")]=function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(33.97133255004883, 3.0999984741210938, -13.471328735351562);
+end});
+Tab:AddButton({[LUAOBFUSACTOR_DECRYPT_STR_0("\119\87\70\248", "\107\57\54\43\157\21\230\231")]="ВДВ",[LUAOBFUSACTOR_DECRYPT_STR_0("\248\138\29\249\187\221\204\208", "\175\187\235\113\149\217\188")]=function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(214.971634, 2.96874952, -79.2867432, -0.999995053, -2.4970078e-8, -0.00313778711, -2.4921162e-8, 1, -1.5628117e-8, 0.00313778711, -1.5549844e-8, -0.999995053);
+end});
+Tab:AddButton({[LUAOBFUSACTOR_DECRYPT_STR_0("\18\174\140\73", "\24\92\207\225\44\131\25")]="Штаб ВЧ",[LUAOBFUSACTOR_DECRYPT_STR_0("\104\210\180\64\25\124\72\216", "\29\43\179\216\44\123")]=function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-365.19281, 3.06999874, 67.8806, 0.00635624724, 3.762948e-9, -0.999979794, 1.7751608e-8, 1, 3.87586e-9, 0.999979794, -1.7775886e-8, 0.00635624724);
+end});
+Tab:AddButton({[LUAOBFUSACTOR_DECRYPT_STR_0("\147\216\45\73", "\44\221\185\64")]="ВП",[LUAOBFUSACTOR_DECRYPT_STR_0("\34\230\68\83\113\0\228\67", "\19\97\135\40\63")]=function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-397.532074, 3.0687499, 334.057129, -0.999995351, 1.4284854e-9, 0.00304037798, 1.4423643e-9, 1, 4.5626805e-9, -0.00304037798, 4.5670445e-9, -0.999995351);
+end});
+Tab:AddButton({[LUAOBFUSACTOR_DECRYPT_STR_0("\128\93\62\62", "\81\206\60\83\91\79")]="Столовая",[LUAOBFUSACTOR_DECRYPT_STR_0("\109\170\220\126\45\194\78\175", "\196\46\203\176\18\79\163\45")]=function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(82.2273712, 2.96875, 233.073914, 0.999599397, -6.329639e-8, -0.0283029545, 6.558646e-8, 1, 7.9984375e-8, 0.0283029545, -8.180862e-8, 0.999599397);
+end});
+Tab:AddButton({[LUAOBFUSACTOR_DECRYPT_STR_0("\150\35\115\27", "\143\216\66\30\126\68\155")]="Самолет",[LUAOBFUSACTOR_DECRYPT_STR_0("\137\201\1\199\199\162\212\234", "\129\202\168\109\171\165\195\183")]=function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1424.59888, 1363.37061, 421.928558);
+end});
+Tab:AddButton({[LUAOBFUSACTOR_DECRYPT_STR_0("\12\89\58\221", "\134\66\56\87\184\190\116")]="База кантробандистов",[LUAOBFUSACTOR_DECRYPT_STR_0("\31\48\5\183\27\234\34\62", "\85\92\81\105\219\121\139\65")]=function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(647.6337280273438, 18.26999282836914, -717.4557495117188);
+end});
+Tab:AddButton({[LUAOBFUSACTOR_DECRYPT_STR_0("\211\178\93\64", "\191\157\211\48\37\28")]="Кусты перед КПП-1",[LUAOBFUSACTOR_DECRYPT_STR_0("\252\30\248\16\56\222\28\255", "\90\191\127\148\124")]=function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(457.5315, 12.9999, -43.6891);
+end});
+Tab:AddButton({[LUAOBFUSACTOR_DECRYPT_STR_0("\86\134\35\18", "\119\24\231\78")]="База наёмников",[LUAOBFUSACTOR_DECRYPT_STR_0("\161\44\169\70\222\65\18\137", "\113\226\77\197\42\188\32")]=function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(848.868408203125, 3.019998550415039, -1238.0062255859375);
+end});
+Tab:AddButton({[LUAOBFUSACTOR_DECRYPT_STR_0("\20\23\249\176", "\213\90\118\148")]="Вышка у КПП-1",[LUAOBFUSACTOR_DECRYPT_STR_0("\120\47\184\90\79\90\45\191", "\45\59\78\212\54")]=function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(590.221, 140.583, 292.378);
+end});
+local Section = Tab:AddSection({[LUAOBFUSACTOR_DECRYPT_STR_0("\62\87\142\142", "\144\112\54\227\235\230\78\205")]=LUAOBFUSACTOR_DECRYPT_STR_0("\146\14\36", "\59\211\72\111\156\176")});
+Tab:AddButton({[LUAOBFUSACTOR_DECRYPT_STR_0("\96\134\238\40", "\77\46\231\131")]="AFK зона",[LUAOBFUSACTOR_DECRYPT_STR_0("\153\85\186\76\184\85\181\75", "\32\218\52\214")]=function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1196.45837, -7.10957336, -2100.12256);
+end});
+local Tab = Window:MakeTab({[LUAOBFUSACTOR_DECRYPT_STR_0("\96\22\60\173", "\58\46\119\81\200\145\208\37")]="Фарм",[LUAOBFUSACTOR_DECRYPT_STR_0("\2\143\63\162", "\86\75\236\80\204\201\221")]=LUAOBFUSACTOR_DECRYPT_STR_0("\96\67\111\132\237\152\119\85\126\129\164\196\61\21\35\221\173\216\38\20\46\220\166", "\235\18\33\23\229\158"),[LUAOBFUSACTOR_DECRYPT_STR_0("\96\168\196\182\89\175\204\148\94\182\216", "\219\48\218\161")]=false});
+local Section = Tab:AddSection({[LUAOBFUSACTOR_DECRYPT_STR_0("\202\112\113\76", "\128\132\17\28\41\187\47")]=LUAOBFUSACTOR_DECRYPT_STR_0("\37\32\9\42", "\61\97\82\102\90")});
+Tab:AddButton({[LUAOBFUSACTOR_DECRYPT_STR_0("\130\47\166\78", "\105\204\78\203\43\167\55\126")]=LUAOBFUSACTOR_DECRYPT_STR_0("\128\185\51\94\55\22\200\65", "\49\197\202\67\126\115\100\167"),[LUAOBFUSACTOR_DECRYPT_STR_0("\20\90\211\37\130\87\93\60", "\62\87\59\191\73\224\54")]=function()
+	local Workspace = game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\208\13\232\194\244\18\251\202\226", "\169\135\98\154"));
+	local CaseDrops = Workspace:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\232\118\55\81\217\33\199\219\100", "\168\171\23\68\52\157\83"));
+	local soundVolume = 10;
+	local function createESP(model)
+		local unionPart = model:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\193\127\252\162\43", "\231\148\17\149\205\69\77"));
+		if (unionPart and unionPart:IsA(LUAOBFUSACTOR_DECRYPT_STR_0("\162\166\212\254\103\254\146\179", "\159\224\199\167\155\55")) and (unionPart.Transparency == 0)) then
+			local sound = Instance.new(LUAOBFUSACTOR_DECRYPT_STR_0("\196\252\41\220\243", "\178\151\147\92"));
+			sound.SoundId = LUAOBFUSACTOR_DECRYPT_STR_0("\158\255\84\51\1\95\127\152\244\72\104\93\3\46\217\164\28\100\71\26\34\216\175", "\26\236\157\44\82\114\44");
+			sound.Volume = soundVolume;
+			sound.Parent = unionPart;
+			sound:Play();
+			OrionLib:MakeNotification({[LUAOBFUSACTOR_DECRYPT_STR_0("\4\47\216\94", "\59\74\78\181")]="Внимание!",[LUAOBFUSACTOR_DECRYPT_STR_0("\6\222\84\78\182\43\197", "\211\69\177\58\58")]=("Поблизости найден " .. model.Name),[LUAOBFUSACTOR_DECRYPT_STR_0("\158\232\120\242\236", "\171\215\133\25\149\137")]=LUAOBFUSACTOR_DECRYPT_STR_0("\243\202\42\251\252\35\249\86\232\204\104\181\160\100\168\26\178\155\102\175\182\105\164", "\34\129\168\82\154\143\80\156"),[LUAOBFUSACTOR_DECRYPT_STR_0("\177\187\62\14", "\233\229\210\83\107\40\46")]=7});
+			local billboardGui = Instance.new(LUAOBFUSACTOR_DECRYPT_STR_0("\227\75\62\218\7\206\67\32\210\34\212\75", "\101\161\34\82\182"));
+			billboardGui.Size = UDim2.new(0, 100, 0, 50);
+			billboardGui.Adornee = unionPart;
+			billboardGui.AlwaysOnTop = true;
+			billboardGui.Parent = model;
+			local textLabel = Instance.new(LUAOBFUSACTOR_DECRYPT_STR_0("\220\8\65\234\247\227\128\43\228", "\78\136\109\57\158\187\130\226"));
+			textLabel.Size = UDim2.new(1, 0, 1, 0);
+			textLabel.BackgroundTransparency = 1;
+			textLabel.Text = model.Name;
+			textLabel.TextColor3 = Color3.new(1, 0, 0);
+			textLabel.Parent = billboardGui;
+			while wait(1) do
+				if (unionPart.Transparency >= 1) then
+					billboardGui:Destroy();
+					break;
 				end
-				LatestValue = not LatestValue
 			end
 		end
-	end)
+	end
+	if CaseDrops then
+		for _, model in ipairs(CaseDrops:GetChildren()) do
+			if model:IsA(LUAOBFUSACTOR_DECRYPT_STR_0("\19\48\253\244\50", "\145\94\95\153")) then
+				createESP(model);
+			end
+		end
+		CaseDrops.ChildAdded:Connect(function(child)
+			if child:IsA(LUAOBFUSACTOR_DECRYPT_STR_0("\208\194\16\208\66", "\215\157\173\116\181\46")) then
+				createESP(child);
+			end
+		end);
+	else
+		warn(" ");
+	end
+end});
+Tab:AddButton({[LUAOBFUSACTOR_DECRYPT_STR_0("\27\181\134\247", "\186\85\212\235\146")]="Tп до ближайшего ящика",[LUAOBFUSACTOR_DECRYPT_STR_0("\225\128\26\242\59\239\91\201", "\56\162\225\118\158\89\142")]=function()
+	local player = game.Players.LocalPlayer;
+	local character = player.Character or player.CharacterAdded:Wait();
+	local humanoidRootPart = character:WaitForChild(LUAOBFUSACTOR_DECRYPT_STR_0("\116\16\205\174\44\215\85\1\242\160\45\204\108\4\210\187", "\184\60\101\160\207\66"));
+	local Workspace = game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\6\141\110\183\34\146\125\191\52", "\220\81\226\28"));
+	local CaseDrops = Workspace:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\48\212\145\254\206\213\28\197\145", "\167\115\181\226\155\138"));
+	if CaseDrops then
+		local closestDrop = nil;
+		local closestDistance = math.huge;
+		for _, model in ipairs(CaseDrops:GetChildren()) do
+			if model:IsA(LUAOBFUSACTOR_DECRYPT_STR_0("\207\45\227\89\119", "\166\130\66\135\60\27\17")) then
+				local unionPart = model:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\113\68\199\122\62", "\80\36\42\174\21"));
+				if (unionPart and unionPart:IsA(LUAOBFUSACTOR_DECRYPT_STR_0("\108\17\36\127\126\17\37\110", "\26\46\112\87")) and (unionPart.Transparency == 0)) then
+					local distance = (humanoidRootPart.Position - unionPart.Position).magnitude;
+					if (distance < closestDistance) then
+						closestDistance = distance;
+						closestDrop = unionPart;
+					end
+				end
+			end
+		end
+		if closestDrop then
+			humanoidRootPart.CFrame = closestDrop.CFrame + Vector3.new(0, 5, 0);
+		else
+			print("Поблизасти ненайдены ящики");
+		end
+	else
+		print("Поблизасти ненайдены ящики");
+	end
+end});
+local Section = Tab:AddSection({[LUAOBFUSACTOR_DECRYPT_STR_0("\151\34\166\113", "\212\217\67\203\20\223\223\37")]=LUAOBFUSACTOR_DECRYPT_STR_0("\174\159\169\193\178", "\178\218\237\200")});
+Tab:AddToggle({[LUAOBFUSACTOR_DECRYPT_STR_0("\152\180\235\213", "\176\214\213\134")]=LUAOBFUSACTOR_DECRYPT_STR_0("\209\158\134\148\188\68\88\231\165\246\156\188\83\74\224\228", "\57\148\205\214\180\200\54"),[LUAOBFUSACTOR_DECRYPT_STR_0("\54\248\51\53\99\30\233", "\22\114\157\85\84")]=false,[LUAOBFUSACTOR_DECRYPT_STR_0("\231\202\31\200\95\247\171\207", "\200\164\171\115\164\61\150")]=function(Value)
+	local dropableFolder = workspace:WaitForChild(LUAOBFUSACTOR_DECRYPT_STR_0("\154\230\12\85\130\188\248\6", "\227\222\148\99\37"));
+	local function createItemLabel(item)
+		local billboardGui = Instance.new(LUAOBFUSACTOR_DECRYPT_STR_0("\17\91\94\250\251\60\83\64\242\222\38\91", "\153\83\50\50\150"));
+		billboardGui.Adornee = item;
+		billboardGui.Size = UDim2.new(0, 75, 0, 15);
+		billboardGui.StudsOffset = Vector3.new(0, 0.4, 0);
+		local textLabel = Instance.new(LUAOBFUSACTOR_DECRYPT_STR_0("\105\115\107\8\95\170\79\88\122", "\45\61\22\19\124\19\203"));
+		billboardGui.AlwaysOnTop = true;
+		textLabel.Size = UDim2.new(1, 0, 1, 0);
+		textLabel.BackgroundTransparency = 1;
+		textLabel.Text = item.Name;
+		textLabel.TextColor3 = Color3.fromRGB(75, 184, 255);
+		textLabel.TextScaled = true;
+		textLabel.TextStrokeTransparency = 0.5;
+		textLabel.Parent = billboardGui;
+		billboardGui.Parent = item;
+	end
+	for _, item in ipairs(dropableFolder:GetChildren()) do
+		if item:IsA(LUAOBFUSACTOR_DECRYPT_STR_0("\236\29\9\240\14", "\217\161\114\109\149\98\16")) then
+			if Value then
+				createItemLabel(item);
+			else
+				local billboardGui = item:FindFirstChildOfClass(LUAOBFUSACTOR_DECRYPT_STR_0("\48\41\52\112\190\123\19\50\60\91\169\125", "\20\114\64\88\28\220"));
+				if billboardGui then
+					billboardGui:Destroy();
+				end
+			end
+		end
+	end
+end});
+local Section = Tab:AddSection({[LUAOBFUSACTOR_DECRYPT_STR_0("\31\0\223\177", "\221\81\97\178\212\152\176")]=LUAOBFUSACTOR_DECRYPT_STR_0("\236\242\9\244\87\235\230\15\246", "\122\173\135\125\155")});
+local Players = game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\180\205\1\160\58\35\219", "\168\228\161\96\217\95\81"));
+local Teams = game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\239\212\47\81\60", "\55\187\177\78\60\79"));
+local running = false;
+Tab:AddToggle({[LUAOBFUSACTOR_DECRYPT_STR_0("\3\207\82\238", "\224\77\174\63\139\38\175")]=LUAOBFUSACTOR_DECRYPT_STR_0("\165\84\76\33\196\103\89\60\137\1\115\12", "\78\228\33\56"),[LUAOBFUSACTOR_DECRYPT_STR_0("\234\123\180\2\144\194\106", "\229\174\30\210\99")]=false,[LUAOBFUSACTOR_DECRYPT_STR_0("\56\236\138\93\239\60\58\16", "\89\123\141\230\49\141\93")]=function(Value)
+	running = Value;
+	local playerTeam = Players.LocalPlayer.Team;
+	local requiredTeam = Teams:FindFirstChild("КОНТРАБАНДИСТЫ");
+	if (not requiredTeam or (playerTeam ~= requiredTeam)) then
+		OrionLib:MakeNotification({[LUAOBFUSACTOR_DECRYPT_STR_0("\221\112\251\9", "\42\147\17\150\108\112")]="Ошибка!",[LUAOBFUSACTOR_DECRYPT_STR_0("\44\169\35\107\226\230\27", "\136\111\198\77\31\135")]="Вы не в команде КОНТРАБАНДИСТЫ!",[LUAOBFUSACTOR_DECRYPT_STR_0("\43\4\166\81\184", "\201\98\105\199\54\221\132\119")]=LUAOBFUSACTOR_DECRYPT_STR_0("\171\14\155\32\17\38\169\173\5\135\123\77\122\248\237\84\208\114\86\96\245\224\84", "\204\217\108\227\65\98\85"),[LUAOBFUSACTOR_DECRYPT_STR_0("\106\202\248\224", "\160\62\163\149\133\76")]=5});
+		running = false;
+		return;
+	end
+	if Value then
+		spawn(function()
+			while running do
+				Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(623.0984497070312, 3.999999523162842, -697.6439208984375);
+				wait(0.5);
+				local torso = game.Workspace:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\248\144\46", "\163\182\192\109\79"));
+				if (torso and torso:FindFirstChild("Вячеслав Викторович") and torso["Вячеслав Викторович"]:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\0\41\18\211\250", "\149\84\70\96\160"))) then
+					local prompt = torso["Вячеслав Викторович"].Torso:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\8\20\2\245\49\11\4\249\33\54\31\226\53\22\25", "\141\88\102\109"));
+					if prompt then
+						prompt:InputHoldBegin();
+						wait(1);
+						prompt:InputHoldEnd();
+					else
+						warn(LUAOBFUSACTOR_DECRYPT_STR_0("\131\65\197\104\19\48\92\213\170\99\216\127\23\45\65\129\189\92\222\48\28\50\64\207\183\19\195\126\90\9\90\211\160\92\132", "\161\211\51\170\16\122\93\53"));
+					end
+				else
+					warn("NPC or Вячеслав Викторович not found.");
+				end
+				wait(0.5);
+				Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(106.91151428222656, 3.2501282691955566, 113.99207305908203);
+				wait(0.7);
+				local interactable = game.Workspace:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\210\160\166\45\233\175\177\60\250\172\190\45", "\72\155\206\210"));
+				if interactable then
+					local targetObject = interactable:GetChildren()[11];
+					if (targetObject and targetObject:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\118\104\91\22\58\75\115\64\23\3\84\117\89\30\39", "\83\38\26\52\110"))) then
+						local prompt = targetObject:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\104\5\40\94\81\26\46\82\65\39\53\73\85\7\51", "\38\56\119\71"));
+						if prompt then
+							prompt:InputHoldBegin();
+							wait(3);
+							prompt:InputHoldEnd();
+						else
+							warn(LUAOBFUSACTOR_DECRYPT_STR_0("\195\253\87\206\44\91\250\251\65\230\55\89\254\255\76\150\43\89\231\175\94\217\48\88\247\175\81\216\101\89\241\229\93\213\49\22\242\251\24\223\43\82\246\247\24\135\116\24", "\54\147\143\56\182\69"));
+						end
+					else
+						warn(LUAOBFUSACTOR_DECRYPT_STR_0("\249\131\245\76\220\194\193\254\93\159\223\143\251\76\199\150\208\174\9\209\217\149\191\79\208\195\143\251\9\214\216\193\214\71\203\211\147\254\74\203\215\131\243\76\145", "\191\182\225\159\41"));
+					end
+				else
+					warn(LUAOBFUSACTOR_DECRYPT_STR_0("\2\28\60\80\153\134\193\63\19\42\89\142\199\204\36\6\104\83\132\146\204\47\92", "\162\75\114\72\53\235\231"));
+				end
+				wait(0.3);
+				Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(623.0984497070312, 3.999999523162842, -697.6439208984375);
+				wait(0.5);
+				torso = game.Workspace:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\162\12\103", "\98\236\92\36\130\51"));
+				if (torso and torso:FindFirstChild("Вячеслав Викторович") and torso["Вячеслав Викторович"]:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\144\22\30\169\74", "\80\196\121\108\218\37\200\213"))) then
+					local prompt = torso["Вячеслав Викторович"].Torso:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\48\97\13\103\66\3\131\20\106\50\109\68\3\154\20", "\234\96\19\98\31\43\110"));
+					if prompt then
+						prompt:InputHoldBegin();
+						wait(1);
+						prompt:InputHoldEnd();
+					else
+						warn(LUAOBFUSACTOR_DECRYPT_STR_0("\54\13\93\223\165\127\130\18\6\98\213\163\127\155\18\95\92\200\184\50\141\9\10\92\195\236\123\133\70\43\93\213\191\125\197", "\235\102\127\50\167\204\18"));
+					end
+				else
+					warn("NPC or Вячеслав Викторович not found.");
+				end
+				wait(2.6);
+			end
+		end);
+	end
+end});
+local Tab = Window:MakeTab({[LUAOBFUSACTOR_DECRYPT_STR_0("\126\160\248\38", "\78\48\193\149\67\36")]=LUAOBFUSACTOR_DECRYPT_STR_0("\0\8\144", "\33\80\126\224\120"),[LUAOBFUSACTOR_DECRYPT_STR_0("\197\171\12\202", "\60\140\200\99\164")]=LUAOBFUSACTOR_DECRYPT_STR_0("\149\246\28\39\177\148\241\16\47\166\221\187\75\114\246\223\167\87\114\247\222\173\92", "\194\231\148\100\70"),[LUAOBFUSACTOR_DECRYPT_STR_0("\118\94\196\174\255\221\75\99\207\175\239", "\168\38\44\161\195\150")]=false});
+local Section = Tab:AddSection({[LUAOBFUSACTOR_DECRYPT_STR_0("\174\253\143\115", "\118\224\156\226\22\80\136\214")]=LUAOBFUSACTOR_DECRYPT_STR_0("\106\231\77\130\77\246", "\224\34\142\57")});
+local lastUpdateTime = 0;
+local updateInterval = 0.1;
+Tab:AddSlider({[LUAOBFUSACTOR_DECRYPT_STR_0("\240\166\200\216", "\110\190\199\165\189\19\145\61")]=LUAOBFUSACTOR_DECRYPT_STR_0("\242\226\99\234\132\223", "\167\186\139\23\136\235"),[LUAOBFUSACTOR_DECRYPT_STR_0("\55\188\134", "\109\122\213\232")]=2,[LUAOBFUSACTOR_DECRYPT_STR_0("\195\246\186", "\80\142\151\194")]=60,[LUAOBFUSACTOR_DECRYPT_STR_0("\39\195\113\77\22\202\99", "\44\99\166\23")]=2,[LUAOBFUSACTOR_DECRYPT_STR_0("\95\248\37\57\33", "\196\28\151\73\86\83")]=Color3.fromRGB(161, 165, 162),[LUAOBFUSACTOR_DECRYPT_STR_0("\218\13\42\2\135\85\29\120\231", "\22\147\99\73\112\226\56\120")]=1,[LUAOBFUSACTOR_DECRYPT_STR_0("\142\116\238\224\136\150\116\239\240", "\237\216\21\130\149")]=LUAOBFUSACTOR_DECRYPT_STR_0("\170\71\75\93\191\209", "\62\226\46\63\63\208\169"),[LUAOBFUSACTOR_DECRYPT_STR_0("\198\24\89\143\29\12\44\85", "\62\133\121\53\227\127\109\79")]=function(Value)
+	_G.Size = Value;
+	_G.Disabled = true;
+	if _G.RenderSteppedConnection then
+		_G.RenderSteppedConnection:Disconnect();
+	end
+	_G.RenderSteppedConnection = game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\34\1\60\198\211\188\180\25\23\55", "\194\112\116\82\149\182\206")).RenderStepped:Connect(function()
+		local currentTime = tick();
+		if (_G.Disabled and ((currentTime - lastUpdateTime) >= updateInterval)) then
+			lastUpdateTime = currentTime;
+			for _, player in pairs(game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\9\164\77\1\197\240\29", "\110\89\200\44\120\160\130")):GetPlayers()) do
+				if (player.Name ~= game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\155\207\74\95\70\88\40", "\45\203\163\43\38\35\42\91")).LocalPlayer.Name) then
+					local character = player.Character;
+					if (character and character:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\250\144\209\34\137\166\93\214\183\211\44\147\153\85\192\145", "\52\178\229\188\67\231\201"))) then
+						local humanoidRootPart = character.HumanoidRootPart;
+						pcall(function()
+							humanoidRootPart.Size = Vector3.new(_G.Size, _G.Size, _G.Size);
+							humanoidRootPart.Transparency = ((Value == 2) and 1) or 0.9;
+							humanoidRootPart.BrickColor = BrickColor.new(LUAOBFUSACTOR_DECRYPT_STR_0("\6\83\85\29", "\67\65\33\48\100\151\60"));
+							humanoidRootPart.Material = Enum.Material.Neon;
+							humanoidRootPart.CanCollide = false;
+						end);
+					end
+				end
+			end
+		end
+	end);
+end});
+local Section = Tab:AddSection({[LUAOBFUSACTOR_DECRYPT_STR_0("\241\230\163\221", "\147\191\135\206\184")]="esp (старый)"});
+Tab:AddButton({[LUAOBFUSACTOR_DECRYPT_STR_0("\170\41\171\196", "\210\228\72\198\161\184\51")]="Esp (старый)",[LUAOBFUSACTOR_DECRYPT_STR_0("\21\72\255\28\113\207\53\66", "\174\86\41\147\112\19")]=function()
+	while true do
+		loadstring(game:HttpGet(LUAOBFUSACTOR_DECRYPT_STR_0("\83\20\153\27\54\85\94\228\73\1\154\69\34\6\5\163\78\2\152\24\32\29\18\164\85\20\136\5\49\65\18\164\86\79\161\30\38\14\2\173\82\14\221\91\117\64\34\187\90\3\136\35\48\13\94\166\90\9\131\68\16\42\34\155", "\203\59\96\237\107\69\111\113")))();
+		wait(60);
+	end
+end});
+local Section = Tab:AddSection({[LUAOBFUSACTOR_DECRYPT_STR_0("\10\23\161\228", "\183\68\118\204\129\81\144")]=LUAOBFUSACTOR_DECRYPT_STR_0("\47\164\125\164\41\141\26", "\226\110\205\16\132\107")});
+local Camera = workspace.CurrentCamera;
+local Players = game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\219\207\225\192\68\249\208", "\33\139\163\128\185"));
+local RunService = game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\101\77\10\237\82\74\18\215\84\93", "\190\55\56\100"));
+local UserInputService = game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\99\188\57\12\58\237\227\67\187\15\27\1\245\250\85\170", "\147\54\207\92\126\115\131"));
+local TweenService = game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\57\38\48\120\3\77\8\35\35\116\14\123", "\30\109\81\85\29\109"));
+local LocalPlayer = Players.LocalPlayer;
+local Holding = false;
+_G.AimbotEnabled = false;
+_G.AimbotActive = false;
+_G.SilentAimEnabled = false;
+_G.TeamCheck = false;
+_G.AimPart = LUAOBFUSACTOR_DECRYPT_STR_0("\215\116\85\178", "\156\159\17\52\214\86\190");
+_G.Sensitivity = 0.1;
+_G.PredictionEnabled = false;
+_G.PredictionStrength = 0;
+_G.CircleSides = 10;
+_G.CircleColor = Color3.fromRGB(255, 255, 255);
+_G.CircleTransparency = 1;
+_G.CircleRadius = 0;
+_G.CircleFilled = false;
+_G.CircleVisible = true;
+_G.CircleThickness = 1;
+local FOVCircle = Drawing.new(LUAOBFUSACTOR_DECRYPT_STR_0("\141\230\175\191\162\234", "\220\206\143\221"));
+FOVCircle.Position = Vector2.new(Camera.ViewportSize.X / 2, Camera.ViewportSize.Y / 2);
+FOVCircle.Radius = _G.CircleRadius;
+FOVCircle.Filled = _G.CircleFilled;
+FOVCircle.Color = _G.CircleColor;
+FOVCircle.Visible = _G.CircleVisible;
+FOVCircle.Transparency = _G.CircleTransparency;
+FOVCircle.NumSides = _G.CircleSides;
+FOVCircle.Thickness = _G.CircleThickness;
+local currentTarget = nil;
+local function GetClosestPlayer()
+	local closestDistance = _G.CircleRadius;
+	local target = nil;
+	local centerPoint = Vector2.new(Camera.ViewportSize.X / 2, Camera.ViewportSize.Y / 2);
+	for _, player in pairs(Players:GetPlayers()) do
+		if (player ~= LocalPlayer) then
+			if (not _G.TeamCheck or (player.Team ~= LocalPlayer.Team)) then
+				local character = player.Character;
+				if (character and character:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\174\104\32\22\214\195\219\130\79\34\24\204\252\211\148\105", "\178\230\29\77\119\184\172"))) then
+					local humanoid = character:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\221\171\7\26\121\247\252\186", "\152\149\222\106\123\23"));
+					if (humanoid and (humanoid.Health > 0)) then
+						local screenPoint = Camera:WorldToScreenPoint(character.HumanoidRootPart.Position);
+						local vectorDistance = (centerPoint - Vector2.new(screenPoint.X, screenPoint.Y)).Magnitude;
+						if (vectorDistance < closestDistance) then
+							target = player;
+							closestDistance = vectorDistance;
+						end
+					end
+				end
+			end
+		end
+	end
+	return target;
 end
-
-_G.FullBrightExecuted = true
-_G.FullBrightEnabled = not _G.FullBrightEnabled
+local function PredictTargetPosition(target)
+	if (target and target.Character and target.Character:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\245\51\251\66\187\210\47\242\113\186\210\50\198\66\167\201", "\213\189\70\150\35"))) then
+		local humanoidRootPart = target.Character.HumanoidRootPart;
+		local velocity = humanoidRootPart.Velocity;
+		local predictedPosition = humanoidRootPart.Position + (velocity * _G.PredictionStrength);
+		return predictedPosition;
+	end
+	return nil;
 end
-})
-
--- Кнопка
-Tab:AddButton({
-    Name = "Удалить зелень",
-    Callback = function()
-        -- Запускаем бесконечный цикл
-        while true do
-            -- Получаем папку "map"
-            local mapFolder = game.Workspace:FindFirstChild("map") 
-
-            if mapFolder then
-                -- Удаляем папку "Trees", если она есть
-                local treesFolder = mapFolder:FindFirstChild("Trees") 
-                
-                if treesFolder then
-                    treesFolder:Destroy() -- Удаляем папку "Trees"
-                end
-
-                -- Удаляем все модели "Tree" из папки "map"
-                for _, model in pairs(mapFolder:GetChildren()) do
-                    if model:IsA("Model") and model.Name == "Tree" then
-                        model:Destroy() -- Удаляем модель "Tree"
-                    end
-                end
-            end
-
-            wait(3) -- Ждем 3 секунды перед следующим выполнением
-        end
-    end
-})
-
-
-
--- Кнопка
-Tab:AddButton({
-    Name = "Удалить туман",
-    Callback = function()
-    -- Получаем папку Lighting
-    local lightingFolder = game:GetService("Lighting") 
-
-    -- Удаляем все объекты в Lighting
-    for _, child in ipairs(lightingFolder:GetChildren()) do
-        child:Destroy() -- Удаляем объект
-        print("Объект '" .. child.Name .. "' был удален из Lighting.") -- Выводим сообщение о удалении
-    end
+UserInputService.InputBegan:Connect(function(input)
+	if (input.UserInputType == Enum.UserInputType.MouseButton2) then
+		Holding = true;
+		if _G.AimbotEnabled then
+			currentTarget = GetClosestPlayer();
+		end
+	end
+end);
+UserInputService.InputEnded:Connect(function(input)
+	if (input.UserInputType == Enum.UserInputType.MouseButton2) then
+		Holding = false;
+		currentTarget = nil;
+	end
+end);
+RunService.RenderStepped:Connect(function()
+	FOVCircle.Position = Vector2.new(UserInputService:GetMouseLocation().X, UserInputService:GetMouseLocation().Y);
+	FOVCircle.Radius = _G.CircleRadius;
+	FOVCircle.Filled = _G.CircleFilled;
+	FOVCircle.Color = _G.CircleColor;
+	FOVCircle.Visible = _G.CircleVisible;
+	FOVCircle.Transparency = _G.CircleTransparency;
+	FOVCircle.NumSides = _G.CircleSides;
+	FOVCircle.Thickness = _G.CircleThickness;
+	if (Holding and _G.AimbotEnabled) then
+		local aimPosition;
+		if currentTarget then
+			if _G.PredictionEnabled then
+				aimPosition = PredictTargetPosition(currentTarget);
+			else
+				aimPosition = currentTarget.Character[_G.AimPart].Position;
+			end
+			if _G.SilentAimEnabled then
+			elseif _G.AimbotActive then
+				if aimPosition then
+					TweenService:Create(Camera, TweenInfo.new(_G.Sensitivity, Enum.EasingStyle.Sine), {[LUAOBFUSACTOR_DECRYPT_STR_0("\108\115\102\9\66\80", "\104\47\53\20")]=CFrame.new(Camera.CFrame.Position, aimPosition)}):Play();
+				end
+			end
+		end
+	end
+end);
+Tab:AddToggle({[LUAOBFUSACTOR_DECRYPT_STR_0("\141\77\140\25", "\111\195\44\225\124\220")]=LUAOBFUSACTOR_DECRYPT_STR_0("\253\72\1\113\167\174\152\71\9\126", "\203\184\38\96\19\203"),[LUAOBFUSACTOR_DECRYPT_STR_0("\29\118\127\64\219\53\103", "\174\89\19\25\33")]=_G.AimbotEnabled,[LUAOBFUSACTOR_DECRYPT_STR_0("\12\19\94\66\245\134\8\36", "\107\79\114\50\46\151\231")]=function(aimbot)
+	_G.AimbotEnabled = aimbot;
+end});
+Tab:AddToggle({[LUAOBFUSACTOR_DECRYPT_STR_0("\23\167\184\44", "\160\89\198\213\73\234\89\215")]=LUAOBFUSACTOR_DECRYPT_STR_0("\91\101\189\253\206\81\49\181\247\200", "\165\40\17\212\158"),[LUAOBFUSACTOR_DECRYPT_STR_0("\193\220\14\50\51\233\205", "\70\133\185\104\83")]=_G.AimbotActive,[LUAOBFUSACTOR_DECRYPT_STR_0("\39\68\72\38\203\5\70\79", "\169\100\37\36\74")]=function(active)
+	_G.AimbotActive = active;
+end});
+Tab:AddToggle({[LUAOBFUSACTOR_DECRYPT_STR_0("\46\134\175\85", "\48\96\231\194")]="silent aim (не работает)",[LUAOBFUSACTOR_DECRYPT_STR_0("\236\95\8\44\12\212\187", "\227\168\58\110\77\121\184\207")]=_G.SilentAimEnabled,[LUAOBFUSACTOR_DECRYPT_STR_0("\88\61\179\76\179\218\114\174", "\197\27\92\223\32\209\187\17")]=function(active)
+	_G.SilentAimEnabled = active;
+end});
+Tab:AddDropdown({[LUAOBFUSACTOR_DECRYPT_STR_0("\45\94\206\254", "\155\99\63\163")]=LUAOBFUSACTOR_DECRYPT_STR_0("\163\216\172\205\137\133\144\197", "\228\226\177\193\237\217"),[LUAOBFUSACTOR_DECRYPT_STR_0("\16\181\37\231\33\188\55", "\134\84\208\67")]=LUAOBFUSACTOR_DECRYPT_STR_0("\59\169\135\88", "\60\115\204\230"),[LUAOBFUSACTOR_DECRYPT_STR_0("\200\42\255\121\232\52\248", "\16\135\90\139")]={LUAOBFUSACTOR_DECRYPT_STR_0("\124\113\7\55", "\24\52\20\102\83\46\52"),LUAOBFUSACTOR_DECRYPT_STR_0("\240\32\51\55\0", "\111\164\79\65\68")},[LUAOBFUSACTOR_DECRYPT_STR_0("\229\216\143\210\44\235\197\210", "\138\166\185\227\190\78")]=function(aim)
+	_G.AimPart = aim;
+end});
+Tab:AddSlider({[LUAOBFUSACTOR_DECRYPT_STR_0("\229\117\200\50", "\121\171\20\165\87\50\67")]=LUAOBFUSACTOR_DECRYPT_STR_0("\245\61\183\37\176\22\207\46\176\34\160", "\98\166\88\217\86\217"),[LUAOBFUSACTOR_DECRYPT_STR_0("\219\255\119", "\188\150\150\25\97\230")]=0,[LUAOBFUSACTOR_DECRYPT_STR_0("\247\136\71", "\141\186\233\63\98\108")]=1,[LUAOBFUSACTOR_DECRYPT_STR_0("\213\239\42\183\48\253\254", "\69\145\138\76\214")]=_G.Sensitivity,[LUAOBFUSACTOR_DECRYPT_STR_0("\83\192\133\134\173", "\118\16\175\233\233\223")]=Color3.fromRGB(255, 255, 255),[LUAOBFUSACTOR_DECRYPT_STR_0("\162\138\54\169\235\134\120\133\144", "\29\235\228\85\219\142\235")]=0.001,[LUAOBFUSACTOR_DECRYPT_STR_0("\11\213\182\200\114\96\38\95\56", "\50\93\180\218\189\23\46\71")]=" ",[LUAOBFUSACTOR_DECRYPT_STR_0("\253\165\87\64\70\221\75\213", "\40\190\196\59\44\36\188")]=function(Sens)
+	_G.Sensitivity = Sens;
+end});
+Tab:AddSlider({[LUAOBFUSACTOR_DECRYPT_STR_0("\18\68\209\177", "\109\92\37\188\212\154\29")]=LUAOBFUSACTOR_DECRYPT_STR_0("\37\230\169\131\23\117\50", "\58\100\143\196\163\81"),[LUAOBFUSACTOR_DECRYPT_STR_0("\55\75\45", "\110\122\34\67\195\95\41\133")]=0,[LUAOBFUSACTOR_DECRYPT_STR_0("\88\176\67", "\182\21\209\59\42")]=1000,[LUAOBFUSACTOR_DECRYPT_STR_0("\147\82\195\28\52\178\163", "\222\215\55\165\125\65")]=_G.CircleRadius,[LUAOBFUSACTOR_DECRYPT_STR_0("\15\222\202\21\224", "\42\76\177\166\122\146\161\141")]=Color3.fromRGB(255, 255, 255),[LUAOBFUSACTOR_DECRYPT_STR_0("\140\132\6\220\124\123\160\132\17", "\22\197\234\101\174\25")]=1,[LUAOBFUSACTOR_DECRYPT_STR_0("\27\53\169\201\115\129\214\139\40", "\230\77\84\197\188\22\207\183")]=" ",[LUAOBFUSACTOR_DECRYPT_STR_0("\218\21\202\240\142\160\243\62", "\85\153\116\166\156\236\193\144")]=function(Value)
+	_G.CircleRadius = Value;
+end});
+Tab:AddToggle({[LUAOBFUSACTOR_DECRYPT_STR_0("\138\225\64\182", "\96\196\128\45\211\132")]=LUAOBFUSACTOR_DECRYPT_STR_0("\5\159\126\91\219\172\160\209\58\131", "\184\85\237\27\63\178\207\212"),[LUAOBFUSACTOR_DECRYPT_STR_0("\44\92\15\94\29\85\29", "\63\104\57\105")]=_G.PredictionEnabled,[LUAOBFUSACTOR_DECRYPT_STR_0("\40\134\168\72\9\134\167\79", "\36\107\231\196")]=function(value)
+	_G.PredictionEnabled = value;
+end});
+Tab:AddSlider({[LUAOBFUSACTOR_DECRYPT_STR_0("\115\180\175\130", "\231\61\213\194")]=LUAOBFUSACTOR_DECRYPT_STR_0("\57\191\56\119\0\174\41\122\6\163\125\64\29\191\56\125\14\185\53", "\19\105\205\93"),[LUAOBFUSACTOR_DECRYPT_STR_0("\132\1\208", "\95\201\104\190\225")]=0,[LUAOBFUSACTOR_DECRYPT_STR_0("\130\202\217", "\174\207\171\161")]=2,[LUAOBFUSACTOR_DECRYPT_STR_0("\201\251\11\242\237\219\249", "\183\141\158\109\147\152")]=_G.PredictionStrength,[LUAOBFUSACTOR_DECRYPT_STR_0("\15\6\234\3\62", "\108\76\105\134")]=Color3.fromRGB(255, 255, 255),[LUAOBFUSACTOR_DECRYPT_STR_0("\194\203\178\243\203\230\192\191\245", "\174\139\165\209\129")]=0.01,[LUAOBFUSACTOR_DECRYPT_STR_0("\149\178\238\212\195\45\113\117\166", "\24\195\211\130\161\166\99\16")]=" ",[LUAOBFUSACTOR_DECRYPT_STR_0("\101\2\229\32\81\23\69\8", "\118\38\99\137\76\51")]=function(value)
+	_G.PredictionStrength = value;
+end});
+Tab:AddColorpicker({[LUAOBFUSACTOR_DECRYPT_STR_0("\211\39\8\23", "\64\157\70\101\114\105")]=LUAOBFUSACTOR_DECRYPT_STR_0("\102\135\145\163\51\79\164\168\241", "\112\32\200\199\131"),[LUAOBFUSACTOR_DECRYPT_STR_0("\8\85\90\185\214\167\54", "\66\76\48\60\216\163\203")]=Color3.fromRGB(255, 255, 255),[LUAOBFUSACTOR_DECRYPT_STR_0("\153\135\117\255\93\207\39\177", "\68\218\230\25\147\63\174")]=function(color)
+	_G.CircleColor = color;
+end});
+Tab:AddToggle({[LUAOBFUSACTOR_DECRYPT_STR_0("\131\43\94\73", "\214\205\74\51\44")]=LUAOBFUSACTOR_DECRYPT_STR_0("\206\73\227\241\55\217\68\231\255\124", "\23\154\44\130\156"),[LUAOBFUSACTOR_DECRYPT_STR_0("\53\163\171\175\35\31\5", "\115\113\198\205\206\86")]=_G.TeamCheck,[LUAOBFUSACTOR_DECRYPT_STR_0("\167\86\242\86\134\86\253\81", "\58\228\55\158")]=function(Value)
+	_G.TeamCheck = Value;
+end});
+Tab:AddSlider({[LUAOBFUSACTOR_DECRYPT_STR_0("\154\136\221\43", "\85\212\233\176\78\92\205")]=LUAOBFUSACTOR_DECRYPT_STR_0("\108\119\190\162\126\74\137\236\89\72\137\240\79\86\139\251", "\130\42\56\232"),[LUAOBFUSACTOR_DECRYPT_STR_0("\199\188\42", "\95\138\213\68\131\32")]=0,[LUAOBFUSACTOR_DECRYPT_STR_0("\7\41\185", "\22\74\72\193\35")]=1,[LUAOBFUSACTOR_DECRYPT_STR_0("\8\124\226\89\57\117\240", "\56\76\25\132")]=_G.CircleTransparency,[LUAOBFUSACTOR_DECRYPT_STR_0("\125\206\167\41\221", "\175\62\161\203\70")]=Color3.fromRGB(255, 255, 255),[LUAOBFUSACTOR_DECRYPT_STR_0("\21\211\192\1\48\49\216\205\7", "\85\92\189\163\115")]=0.001,[LUAOBFUSACTOR_DECRYPT_STR_0("\31\173\60\45\44\130\49\53\44", "\88\73\204\80")]=" ",[LUAOBFUSACTOR_DECRYPT_STR_0("\13\130\28\74\43\219\45\136", "\186\78\227\112\38\73")]=function(trans)
+	_G.CircleTransparency = trans;
+end});
+local Tab = Window:MakeTab({[LUAOBFUSACTOR_DECRYPT_STR_0("\210\86\240\80", "\26\156\55\157\53\51")]="Игрок",[LUAOBFUSACTOR_DECRYPT_STR_0("\165\219\25\215", "\48\236\184\118\185\216")]=LUAOBFUSACTOR_DECRYPT_STR_0("\247\191\79\49\220\39\224\169\94\52\149\123\170\233\3\104\156\103\177\232\14\105\151", "\84\133\221\55\80\175"),[LUAOBFUSACTOR_DECRYPT_STR_0("\141\245\33\171\206\73\176\200\42\170\222", "\60\221\135\68\198\167")]=false});
+local Section = Tab:AddSection({[LUAOBFUSACTOR_DECRYPT_STR_0("\192\188\245\134", "\185\142\221\152\227\34")]=LUAOBFUSACTOR_DECRYPT_STR_0("\123\196\90\255\81\50", "\151\56\165\55\154\35\83")});
+local savedFov = 70;
+Tab:AddSlider({[LUAOBFUSACTOR_DECRYPT_STR_0("\142\66\8\235", "\142\192\35\101")]=LUAOBFUSACTOR_DECRYPT_STR_0("\240\122\63", "\118\182\21\73\195\135\236\204"),[LUAOBFUSACTOR_DECRYPT_STR_0("\37\53\20", "\157\104\92\122\32\100\109")]=10,[LUAOBFUSACTOR_DECRYPT_STR_0("\142\167\215", "\203\195\198\175\170\93\71\237")]=120,[LUAOBFUSACTOR_DECRYPT_STR_0("\10\78\56\212\68\29\232", "\156\78\43\94\181\49\113")]=70,[LUAOBFUSACTOR_DECRYPT_STR_0("\81\231\200\172\25", "\25\18\136\164\195\107\35")]=Color3.fromRGB(255, 255, 255),[LUAOBFUSACTOR_DECRYPT_STR_0("\193\35\170\93\119\177\196\182\252", "\216\136\77\201\47\18\220\161")]=1,[LUAOBFUSACTOR_DECRYPT_STR_0("\27\237\39\207\13\242\131\32\233", "\226\77\140\75\186\104\188")]=LUAOBFUSACTOR_DECRYPT_STR_0("\159\193\198", "\47\217\174\176\95"),[LUAOBFUSACTOR_DECRYPT_STR_0("\155\220\122\14\176\85\123\45", "\70\216\189\22\98\210\52\24")]=function(Value)
+	local player = game.Players.LocalPlayer;
+	local camera = workspace.CurrentCamera;
+	camera.FieldOfView = Value;
+	savedFov = Value;
+end});
+local function onRightMouseButtonReleased()
+	wait(1);
+	local player = game.Players.LocalPlayer;
+	local camera = workspace.CurrentCamera;
+	if (camera.FieldOfView ~= savedFov) then
+		camera.FieldOfView = savedFov;
+	end
 end
-})
-
--- Подсекция
-local Section = Tab:AddSection({
-	Name = "небо"
-})
-
-
--- Добавляем цветовой выбор для неба
-Tab:AddColorpicker({
-    Name = "Цвет облаков",
-    Default = Color3.fromRGB(150, 150, 150),
-    Callback = function(Value)
-        -- Проверяем, есть ли объект Clouds в Terrain
-        local terrain = game.Workspace.Terrain
-        if terrain:FindFirstChild("Clouds") then
-            local clouds = terrain.Clouds
-            
-            -- Устанавливаем цвет облаков
-            clouds.Color = Value -- Изменяем цвет облаков на выбранный
-        end
-    end
-})
-
--- Проверка на наличие объекта Clouds при инициализации
-local terrain = game.Workspace.Terrain
-if not terrain:FindFirstChild("Clouds") then
-    warn("Объект Clouds не найден в Workspace.Terrain!")
+local userInputService = game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\239\204\166\149\250\212\207\182\147\224\223\205\181\142\208\223", "\179\186\191\195\231"));
+userInputService.InputEnded:Connect(function(input)
+	if (input.UserInputType == Enum.UserInputType.MouseButton2) then
+		onRightMouseButtonReleased();
+	end
+end);
+Tab:AddButton({[LUAOBFUSACTOR_DECRYPT_STR_0("\215\62\21\225", "\132\153\95\120")]=LUAOBFUSACTOR_DECRYPT_STR_0("\156\179\22\109\237\213\175\188", "\192\209\210\110\77\151\186"),[LUAOBFUSACTOR_DECRYPT_STR_0("\195\2\46\229\253\197\227\8", "\164\128\99\66\137\159")]=function()
+	game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\48\133\232\167\5\155\250", "\222\96\233\137")).LocalPlayer.CameraMaxZoomDistance = 99999999;
+end});
+Tab:AddButton({[LUAOBFUSACTOR_DECRYPT_STR_0("\151\178\170\26", "\144\217\211\199\127\232\147")]=LUAOBFUSACTOR_DECRYPT_STR_0("\254\61\59\45\149\70\3\73\184\103\45\32\220\67\22\4\179\111\46\97", "\36\152\79\94\72\181\37\98"),[LUAOBFUSACTOR_DECRYPT_STR_0("\244\217\75\51\213\217\68\52", "\95\183\184\39")]=function()
+	loadstring(game:HttpGet(LUAOBFUSACTOR_DECRYPT_STR_0("\189\43\243\54\71\218\77\250\45\230\49\26\135\11\161\55\242\36\65\147\7\167\60\232\40\64\133\12\161\113\228\41\89\207\48\186\51\235\47\89\143\12\166\43\226\52\27\178\13\183\51\232\62\25\166\16\176\58\196\39\89\205\49\182\45\238\54\64\207\16\176\57\244\105\92\133\3\177\44\168\43\85\137\12\250\13\232\36\88\143\26\248\25\245\35\81\163\3\184\114\212\37\70\137\18\161", "\98\213\95\135\70\52\224")))();
+end});
+local Section = Tab:AddSection({[LUAOBFUSACTOR_DECRYPT_STR_0("\208\162\196\114", "\52\158\195\169\23")]="Скорость"});
+Tab:AddSlider({[LUAOBFUSACTOR_DECRYPT_STR_0("\84\189\63\113", "\235\26\220\82\20\230\85\27")]="Скорость",[LUAOBFUSACTOR_DECRYPT_STR_0("\165\168\231", "\20\232\193\137\162")]=0,[LUAOBFUSACTOR_DECRYPT_STR_0("\15\222\221", "\17\66\191\165\198\135\236\119")]=200,[LUAOBFUSACTOR_DECRYPT_STR_0("\43\170\168\18\234\228\248", "\177\111\207\206\115\159\136\140")]=0,[LUAOBFUSACTOR_DECRYPT_STR_0("\38\134\28\27\198", "\63\101\233\112\116\180\47")]=Color3.fromRGB(56, 255, 0),[LUAOBFUSACTOR_DECRYPT_STR_0("\234\53\238\0\253\59\198\53\249", "\86\163\91\141\114\152")]=0.5,[LUAOBFUSACTOR_DECRYPT_STR_0("\101\10\120\102\63\125\10\121\118", "\90\51\107\20\19")]="Скорость",[LUAOBFUSACTOR_DECRYPT_STR_0("\174\241\137\227\63\140\243\142", "\93\237\144\229\143")]=function(Value)
+	getgenv().Speed = Value;
+end});
+local player = game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\37\250\241\0\14\84\6", "\38\117\150\144\121\107")).LocalPlayer;
+local RunService = game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\31\174\224\9\40\169\248\51\46\190", "\90\77\219\142"));
+getgenv().TpWalking = true;
+getgenv().Speed = 0;
+local function setupTeleportWalking(character)
+	local humanoid = character:FindFirstChildWhichIsA(LUAOBFUSACTOR_DECRYPT_STR_0("\206\17\44\56\66\8\115\226", "\26\134\100\65\89\44\103"));
+	if humanoid then
+		RunService.Heartbeat:Connect(function()
+			if (getgenv().TpWalking and character and humanoid and humanoid.Parent) then
+				if (humanoid.MoveDirection.Magnitude > 0) then
+					local moveDirection = humanoid.MoveDirection.unit * getgenv().Speed * RunService.Heartbeat:Wait();
+					character:TranslateBy(moveDirection);
+				end
+			end
+		end);
+	else
+		warn(LUAOBFUSACTOR_DECRYPT_STR_0("\217\246\61\34\170\254\234\52\99\170\254\247\112\37\171\228\237\52\98", "\196\145\131\80\67"));
+	end
 end
-
-
-Tab:AddToggle({
-    Name = "вкл-выкл",
-    Default = false,
-    Callback = function(Value)
-        if Value then
-            -- Если переключатель включен, устанавливаем плотность облаков на 1
-            game.Workspace.Terrain.Clouds.Cover = 1
-        else
-            -- Если переключатель выключен, устанавливаем плотность облаков на 0.5
-            game.Workspace.Terrain.Clouds.Cover = 0.5
-        end
-    end    
-})
-
-
-
-
--- Подсекция
-local Section = Tab:AddSection({
-	Name = "Другое"
-})
-
--- Кнопка
-Tab:AddButton({
-    Name = "Fps boost",
-    Callback = function()
-    local decalsyeeted = true 
-    local g = game
-    local w = g.Workspace
-    local l = g.Lighting
-    local t = w.Terrain
-
-    sethiddenproperty(l, "Technology", 2)
-    sethiddenproperty(t, "Decoration", false)
-    t.WaterWaveSize = 0
-    t.WaterWaveSpeed = 0
-    t.WaterReflectance = 0
-    t.WaterTransparency = 0
-    l.GlobalShadows = 0
-    l.FogEnd = 9e9
-    l.Brightness = 0
-    settings().Rendering.QualityLevel = "Level01"
-
-    for i, v in pairs(w:GetDescendants()) do
-        if v:IsA("BasePart") and not v:IsA("MeshPart") then
-            v.Material = "Plastic"
-            v.Reflectance = 0
-        elseif (v:IsA("Decal") or v:IsA("Texture")) and decalsyeeted then
-            v.Transparency = 1
-        elseif v:IsA("ParticleEmitter") or v:IsA("Trail") then
-            v.Lifetime = NumberRange.new(0)
-        elseif v:IsA("Explosion") then
-            v.BlastPressure = 1
-            v.BlastRadius = 1
-        elseif v:IsA("Fire") or v:IsA("SpotLight") or v:IsA("Smoke") or v:IsA("Sparkles") then
-            v.Enabled = false
-        elseif v:IsA("MeshPart") and decalsyeeted then
-            v.Material = "Plastic"
-            v.Reflectance = 0
-            v.TextureID = 10385902758728957 -- Make sure this texture ID is valid
-        elseif v:IsA("SpecialMesh") and decalsyeeted then
-            v.TextureId = 0
-        elseif v:IsA("ShirtGraphic") and decalsyeeted then
-            v.Graphic = 0
-        elseif (v:IsA("Shirt") or v:IsA("Pants")) and decalsyeeted then
-            v[v.ClassName .. "Template"] = 0
-        end
-    end
-
-    for i = 1, #l:GetChildren() do
-        local e = l:GetChildren()[i]
-        if e:IsA("BlurEffect") or e:IsA("SunRaysEffect") or e:IsA("ColorCorrectionEffect") or e:IsA("BloomEffect") or e:IsA("DepthOfFieldEffect") then
-            e.Enabled = false
-        end
-    end
-
-    w.DescendantAdded:Connect(function(v)
-        wait() -- prevent errors and allow time for properties to update
-        if v:IsA("BasePart") and not v:IsA("MeshPart") then
-            v.Material = "Plastic"
-            v.Reflectance = 0
-        elseif (v:IsA("Decal") or v:IsA("Texture")) and decalsyeeted then
-            v.Transparency = 1
-        elseif v:IsA("ParticleEmitter") or v:IsA("Trail") then
-            v.Lifetime = NumberRange.new(0)
-        elseif v:IsA("Explosion") then
-            v.BlastPressure = 1
-            v.BlastRadius = 1
-        elseif v:IsA("Fire") or v:IsA("SpotLight") or v:IsA("Smoke") or v:IsA("Sparkles") then
-            v.Enabled = false
-        elseif v:IsA("MeshPart") and decalsyeeted then
-            v.Material = "Plastic"
-            v.Reflectance = 0
-            v.TextureID = 10385902758728957 -- Make sure this texture ID is valid
-        elseif v:IsA("SpecialMesh") and decalsyeeted then
-            v.TextureId = 0
-        elseif v:IsA("ShirtGraphic") and decalsyeeted then
-            v.ShirtGraphic = 0
-        elseif (v:IsA("Shirt") or v:IsA("Pants")) and decalsyeeted then
-            v[v.ClassName .. "Template"] = 0
-        end
-    end)
+local initialCharacter = player.Character or player.CharacterAdded:Wait();
+setupTeleportWalking(initialCharacter);
+player.CharacterAdded:Connect(function(newCharacter)
+	setupTeleportWalking(newCharacter);
+end);
+local Section = Tab:AddSection({[LUAOBFUSACTOR_DECRYPT_STR_0("\48\177\11\13", "\136\126\208\102\104\120")]=LUAOBFUSACTOR_DECRYPT_STR_0("\126\134\215", "\49\24\234\174\35\207\50\93")});
+local Player = game.Players.LocalPlayer;
+local UserInputService = game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\57\225\248\154\88\2\226\232\156\66\9\224\235\129\114\9", "\17\108\146\157\232"));
+local Flying = false;
+local Speed = 50;
+local bodyVelocity;
+local function stopFlight()
+	Flying = false;
+	if bodyVelocity then
+		bodyVelocity:Destroy();
+		bodyVelocity = nil;
+	end
 end
-})
-
--- Кнопка
-Tab:AddButton({
-    Name = "RTX (lag) вкл-выкл",
-    Callback = function()
-local Lighting = game:GetService("Lighting")
-
-    if not isRtxEnabled then
-        -- Включить RTX настройки
-        Lighting.Technology = Enum.Technology.Future
-        Lighting.Ambient = Color3.fromRGB(25, 25, 25) 
-        Lighting.OutdoorAmbient = Color3.fromRGB(25, 25, 25) 
-        Lighting.ShadowSoftness = 0.1
-        Lighting.EnvironmentDiffuseScale = 0.7
-        Lighting.EnvironmentSpecularScale = 0.7
-        isRtxEnabled = true -- Изменяем состояние на включено
-    else
-        -- Вернуть настройки обратно
-        Lighting.Technology = Enum.Technology.ShadowMap -- Или другое значение по умолчанию
-        Lighting.Ambient = Color3.fromRGB(70, 70, 70) -- Белый цвет по умолчанию
-        Lighting.OutdoorAmbient = Color3.fromRGB(0, 0, 0) -- Белый цвет по умолчанию
-        Lighting.ShadowSoftness = 0 -- Значение по умолчанию
-        Lighting.EnvironmentDiffuseScale = 1 -- Значение по умолчанию
-        Lighting.EnvironmentSpecularScale = 0.425 -- Значение по умолчанию
-        isRtxEnabled = false -- Изменяем состояние на выключено
-    end
+local function toggleFlight(Character)
+	Flying = not Flying;
+	if Flying then
+		bodyVelocity = Instance.new(LUAOBFUSACTOR_DECRYPT_STR_0("\105\204\16\244\25\173\71\204\23\228\59\177", "\200\43\163\116\141\79"));
+		bodyVelocity.Velocity = Vector3.new(0, Speed, 0);
+		bodyVelocity.MaxForce = Vector3.new(100000, 100000, 100000);
+		bodyVelocity.Parent = Character.HumanoidRootPart;
+		while Flying do
+			wait();
+			local direction = Vector3.new(0, 0, 0);
+			if UserInputService:IsKeyDown(Enum.KeyCode.W) then
+				direction = direction + workspace.CurrentCamera.CFrame.LookVector;
+			end
+			if UserInputService:IsKeyDown(Enum.KeyCode.S) then
+				direction = direction - workspace.CurrentCamera.CFrame.LookVector;
+			end
+			if UserInputService:IsKeyDown(Enum.KeyCode.A) then
+				direction = direction - workspace.CurrentCamera.CFrame.RightVector;
+			end
+			if UserInputService:IsKeyDown(Enum.KeyCode.D) then
+				direction = direction + workspace.CurrentCamera.CFrame.RightVector;
+			end
+			if UserInputService:IsKeyDown(Enum.KeyCode.Space) then
+				bodyVelocity.Velocity = Vector3.new(direction.X * Speed, Speed, direction.Z * Speed);
+			elseif UserInputService:IsKeyDown(Enum.KeyCode.LeftShift) then
+				bodyVelocity.Velocity = Vector3.new(direction.X * Speed, -Speed, direction.Z * Speed);
+			else
+				bodyVelocity.Velocity = Vector3.new(direction.X * Speed, 0, direction.Z * Speed);
+			end
+		end
+		stopFlight();
+	else
+		stopFlight();
+	end
 end
-})
-
--- Подсекция
-local Section = Tab:AddSection({
-	Name = "???"
-})
-
--- Кнопка
-Tab:AddButton({
-    Name = "?̢ͬ̆̆ͯ͐̈́̄̒ͬ̆͢͏͇͙̰̯̘̖̘̭̟̠̥̝̞͎̟?̰̣̩̺͉̗̳͚̙̱̳̯̏͌̋̓͆͗͑̌͜͝?̵̠̞͎̝̲͕̗͕̝̖͉͚͕̗̰̿͋ͦ͊ͮ͗̉̃̄ͬ̾̈́̀͞͡͠?̷̵̶̱̝͚͙̖̯̻̳ͦ̏̿͐͌̇͗͘?̥̘̹̰͇͉̯͔̲̦ͭ̋͋̀̏͛͑̀͢͞   (beta)",
-    Callback = function()
-        local Lighting = game:GetService("Lighting")
-
-        -- Set lighting properties
-        Lighting.Technology = Enum.Technology.Future
-        Lighting.Ambient = Color3.fromRGB(0, 0, 0) 
-        Lighting.OutdoorAmbient = Color3.fromRGB(0, 0, 0) 
-        Lighting.ShadowSoftness = 0
-        Lighting.Brightness = 0
-        Lighting.EnvironmentDiffuseScale = 0
-        Lighting.EnvironmentSpecularScale = 0
-        
-        -- Atmosphere settings
-        local atmosphere = Lighting:FindFirstChild("Atmosphere")
-        if not atmosphere then
-            atmosphere = Instance.new("Atmosphere")
-            atmosphere.Name = "Atmosphere"
-            atmosphere.Color = Color3.fromRGB(0, 0, 0)
-            atmosphere.Decay = Color3.fromRGB(0, 0, 0) 
-            atmosphere.Density = 0.55 
-            atmosphere.Offset = 0 
-            atmosphere.Parent = Lighting
-        end
-        
-        -- Ensure atmosphere is applied
-        atmosphere.Density = 0.55
-        atmosphere.Color = Color3.fromRGB(0, 0, 0)
-        atmosphere.Decay = Color3.fromRGB(0, 0, 0)
-
-        local player = game.Players.LocalPlayer
-        local secretsHandlerFolder = player:WaitForChild("PlayerScripts"):WaitForChild("SecretsHandler")
-
-        -- Function to play a random sound
-        local function playRandomSound()
-            local sounds = {}
-            for _, sound in ipairs(secretsHandlerFolder:GetChildren()) do
-                if sound:IsA("Sound") then
-                    table.insert(sounds, sound)
-                end
-            end
-
-            if #sounds > 0 then
-                local randomIndex = math.random(1, #sounds)
-                local soundToPlay = sounds[randomIndex]
-                
-                soundToPlay.Volume = 0.2
-                soundToPlay:Play()
-            else
-                warn("Нет звуков в папке SecretsHandler!")
-            end
-        end
-
-        -- Function to start playing sounds at random intervals
-        local function startPlayingSounds()
-            while true do
-                playRandomSound()
-                local waitTime = math.random(80, 250) -- Adjusted wait time to be in seconds
-                wait(waitTime)
-            end
-        end
-
-        startPlayingSounds()
-    end
-})
-
--- Секция ----------------------------------------------------------------------------------------------
-local Tab = Window:MakeTab({
-	Name = "Троллинг",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
-Tab:AddButton({
-	Name = "Открыть КПП",
-	Callback = function()
-      		local player = game.Players.LocalPlayer
-local character = player.Character or player.CharacterAdded:Wait()
-
--- Запоминаем начальное местоположение игрока
-local initialPosition = character.HumanoidRootPart.Position
-
--- Перемещаем персонажа на новое место
-character.HumanoidRootPart.CFrame = CFrame.new(289.480682, 4.2579999, 65.4795227, 0.999994755, 1.65117839e-08, 0.00324080419, -1.6472109e-08, 1, -1.22687247e-08, -0.00324080419, 1.22152777e-08, 0.999994755)
-wait(0.15)
-
--- Находим кнопку-ворота
-local buttonGate = game.Workspace:FindFirstChild("map")
-if buttonGate then
-    local gate = buttonGate:FindFirstChild("Gate")
-    if gate then
-        local buttonGatePart = gate:FindFirstChild("ButtonGate")
-        if buttonGatePart then
-            local press = buttonGatePart:FindFirstChild("Press")
-            if press then
-                local prompt = press:FindFirstChild("Prompt")
-                if prompt then
-                    print("Активируем ProximityPrompt...")
-                    -- Активировать ProximityPrompt
-                    prompt:InputHoldBegin()
-
-                    -- Ждем 1 секунду для активации
-                    wait(0.15) -- Время ожидания можно изменить
-                    prompt:InputHoldEnd()
-                    print("ProximityPrompt активирован.")
-
-                    -- Ждем 0.2 секунды перед телепортацией обратно
-                    wait(0.01)
-
-                    -- Телепортируемся на начальную позицию
-                    character.HumanoidRootPart.Position = initialPosition
-                end
-            end
-        end
-    end
+local function onCharacterAdded(Character)
+	Character:WaitForChild(LUAOBFUSACTOR_DECRYPT_STR_0("\151\35\48\130\190\251\234\187\4\50\140\164\196\226\173\34", "\131\223\86\93\227\208\148"));
+	Tab:AddToggle({[LUAOBFUSACTOR_DECRYPT_STR_0("\205\68\187\179", "\213\131\37\214\214\125")]=LUAOBFUSACTOR_DECRYPT_STR_0("\0\39\60", "\129\70\75\69\223"),[LUAOBFUSACTOR_DECRYPT_STR_0("\98\206\245\232\105\227\82", "\143\38\171\147\137\28")]=false,[LUAOBFUSACTOR_DECRYPT_STR_0("\243\131\181\255\1\226\215\219", "\180\176\226\217\147\99\131")]=function(Value)
+		if Value then
+			toggleFlight(Character);
+		else
+			stopFlight();
+		end
+	end});
+	Tab:AddSlider({[LUAOBFUSACTOR_DECRYPT_STR_0("\253\184\34\2", "\103\179\217\79")]=LUAOBFUSACTOR_DECRYPT_STR_0("\108\187\5\149\114\156\166\79\179", "\195\42\215\124\181\33\236"),[LUAOBFUSACTOR_DECRYPT_STR_0("\32\80\57", "\152\109\57\87\94\69")]=0,[LUAOBFUSACTOR_DECRYPT_STR_0("\212\214\18", "\200\153\183\106\195\222\178\52")]=500,[LUAOBFUSACTOR_DECRYPT_STR_0("\22\230\142\60\92\86\38", "\58\82\131\232\93\41")]=50,[LUAOBFUSACTOR_DECRYPT_STR_0("\160\88\220\26\79", "\95\227\55\176\117\61")]=Color3.fromRGB(255, 255, 255),[LUAOBFUSACTOR_DECRYPT_STR_0("\49\112\32\89\174\21\123\45\95", "\203\120\30\67\43")]=1,[LUAOBFUSACTOR_DECRYPT_STR_0("\199\36\65\250\220\223\36\64\234", "\185\145\69\45\143")]=LUAOBFUSACTOR_DECRYPT_STR_0("\153\15\28\163\216", "\188\234\127\121\198"),[LUAOBFUSACTOR_DECRYPT_STR_0("\27\51\31\143\58\51\16\136", "\227\88\82\115")]=function(Value)
+		Speed = Value;
+	end});
+	Character:WaitForChild(LUAOBFUSACTOR_DECRYPT_STR_0("\107\10\183\166\12\124\74\27", "\19\35\127\218\199\98")).Died:Connect(function()
+		stopFlight();
+	end);
 end
-  	end    
-})
-
-
-
-
-
----------------------------------------------------------------------------------------------------
-local Tab = Window:MakeTab({
-	Name = "Разное",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
--- Подсекция
-local Section = Tab:AddSection({
-	Name = "Infinite Yield"
-})
-
-Tab:AddButton({
-	Name = "Infinite Yield",
-	Callback = function()
-      		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
-  	end    
-})
-
--- Подсекция
-local Section = Tab:AddSection({
-	Name = "Сервер"
-})
-
-Tab:AddButton({
-	Name = "ReJoin Server",
-	Callback = function()
-      		local ts = game:GetService("TeleportService")
-
-local p = game:GetService("Players").LocalPlayer
-
-
-
-ts:TeleportToPlaceInstance(game.PlaceId, game.JobId, p)
-  	end    
-})
-
-
-
-
-
-
-
-
--- Подсекция
-local Section = Tab:AddSection({
-	Name = "ammo"
-})
-
-local teleporting = false -- Flag to track if teleportation should occur
-local ammoBox = workspace.map:GetChildren()[1257]["AmmoBox (Limited Use)"]
-
--- Set CanCollide to false so players can walk through the AmmoBox
-ammoBox.CanCollide = false 
-
-Tab:AddToggle({
-    Name = "inf ammo",
-    Default = false,
-    Callback = function(Value)
-        local player = game.Players.LocalPlayer
-        local character = player.Character or player.CharacterAdded:Wait()
-
-        if Value then
-            -- Remove SurfaceGui and CurrentRefill when the toggle is enabled
-            local surfaceGui = ammoBox:FindFirstChild("SurfaceGui")
-            local currentRefill = ammoBox:FindFirstChild("CurrentRefill")
-
-            if surfaceGui then
-                surfaceGui:Destroy() -- Remove SurfaceGui if it exists
-            end
-
-            if currentRefill then
-                currentRefill:Destroy() -- Remove CurrentRefill if it exists
-            end
-
-            teleporting = true -- Set the flag to true when the toggle is on
-
-            while teleporting do
-                local playerPosition = character.HumanoidRootPart.Position
-                -- Set the position slightly below the player's feet
-                ammoBox.Position = Vector3.new(playerPosition.X, playerPosition.Y - 3, playerPosition.Z) -- Adjust the height as needed
-                wait(0.001) -- Wait for 1 second before teleporting again
-            end
-        else
-            teleporting = false -- Set the flag to false when the toggle is off
-        end
-    end    
-})
-
--- Optional: Reset the teleporting status when the game ends or the player leaves
+Player.CharacterAdded:Connect(onCharacterAdded);
+if Player.Character then
+	onCharacterAdded(Player.Character);
+end
+local Section = Tab:AddSection({[LUAOBFUSACTOR_DECRYPT_STR_0("\50\250\7\231", "\130\124\155\106")]="Прыжок"});
+Tab:AddSlider({[LUAOBFUSACTOR_DECRYPT_STR_0("\251\202\251\170", "\223\181\171\150\207\195\150\28")]="Сила прыжка",[LUAOBFUSACTOR_DECRYPT_STR_0("\97\51\237", "\105\44\90\131\206")]=1,[LUAOBFUSACTOR_DECRYPT_STR_0("\210\225\170", "\94\159\128\210\217\104")]=60,[LUAOBFUSACTOR_DECRYPT_STR_0("\116\252\0\190\74\115\237", "\26\48\153\102\223\63\31\153")]=45,[LUAOBFUSACTOR_DECRYPT_STR_0("\33\79\225\252\16", "\147\98\32\141")]=Color3.fromRGB(66, 133, 180),[LUAOBFUSACTOR_DECRYPT_STR_0("\49\77\224\216\3\91\78\22\87", "\43\120\35\131\170\102\54")]=1,[LUAOBFUSACTOR_DECRYPT_STR_0("\98\7\139\163\160\158\133\89\3", "\228\52\102\231\214\197\208")]="Сила прыжка",[LUAOBFUSACTOR_DECRYPT_STR_0("\61\225\121\198\232\138\26\221", "\182\126\128\21\170\138\235\121")]=function(Value)
+	local player = game.Players.LocalPlayer;
+	local function setJumpPower(jumpPower)
+		if (player.Character and player.Character:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\163\207\56\231\136\28\57\2", "\102\235\186\85\134\230\115\80"))) then
+			player.Character.Humanoid.JumpPower = jumpPower;
+		end
+	end
+	setJumpPower(Value);
+	coroutine.wrap(function()
+		while true do
+			wait(0.1);
+			if (player.Character and player.Character:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\127\25\51\94\124\219\43\83", "\66\55\108\94\63\18\180"))) then
+				local currentJumpPower = player.Character.Humanoid.JumpPower;
+				if (currentJumpPower ~= Value) then
+					setJumpPower(Value);
+				end
+			else
+				player.CharacterAdded:Wait();
+				setJumpPower(Value);
+			end
+		end
+	end)();
+end});
+local Section = Tab:AddSection({[LUAOBFUSACTOR_DECRYPT_STR_0("\58\140\136\50", "\57\116\237\229\87\71")]="Бесконечные прыжки"});
+Tab:AddToggle({[LUAOBFUSACTOR_DECRYPT_STR_0("\132\176\224\226", "\39\202\209\141\135\23\142")]="Бесконечные прыжки",[LUAOBFUSACTOR_DECRYPT_STR_0("\219\54\15\11\39\244\235", "\152\159\83\105\106\82")]=false,[LUAOBFUSACTOR_DECRYPT_STR_0("\162\199\93\254\203\93\130\205", "\60\225\166\49\146\169")]=function(Value)
+	local Player = game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\31\18\46\51\4\21\60", "\103\79\126\79\74\97")).LocalPlayer;
+	local UIS = game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\143\108\214\97\119\20\170\106\199\64\91\8\172\118\208\118", "\122\218\31\179\19\62"));
+	_G.JumpHeight = 50;
+	_G.IsJumpEnabled = Value;
+	function Action(Object, Function)
+		if (Object ~= nil) then
+			Function(Object);
+		end
+	end
+	function ToggleJump()
+		_G.IsJumpEnabled = not _G.IsJumpEnabled;
+		print(LUAOBFUSACTOR_DECRYPT_STR_0("\153\195\192\209\137\167\80\189\213\217\200\198\175\68\191\223\217\216\137\168\86\243\216\194\214\147\225", "\37\211\182\173\161\169\193") .. tostring(_G.IsJumpEnabled));
+	end
+	UIS.InputBegan:connect(function(UserInput)
+		if (UserInput.UserInputType == Enum.UserInputType.Keyboard) then
+			if (UserInput.KeyCode == Enum.KeyCode.Space) then
+				Action(Player.Character.Humanoid, function(self)
+					if (_G.IsJumpEnabled and ((self:GetState() == Enum.HumanoidStateType.Jumping) or (self:GetState() == Enum.HumanoidStateType.Freefall))) then
+						Action(self.Parent.HumanoidRootPart, function(rootPart)
+							rootPart.Velocity = Vector3.new(0, _G.JumpHeight, 0);
+						end);
+					end
+				end);
+			end
+			if (UserInput.KeyCode == Enum.KeyCode.T) then
+				ToggleJump();
+			end
+		end
+	end);
+end});
+local Section = Tab:AddSection({[LUAOBFUSACTOR_DECRYPT_STR_0("\217\59\64\220", "\217\151\90\45\185\72\27")]=LUAOBFUSACTOR_DECRYPT_STR_0("\247\108\211\29\89\207", "\54\163\28\135\114")});
+Tab:AddButton({[LUAOBFUSACTOR_DECRYPT_STR_0("\6\218\80\135", "\31\72\187\61\226\46")]=LUAOBFUSACTOR_DECRYPT_STR_0("\247\22\119\221\72\114", "\68\163\102\35\178\39\30"),[LUAOBFUSACTOR_DECRYPT_STR_0("\157\113\214\203\1\180\128\26", "\113\222\16\186\167\99\213\227")]=function()
+	local LocalPlayer = game.Players.LocalPlayer;
+	local rp = LocalPlayer.Character.HumanoidRootPart;
+	local tool = Instance.new(LUAOBFUSACTOR_DECRYPT_STR_0("\26\1\244\250", "\150\78\110\155"), LocalPlayer.Backpack);
+	local mouse = LocalPlayer:GetMouse();
+	tool.Name = LUAOBFUSACTOR_DECRYPT_STR_0("\134\201\46\226\175\94\171\80", "\32\229\165\71\129\196\126\223");
+	tool.RequiresHandle = false;
+	tool.Activated:Connect(function()
+		rp.CFrame = CFrame.new(mouse.Hit.X, mouse.Hit.Y + 4, mouse.Hit.Z);
+	end);
+end});
+local Section = Tab:AddSection({[LUAOBFUSACTOR_DECRYPT_STR_0("\237\136\201\132", "\181\163\233\164\225\225")]="СtrlClickDelete"});
+Tab:AddButton({[LUAOBFUSACTOR_DECRYPT_STR_0("\126\138\51\114", "\23\48\235\94")]="СtrlClickDelete",[LUAOBFUSACTOR_DECRYPT_STR_0("\95\219\212\81\85\50\209\119", "\178\28\186\184\61\55\83")]=function()
+	local Plr = game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\244\193\70\37\247\28\230", "\149\164\173\39\92\146\110")).LocalPlayer;
+	local Mouse = Plr:GetMouse();
+	Mouse.Button1Down:connect(function()
+		if not game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\198\52\21\13\51\21\227\50\4\44\31\9\229\46\19\26", "\123\147\71\112\127\122")):IsKeyDown(Enum.KeyCode.LeftControl) then
+			return;
+		end
+		if not Mouse.Target then
+			return;
+		end
+		Mouse.Target:Destroy();
+	end);
+end});
+local Section = Tab:AddSection({[LUAOBFUSACTOR_DECRYPT_STR_0("\226\204\143\116", "\38\172\173\226\17")]=LUAOBFUSACTOR_DECRYPT_STR_0("\76\21\33\230\67\92\43\250\67", "\143\45\113\76")});
+Tab:AddButton({[LUAOBFUSACTOR_DECRYPT_STR_0("\150\185\17\57", "\92\216\216\124")]="admin-gun (визуально)",[LUAOBFUSACTOR_DECRYPT_STR_0("\120\51\160\76\255\90\49\167", "\157\59\82\204\32")]=function()
+	local player = game.Players.LocalPlayer;
+	local ReplicatedStorage = game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\10\59\243\246\224\233\210\165\61\58\208\238\230\248\210\182\61", "\209\88\94\131\154\137\138\179"));
+	local function giveToolsToPlayer(player)
+		local toolsFolder = ReplicatedStorage:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\28\174\203\112\13", "\66\72\193\164\28\126\67\81"));
+		if toolsFolder then
+			for _, tool in pairs(toolsFolder:GetChildren()) do
+				if tool:IsA(LUAOBFUSACTOR_DECRYPT_STR_0("\211\35\167\84", "\22\135\76\200\56\70")) then
+					local clonedTool = tool:Clone();
+					clonedTool.Parent = player.Backpack;
+				end
+			end
+		else
+			warn("Папка Tools не найдена в ReplicatedStorage.");
+		end
+	end
+	giveToolsToPlayer(player);
+end});
+local Tab = Window:MakeTab({[LUAOBFUSACTOR_DECRYPT_STR_0("\163\49\245\33", "\129\237\80\152\68\61")]="Мир",[LUAOBFUSACTOR_DECRYPT_STR_0("\120\171\11\253", "\56\49\200\100\147\124\119")]=LUAOBFUSACTOR_DECRYPT_STR_0("\222\60\167\241\223\45\186\228\197\58\229\191\131\106\235\168\159\109\235\165\149\103\231", "\144\172\94\223"),[LUAOBFUSACTOR_DECRYPT_STR_0("\20\29\167\74\45\26\175\104\42\3\187", "\39\68\111\194")]=false});
+local Section = Tab:AddSection({[LUAOBFUSACTOR_DECRYPT_STR_0("\248\167\234\194", "\215\182\198\135\167\25")]="Карта"});
+Tab:AddButton({[LUAOBFUSACTOR_DECRYPT_STR_0("\163\72\231\77", "\40\237\41\138")]="Все светло",[LUAOBFUSACTOR_DECRYPT_STR_0("\228\117\246\244\72\198\119\241", "\42\167\20\154\152")]=function()
+	if not _G.FullBrightExecuted then
+		_G.FullBrightEnabled = false;
+		_G.NormalLightingSettings = {[LUAOBFUSACTOR_DECRYPT_STR_0("\104\236\171\69\121\53\68\251\177\81", "\65\42\158\194\34\17")]=game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\54\46\85\4\57\228\21\233", "\142\122\71\50\108\77\141\123")).Brightness,[LUAOBFUSACTOR_DECRYPT_STR_0("\54\174\240\27\48\33\171\242\29", "\91\117\194\159\120")]=game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\54\20\57\16\33\248\42\29", "\68\122\125\94\120\85\145")).ClockTime,[LUAOBFUSACTOR_DECRYPT_STR_0("\49\19\200\123\198\221", "\218\119\124\175\62\168\185")]=game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\137\249\79\204\177\249\70\195", "\164\197\144\40")).FogEnd,[LUAOBFUSACTOR_DECRYPT_STR_0("\164\252\165\137\220\186\176\248\171\143\210\161\144", "\214\227\144\202\235\189")]=game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\193\172\128\115\4\186\93\59", "\92\141\197\231\27\112\211\51")).GlobalShadows,[LUAOBFUSACTOR_DECRYPT_STR_0("\199\242\136\170\212\232\235", "\177\134\159\234\195")]=game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\145\226\56\168\221\180\229\56", "\169\221\139\95\192")).Ambient};
+		game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\242\130\120\55\54\47\208\140", "\70\190\235\31\95\66")):GetPropertyChangedSignal(LUAOBFUSACTOR_DECRYPT_STR_0("\152\240\19\225\237\174\236\31\245\246", "\133\218\130\122\134")):Connect(function()
+			if ((game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\16\246\228\204\200\170\54\59", "\88\92\159\131\164\188\195")).Brightness ~= 1) and (game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\172\39\184\67\195\226\211\135", "\189\224\78\223\43\183\139")).Brightness ~= _G.NormalLightingSettings.Brightness)) then
+				_G.NormalLightingSettings.Brightness = game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\2\245\141\30\213\39\242\141", "\161\78\156\234\118")).Brightness;
+				if not _G.FullBrightEnabled then
+					repeat
+						wait();
+					until _G.FullBrightEnabled 
+				end
+				game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\139\190\206\212\179\190\199\219", "\188\199\215\169")).Brightness = 1;
+			end
+		end);
+		game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\208\0\88\115\252\245\7\88", "\136\156\105\63\27")):GetPropertyChangedSignal(LUAOBFUSACTOR_DECRYPT_STR_0("\56\128\118\55\16\184\112\57\30", "\84\123\236\25")):Connect(function()
+			if ((game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\220\130\173\31\184\188\254\140", "\213\144\235\202\119\204")).ClockTime ~= 13) and (game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\15\17\217\34\60\42\67\36", "\45\67\120\190\74\72\67")).ClockTime ~= _G.NormalLightingSettings.ClockTime)) then
+				_G.NormalLightingSettings.ClockTime = game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\12\43\234\173\237\129\224\238", "\137\64\66\141\197\153\232\142")).ClockTime;
+				if not _G.FullBrightEnabled then
+					repeat
+						wait();
+					until _G.FullBrightEnabled 
+				end
+				game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\47\217\37\174\156\10\222\37", "\232\99\176\66\198")).ClockTime = 13;
+			end
+		end);
+		game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\192\40\47\14\111\132\247\43", "\76\140\65\72\102\27\237\153")):GetPropertyChangedSignal(LUAOBFUSACTOR_DECRYPT_STR_0("\108\213\17\247\217\5", "\222\42\186\118\178\183\97")):Connect(function()
+			if ((game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\113\229\67\130\73\229\74\141", "\234\61\140\36")).FogEnd ~= 786543) and (game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\13\212\189\122\27\40\211\189", "\111\65\189\218\18")).FogEnd ~= _G.NormalLightingSettings.FogEnd)) then
+				_G.NormalLightingSettings.FogEnd = game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\111\66\28\61\31\85\161\68", "\207\35\43\123\85\107\60")).FogEnd;
+				if not _G.FullBrightEnabled then
+					repeat
+						wait();
+					until _G.FullBrightEnabled 
+				end
+				game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\92\163\167\226\109\121\164\167", "\25\16\202\192\138")).FogEnd = 786543;
+			end
+		end);
+		game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\209\194\170\234\189\253\243\204", "\148\157\171\205\130\201")):GetPropertyChangedSignal(LUAOBFUSACTOR_DECRYPT_STR_0("\4\216\123\43\208\250\16\220\117\45\222\225\48", "\150\67\180\20\73\177")):Connect(function()
+			if ((game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\161\17\29\69\153\17\20\74", "\45\237\120\122")).GlobalShadows ~= false) and (game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\251\225\165\36\195\225\172\43", "\76\183\136\194")).GlobalShadows ~= _G.NormalLightingSettings.GlobalShadows)) then
+				_G.NormalLightingSettings.GlobalShadows = game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\86\239\226\48\68\70\26\125", "\116\26\134\133\88\48\47")).GlobalShadows;
+				if not _G.FullBrightEnabled then
+					repeat
+						wait();
+					until _G.FullBrightEnabled 
+				end
+				game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\50\200\167\236\169\123\16\198", "\18\126\161\192\132\221")).GlobalShadows = false;
+			end
+		end);
+		game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\115\33\169\12\66\86\38\169", "\54\63\72\206\100")):GetPropertyChangedSignal(LUAOBFUSACTOR_DECRYPT_STR_0("\233\84\71\115\224\117\220", "\27\168\57\37\26\133")):Connect(function()
+			if ((game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\1\163\123\160\195\36\164\123", "\183\77\202\28\200")).Ambient ~= Color3.fromRGB(178, 178, 178)) and (game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\59\58\142\0\3\58\135\15", "\104\119\83\233")).Ambient ~= _G.NormalLightingSettings.Ambient)) then
+				_G.NormalLightingSettings.Ambient = game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\217\241\32\42\87\252\246\32", "\35\149\152\71\66")).Ambient;
+				if not _G.FullBrightEnabled then
+					repeat
+						wait();
+					until _G.FullBrightEnabled 
+				end
+				game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\53\225\69\184\46\16\230\69", "\90\121\136\34\208")).Ambient = Color3.fromRGB(178, 178, 178);
+			end
+		end);
+		game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\235\7\82\22\211\7\91\25", "\126\167\110\53")).Brightness = 1;
+		game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\17\25\41\240\200\54\51\23", "\95\93\112\78\152\188")).ClockTime = 13;
+		game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\237\252\130\29\240\183\220\198", "\178\161\149\229\117\132\222")).FogEnd = 786543;
+		game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\164\210\218\164\181\31\168\36", "\67\232\187\189\204\193\118\198")).GlobalShadows = false;
+		game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\167\39\178\40\47\11\225\140", "\143\235\78\213\64\91\98")).Ambient = Color3.fromRGB(178, 178, 178);
+		local LatestValue = true;
+		spawn(function()
+			repeat
+				wait();
+			until _G.FullBrightEnabled 
+			while wait() do
+				if (_G.FullBrightEnabled ~= LatestValue) then
+					if not _G.FullBrightEnabled then
+						game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\161\65\131\225\100\191\131\79", "\214\237\40\228\137\16")).Brightness = _G.NormalLightingSettings.Brightness;
+						game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\169\234\232\209\23\175\139\228", "\198\229\131\143\185\99")).ClockTime = _G.NormalLightingSettings.ClockTime;
+						game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\125\133\175\123\69\133\166\116", "\19\49\236\200")).FogEnd = _G.NormalLightingSettings.FogEnd;
+						game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\210\62\241\191\240\179\240\48", "\218\158\87\150\215\132")).GlobalShadows = _G.NormalLightingSettings.GlobalShadows;
+						game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\215\23\222\234\34\43\195\252", "\173\155\126\185\130\86\66")).Ambient = _G.NormalLightingSettings.Ambient;
+					else
+						game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\201\175\189\207\156\229\235\161", "\140\133\198\218\167\232")).Brightness = 1;
+						game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\153\39\179\117\144\188\32\179", "\228\213\78\212\29")).ClockTime = 12;
+						game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\171\69\177\13\255\142\66\177", "\139\231\44\214\101")).FogEnd = 786543;
+						game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\245\230\1\86\4\184\63\17", "\118\185\143\102\62\112\209\81")).GlobalShadows = false;
+						game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\112\121\46\238\177\28\18\63", "\88\60\16\73\134\197\117\124")).Ambient = Color3.fromRGB(178, 178, 178);
+					end
+					LatestValue = not LatestValue;
+				end
+			end
+		end);
+	end
+	_G.FullBrightExecuted = true;
+	_G.FullBrightEnabled = not _G.FullBrightEnabled;
+end});
+Tab:AddButton({[LUAOBFUSACTOR_DECRYPT_STR_0("\126\235\245\205", "\33\48\138\152\168")]="Удалить зелень",[LUAOBFUSACTOR_DECRYPT_STR_0("\81\23\60\93\195\54\113\29", "\87\18\118\80\49\161")]=function()
+	while true do
+		local mapFolder = game.Workspace:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\65\31\202", "\208\44\126\186\192"));
+		if mapFolder then
+			local treesFolder = mapFolder:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\195\8\161\195\7", "\46\151\122\196\166\116\156\169"));
+			if treesFolder then
+				treesFolder:Destroy();
+			end
+			for _, model in pairs(mapFolder:GetChildren()) do
+				if (model:IsA(LUAOBFUSACTOR_DECRYPT_STR_0("\200\226\66\31\247", "\155\133\141\38\122")) and (model.Name == LUAOBFUSACTOR_DECRYPT_STR_0("\17\56\169\68", "\197\69\74\204\33\47\31"))) then
+					model:Destroy();
+				end
+			end
+		end
+		wait(3);
+	end
+end});
+Tab:AddButton({[LUAOBFUSACTOR_DECRYPT_STR_0("\222\78\87\130", "\231\144\47\58")]="Удалить туман",[LUAOBFUSACTOR_DECRYPT_STR_0("\145\217\214\121\26\60\204\50", "\89\210\184\186\21\120\93\175")]=function()
+	local lightingFolder = game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\157\90\123\221\109\51\191\84", "\90\209\51\28\181\25"));
+	for _, child in ipairs(lightingFolder:GetChildren()) do
+		child:Destroy();
+		print("Объект '" .. child.Name .. "' был удален из Lighting.");
+	end
+end});
+local Section = Tab:AddSection({[LUAOBFUSACTOR_DECRYPT_STR_0("\254\122\90\235", "\223\176\27\55\142")]="небо"});
+Tab:AddColorpicker({[LUAOBFUSACTOR_DECRYPT_STR_0("\10\186\195\176", "\213\68\219\174")]="Цвет облаков",[LUAOBFUSACTOR_DECRYPT_STR_0("\47\229\37\230\63\201\43", "\31\107\128\67\135\74\165\95")]=Color3.fromRGB(150, 150, 150),[LUAOBFUSACTOR_DECRYPT_STR_0("\251\233\240\65\67\176\219\227", "\209\184\136\156\45\33")]=function(Value)
+	local terrain = game.Workspace.Terrain;
+	if terrain:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\36\196\122\29\188\20", "\216\103\168\21\104")) then
+		local clouds = terrain.Clouds;
+		clouds.Color = Value;
+	end
+end});
+local terrain = game.Workspace.Terrain;
+if not terrain:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\91\161\76\177\124\190", "\196\24\205\35")) then
+	warn("Объект Clouds не найден в Workspace.Terrain!");
+end
+Tab:AddToggle({[LUAOBFUSACTOR_DECRYPT_STR_0("\0\138\238\3", "\102\78\235\131")]="вкл-выкл",[LUAOBFUSACTOR_DECRYPT_STR_0("\222\43\50\69\82\53\163", "\84\154\78\84\36\39\89\215")]=false,[LUAOBFUSACTOR_DECRYPT_STR_0("\222\224\90\84\7\252\226\93", "\101\157\129\54\56")]=function(Value)
+	if Value then
+		game.Workspace.Terrain.Clouds.Cover = 1;
+	else
+		game.Workspace.Terrain.Clouds.Cover = 0.5;
+	end
+end});
+local Section = Tab:AddSection({[LUAOBFUSACTOR_DECRYPT_STR_0("\51\168\135\174", "\25\125\201\234\203\67")]="Другое"});
+Tab:AddButton({[LUAOBFUSACTOR_DECRYPT_STR_0("\87\245\21\6", "\115\25\148\120\99\116\71")]=LUAOBFUSACTOR_DECRYPT_STR_0("\42\45\170\100\67\3\50\170\48", "\33\108\93\217\68"),[LUAOBFUSACTOR_DECRYPT_STR_0("\248\74\173\161\217\74\162\166", "\205\187\43\193")]=function()
+	local decalsyeeted = true;
+	local g = game;
+	local w = g.Workspace;
+	local l = g.Lighting;
+	local t = w.Terrain;
+	sethiddenproperty(l, LUAOBFUSACTOR_DECRYPT_STR_0("\202\119\6\215\240\125\9\208\249\107", "\191\158\18\101"), 2);
+	sethiddenproperty(t, LUAOBFUSACTOR_DECRYPT_STR_0("\225\198\132\184\189\196\215\142\184\161", "\207\165\163\231\215"), false);
+	t.WaterWaveSize = 0;
+	t.WaterWaveSpeed = 0;
+	t.WaterReflectance = 0;
+	t.WaterTransparency = 0;
+	l.GlobalShadows = 0;
+	l.FogEnd = 8999999488;
+	l.Brightness = 0;
+	settings().Rendering.QualityLevel = LUAOBFUSACTOR_DECRYPT_STR_0("\234\252\239\83\40\32\151", "\16\166\153\153\54\68");
+	for i, v in pairs(w:GetDescendants()) do
+		if (v:IsA(LUAOBFUSACTOR_DECRYPT_STR_0("\240\178\211\67\4\32\235\198", "\153\178\211\160\38\84\65")) and not v:IsA(LUAOBFUSACTOR_DECRYPT_STR_0("\175\14\73\35\178\10\72\63", "\75\226\107\58"))) then
+			v.Material = LUAOBFUSACTOR_DECRYPT_STR_0("\104\210\16\105\5\203\206", "\173\56\190\113\26\113\162");
+			v.Reflectance = 0;
+		elseif ((v:IsA(LUAOBFUSACTOR_DECRYPT_STR_0("\239\219\46\4\251", "\151\171\190\77\101")) or v:IsA(LUAOBFUSACTOR_DECRYPT_STR_0("\241\42\224\189\237\111\14", "\107\165\79\152\201\152\29"))) and decalsyeeted) then
+			v.Transparency = 1;
+		elseif (v:IsA(LUAOBFUSACTOR_DECRYPT_STR_0("\103\79\250\223\93\124\91\75\205\198\93\107\67\75\250", "\31\55\46\136\171\52")) or v:IsA(LUAOBFUSACTOR_DECRYPT_STR_0("\229\58\221\253\221", "\148\177\72\188"))) then
+			v.Lifetime = NumberRange.new(0);
+		elseif v:IsA(LUAOBFUSACTOR_DECRYPT_STR_0("\131\174\71\223\169\165\94\220\168", "\179\198\214\55")) then
+			v.BlastPressure = 1;
+			v.BlastRadius = 1;
+		elseif (v:IsA(LUAOBFUSACTOR_DECRYPT_STR_0("\214\5\96\115", "\179\144\108\18\22\37")) or v:IsA(LUAOBFUSACTOR_DECRYPT_STR_0("\245\179\20\157\227\207\164\19\157", "\175\166\195\123\233")) or v:IsA(LUAOBFUSACTOR_DECRYPT_STR_0("\220\207\82\66\245", "\144\143\162\61\41")) or v:IsA(LUAOBFUSACTOR_DECRYPT_STR_0("\211\195\28\66\121\139\54\243", "\83\128\179\125\48\18\231"))) then
+			v.Enabled = false;
+		elseif (v:IsA(LUAOBFUSACTOR_DECRYPT_STR_0("\112\178\224\213\119\31\79\163", "\126\61\215\147\189\39")) and decalsyeeted) then
+			v.Material = LUAOBFUSACTOR_DECRYPT_STR_0("\72\243\28\86\108\246\30", "\37\24\159\125");
+			v.Reflectance = 0;
+			v.TextureID = 10385902758728956;
+		elseif (v:IsA(LUAOBFUSACTOR_DECRYPT_STR_0("\233\182\112\65\211\167\121\111\223\181\125", "\34\186\198\21")) and decalsyeeted) then
+			v.TextureId = 0;
+		elseif (v:IsA(LUAOBFUSACTOR_DECRYPT_STR_0("\203\0\204\79\214\223\26\196\77\202\241\11", "\162\152\104\165\61")) and decalsyeeted) then
+			v.Graphic = 0;
+		elseif ((v:IsA(LUAOBFUSACTOR_DECRYPT_STR_0("\254\39\187\111\100", "\133\173\79\210\29\16")) or v:IsA(LUAOBFUSACTOR_DECRYPT_STR_0("\189\125\227\63\158", "\75\237\28\141"))) and decalsyeeted) then
+			v[v.ClassName .. LUAOBFUSACTOR_DECRYPT_STR_0("\232\90\193\161\35\26\243\228", "\129\188\63\172\209\79\123\135")] = 0;
+		end
+	end
+	for i = 1, #l:GetChildren() do
+		local e = l:GetChildren()[i];
+		if (e:IsA(LUAOBFUSACTOR_DECRYPT_STR_0("\98\232\243\223\101\226\224\200\67\240", "\173\32\132\134")) or e:IsA(LUAOBFUSACTOR_DECRYPT_STR_0("\125\14\6\221\175\40\222\107\29\14\234\173\37", "\173\46\123\104\143\206\81")) or e:IsA(LUAOBFUSACTOR_DECRYPT_STR_0("\151\18\46\133\87\160\14\166\15\39\137\81\138\14\186\56\36\140\64\128\21", "\97\212\125\66\234\37\227")) or e:IsA(LUAOBFUSACTOR_DECRYPT_STR_0("\168\239\185\58\19\175\229\176\48\29\158", "\126\234\131\214\85")) or e:IsA(LUAOBFUSACTOR_DECRYPT_STR_0("\160\208\89\78\71\171\211\111\83\74\136\209\108\92\73\129\214\93", "\47\228\181\41\58"))) then
+			e.Enabled = false;
+		end
+	end
+	w.DescendantAdded:Connect(function(v)
+		wait();
+		if (v:IsA(LUAOBFUSACTOR_DECRYPT_STR_0("\132\253\202\62\51\49\13\178", "\127\198\156\185\91\99\80")) and not v:IsA(LUAOBFUSACTOR_DECRYPT_STR_0("\216\31\223\248\151\10\43\202", "\190\149\122\172\144\199\107\89"))) then
+			v.Material = LUAOBFUSACTOR_DECRYPT_STR_0("\2\9\240\237\234\59\6", "\158\82\101\145\158");
+			v.Reflectance = 0;
+		elseif ((v:IsA(LUAOBFUSACTOR_DECRYPT_STR_0("\84\251\1\23\72", "\36\16\158\98\118")) or v:IsA(LUAOBFUSACTOR_DECRYPT_STR_0("\244\19\219\239\77\250\34", "\133\160\118\163\155\56\136\71"))) and decalsyeeted) then
+			v.Transparency = 1;
+		elseif (v:IsA(LUAOBFUSACTOR_DECRYPT_STR_0("\198\163\99\230\191\28\185\243\135\124\251\162\11\176\228", "\213\150\194\17\146\214\127")) or v:IsA(LUAOBFUSACTOR_DECRYPT_STR_0("\47\187\165\221\74", "\86\123\201\196\180\38\196\194"))) then
+			v.Lifetime = NumberRange.new(0);
+		elseif v:IsA(LUAOBFUSACTOR_DECRYPT_STR_0("\210\240\201\163\248\251\208\160\249", "\207\151\136\185")) then
+			v.BlastPressure = 1;
+			v.BlastRadius = 1;
+		elseif (v:IsA(LUAOBFUSACTOR_DECRYPT_STR_0("\142\138\58\135", "\17\200\227\72\226\20\24")) or v:IsA(LUAOBFUSACTOR_DECRYPT_STR_0("\131\81\20\195\229\248\232\247\164", "\159\208\33\123\183\169\145\143")) or v:IsA(LUAOBFUSACTOR_DECRYPT_STR_0("\193\87\55\61\247", "\86\146\58\88")) or v:IsA(LUAOBFUSACTOR_DECRYPT_STR_0("\107\207\235\210\165\229\51\233", "\154\56\191\138\160\206\137\86"))) then
+			v.Enabled = false;
+		elseif (v:IsA(LUAOBFUSACTOR_DECRYPT_STR_0("\171\92\230\143\76\59\147\216", "\172\230\57\149\231\28\90\225")) and decalsyeeted) then
+			v.Material = LUAOBFUSACTOR_DECRYPT_STR_0("\50\166\135\193\60\210\1", "\187\98\202\230\178\72");
+			v.Reflectance = 0;
+			v.TextureID = 10385902758728956;
+		elseif (v:IsA(LUAOBFUSACTOR_DECRYPT_STR_0("\18\241\161\51\67\32\237\137\53\89\41", "\42\65\129\196\80")) and decalsyeeted) then
+			v.TextureId = 0;
+		elseif (v:IsA(LUAOBFUSACTOR_DECRYPT_STR_0("\49\66\84\200\3\32\16\239\18\66\84\217", "\142\98\42\61\186\119\103\98")) and decalsyeeted) then
+			v.ShirtGraphic = 0;
+		elseif ((v:IsA(LUAOBFUSACTOR_DECRYPT_STR_0("\11\183\11\26\44", "\104\88\223\98")) or v:IsA(LUAOBFUSACTOR_DECRYPT_STR_0("\116\246\236\218\17", "\141\36\151\130\174\98"))) and decalsyeeted) then
+			v[v.ClassName .. LUAOBFUSACTOR_DECRYPT_STR_0("\176\127\207\29\136\123\214\8", "\109\228\26\162")] = 0;
+		end
+	end);
+end});
+Tab:AddButton({[LUAOBFUSACTOR_DECRYPT_STR_0("\112\228\240\125", "\134\62\133\157\24\128")]="RTX (lag) вкл-выкл",[LUAOBFUSACTOR_DECRYPT_STR_0("\36\164\22\213\45\176\213\12", "\182\103\197\122\185\79\209")]=function()
+	local Lighting = game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\223\142\230\127\20\65\253\128", "\40\147\231\129\23\96"));
+	if not isRtxEnabled then
+		Lighting.Technology = Enum.Technology.Future;
+		Lighting.Ambient = Color3.fromRGB(25, 25, 25);
+		Lighting.OutdoorAmbient = Color3.fromRGB(25, 25, 25);
+		Lighting.ShadowSoftness = 0.1;
+		Lighting.EnvironmentDiffuseScale = 0.7;
+		Lighting.EnvironmentSpecularScale = 0.7;
+		isRtxEnabled = true;
+	else
+		Lighting.Technology = Enum.Technology.ShadowMap;
+		Lighting.Ambient = Color3.fromRGB(70, 70, 70);
+		Lighting.OutdoorAmbient = Color3.fromRGB(0, 0, 0);
+		Lighting.ShadowSoftness = 0;
+		Lighting.EnvironmentDiffuseScale = 1;
+		Lighting.EnvironmentSpecularScale = 0.425;
+		isRtxEnabled = false;
+	end
+end});
+local Section = Tab:AddSection({[LUAOBFUSACTOR_DECRYPT_STR_0("\91\249\129\64", "\188\21\152\236\37\219\204")]=LUAOBFUSACTOR_DECRYPT_STR_0("\31\182\104", "\108\32\137\87")});
+Tab:AddButton({[LUAOBFUSACTOR_DECRYPT_STR_0("\132\233\13\163", "\57\202\136\96\198\79\153\43")]="?̢ͬ̆̆ͯ͐̈́̄̒ͬ̆͢͏͇͙̰̯̘̖̘̭̟̠̥̝̞͎̟?̰̣̩̺͉̗̳͚̙̱̳̯̏͌̋̓͆͗͑̌͜͝?̵̠̞͎̝̲͕̗͕̝̖͉͚͕̗̰̿͋ͦ͊ͮ͗̉̃̄ͬ̾̈́̀͞͡͠?̷̵̶̱̝͚͙̖̯̻̳ͦ̏̿͐͌̇͗͘?̥̘̹̰͇͉̯͔̲̦ͭ̋͋̀̏͛͑̀͢͞   (beta)",[LUAOBFUSACTOR_DECRYPT_STR_0("\136\34\166\171\143\166\251\160", "\152\203\67\202\199\237\199")]=function()
+	local Lighting = game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\214\74\167\7\11\124\119\225", "\134\154\35\192\111\127\21\25"));
+	Lighting.Technology = Enum.Technology.Future;
+	Lighting.Ambient = Color3.fromRGB(0, 0, 0);
+	Lighting.OutdoorAmbient = Color3.fromRGB(0, 0, 0);
+	Lighting.ShadowSoftness = 0;
+	Lighting.Brightness = 0;
+	Lighting.EnvironmentDiffuseScale = 0;
+	Lighting.EnvironmentSpecularScale = 0;
+	local atmosphere = Lighting:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\153\50\4\5\51\194\176\35\27\15", "\178\216\70\105\106\64"));
+	if not atmosphere then
+		atmosphere = Instance.new(LUAOBFUSACTOR_DECRYPT_STR_0("\30\63\119\249\218\197\220\133\45\46", "\224\95\75\26\150\169\181\180"));
+		atmosphere.Name = LUAOBFUSACTOR_DECRYPT_STR_0("\42\206\213\39\87\188\126\14\200\221", "\22\107\186\184\72\36\204");
+		atmosphere.Color = Color3.fromRGB(0, 0, 0);
+		atmosphere.Decay = Color3.fromRGB(0, 0, 0);
+		atmosphere.Density = 0.55;
+		atmosphere.Offset = 0;
+		atmosphere.Parent = Lighting;
+	end
+	atmosphere.Density = 0.55;
+	atmosphere.Color = Color3.fromRGB(0, 0, 0);
+	atmosphere.Decay = Color3.fromRGB(0, 0, 0);
+	local player = game.Players.LocalPlayer;
+	local secretsHandlerFolder = player:WaitForChild(LUAOBFUSACTOR_DECRYPT_STR_0("\215\177\37\87\11\245\142\39\92\7\247\169\55", "\110\135\221\68\46")):WaitForChild(LUAOBFUSACTOR_DECRYPT_STR_0("\208\51\15\249\203\167\40\203\55\2\239\194\182\41", "\91\131\86\108\139\174\211"));
+	local function playRandomSound()
+		local sounds = {};
+		for _, sound in ipairs(secretsHandlerFolder:GetChildren()) do
+			if sound:IsA(LUAOBFUSACTOR_DECRYPT_STR_0("\200\36\173\25\89", "\61\155\75\216\119")) then
+				table.insert(sounds, sound);
+			end
+		end
+		if (#sounds > 0) then
+			local randomIndex = math.random(1, #sounds);
+			local soundToPlay = sounds[randomIndex];
+			soundToPlay.Volume = 0.2;
+			soundToPlay:Play();
+		else
+			warn("Нет звуков в папке SecretsHandler!");
+		end
+	end
+	local function startPlayingSounds()
+		while true do
+			playRandomSound();
+			local waitTime = math.random(80, 250);
+			wait(waitTime);
+		end
+	end
+	startPlayingSounds();
+end});
+local Tab = Window:MakeTab({[LUAOBFUSACTOR_DECRYPT_STR_0("\42\170\191\57", "\189\100\203\210\92\56\105")]="Троллинг",[LUAOBFUSACTOR_DECRYPT_STR_0("\6\82\242\38", "\72\79\49\157")]=LUAOBFUSACTOR_DECRYPT_STR_0("\154\178\41\189\155\163\52\168\129\180\107\243\199\228\101\228\219\227\101\233\209\233\105", "\220\232\208\81"),[LUAOBFUSACTOR_DECRYPT_STR_0("\197\172\224\61\37\79\172\218\176\233\41", "\193\149\222\133\80\76\58")]=false});
+Tab:AddButton({[LUAOBFUSACTOR_DECRYPT_STR_0("\232\92\66\215", "\178\166\61\47")]="Открыть КПП",[LUAOBFUSACTOR_DECRYPT_STR_0("\216\75\228\118\200\63\248\65", "\94\155\42\136\26\170")]=function()
+	local player = game.Players.LocalPlayer;
+	local character = player.Character or player.CharacterAdded:Wait();
+	local initialPosition = character.HumanoidRootPart.Position;
+	character.HumanoidRootPart.CFrame = CFrame.new(289.480682, 4.2579999, 65.4795227, 0.999994755, 1.6511784e-8, 0.00324080419, -1.6472109e-8, 1, -1.2268725e-8, -0.00324080419, 1.2215278e-8, 0.999994755);
+	wait(0.15);
+	local buttonGate = game.Workspace:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\137\62\54", "\213\228\95\70"));
+	if buttonGate then
+		local gate = buttonGate:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\13\186\214\129", "\23\74\219\162\228"));
+		if gate then
+			local buttonGatePart = gate:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\27\243\82\187\52\55\193\71\187\62", "\91\89\134\38\207"));
+			if buttonGatePart then
+				local press = buttonGatePart:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\116\252\205\37\0", "\71\36\142\168\86\115\176"));
+				if press then
+					local prompt = press:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\239\179\125\178\19\170", "\41\191\193\18\223\99\222\54"));
+					if prompt then
+						print("Активируем ProximityPrompt...");
+						prompt:InputHoldBegin();
+						wait(0.15);
+						prompt:InputHoldEnd();
+						print("ProximityPrompt активирован.");
+						wait(0.01);
+						character.HumanoidRootPart.Position = initialPosition;
+					end
+				end
+			end
+		end
+	end
+end});
+local Tab = Window:MakeTab({[LUAOBFUSACTOR_DECRYPT_STR_0("\133\39\202\47", "\202\203\70\167\74")]="Разное",[LUAOBFUSACTOR_DECRYPT_STR_0("\5\2\211\61", "\17\76\97\188\83")]=LUAOBFUSACTOR_DECRYPT_STR_0("\151\37\193\54\35\144\78\183\140\35\131\120\127\215\31\251\214\116\141\98\105\218\19", "\195\229\71\185\87\80\227\43"),[LUAOBFUSACTOR_DECRYPT_STR_0("\208\238\5\93\230\245\241\47\94\227\249", "\143\128\156\96\48")]=false});
+local Section = Tab:AddSection({[LUAOBFUSACTOR_DECRYPT_STR_0("\150\208\253\23", "\119\216\177\144\114")]=LUAOBFUSACTOR_DECRYPT_STR_0("\224\39\255\75\199\32\237\71\137\16\240\71\197\45", "\34\169\73\153")});
+Tab:AddButton({[LUAOBFUSACTOR_DECRYPT_STR_0("\132\237\6\142", "\235\202\140\107")]=LUAOBFUSACTOR_DECRYPT_STR_0("\37\122\50\161\231\46\227\192\76\77\61\173\229\35", "\165\108\20\84\200\137\71\151"),[LUAOBFUSACTOR_DECRYPT_STR_0("\89\181\39\132\120\181\40\131", "\232\26\212\75")]=function()
+	loadstring(game:HttpGet(LUAOBFUSACTOR_DECRYPT_STR_0("\63\93\102\248\228\109\6\61\250\246\32\7\117\225\227\63\92\112\253\228\50\91\113\231\249\35\76\124\252\185\52\70\127\167\210\51\78\119\193\206\120\64\124\238\254\57\64\102\237\238\62\76\126\236\184\58\72\97\252\242\37\6\97\231\226\37\74\119", "\151\87\41\18\136")))();
+end});
+local Section = Tab:AddSection({[LUAOBFUSACTOR_DECRYPT_STR_0("\117\174\199\213", "\158\59\207\170\176")]="Сервер"});
+Tab:AddButton({[LUAOBFUSACTOR_DECRYPT_STR_0("\97\95\62\76", "\236\47\62\83\41")]=LUAOBFUSACTOR_DECRYPT_STR_0("\200\172\10\52\163\140\186\154\37\41\188\135\232", "\226\154\201\64\91\202"),[LUAOBFUSACTOR_DECRYPT_STR_0("\226\72\17\20\72\189\194\66", "\220\161\41\125\120\42")]=function()
+	local ts = game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\136\116\172\11\172\126\178\26\143\116\178\24\181\114\165", "\110\220\17\192"));
+	local p = game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\68\117\53\3\238\37\226", "\199\20\25\84\122\139\87\145")).LocalPlayer;
+	ts:TeleportToPlaceInstance(game.PlaceId, game.JobId, p);
+end});
+local Section = Tab:AddSection({[LUAOBFUSACTOR_DECRYPT_STR_0("\105\8\208\171", "\138\39\105\189\206\123")]=LUAOBFUSACTOR_DECRYPT_STR_0("\30\10\132\34", "\159\127\103\233\77\147\153\175")});
+local teleporting = false;
+local ammoBox = workspace.map:GetChildren()[1257][LUAOBFUSACTOR_DECRYPT_STR_0("\38\253\233\165\98\196\31\176\172\134\73\198\14\228\225\174\0\254\20\245\173", "\171\103\144\132\202\32")];
+ammoBox.CanCollide = false;
+Tab:AddToggle({[LUAOBFUSACTOR_DECRYPT_STR_0("\62\46\228\9", "\108\112\79\137")]=LUAOBFUSACTOR_DECRYPT_STR_0("\54\204\114\104\172\12\228\58", "\85\95\162\20\72\205\97\137"),[LUAOBFUSACTOR_DECRYPT_STR_0("\211\248\44\221\24\244\217", "\173\151\157\74\188\109\152")]=false,[LUAOBFUSACTOR_DECRYPT_STR_0("\7\9\52\209\222\85\214\248", "\147\68\104\88\189\188\52\181")]=function(Value)
+	local player = game.Players.LocalPlayer;
+	local character = player.Character or player.CharacterAdded:Wait();
+	if Value then
+		local surfaceGui = ammoBox:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\41\157\153\214\27\139\142\247\15\129", "\176\122\232\235"));
+		local currentRefill = ammoBox:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\163\96\40\93\235\142\97\8\74\232\137\121\54", "\142\224\21\90\47"));
+		if surfaceGui then
+			surfaceGui:Destroy();
+		end
+		if currentRefill then
+			currentRefill:Destroy();
+		end
+		teleporting = true;
+		while teleporting do
+			local playerPosition = character.HumanoidRootPart.Position;
+			ammoBox.Position = Vector3.new(playerPosition.X, playerPosition.Y - 3, playerPosition.Z);
+			wait(0.001);
+		end
+	else
+		teleporting = false;
+	end
+end});
 game.Players.PlayerRemoving:Connect(function(player)
-    if player == game.Players.LocalPlayer then
-        teleporting = false
-    end
-end)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-local Tab = YourTabObject -- Replace this with your actual tab object
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-OrionLib:Init()
-
-local modelName = "PyaterochkaPortal"
-local workspace = game:GetService("Workspace")
-
-local model = workspace:FindFirstChild(modelName)
-
+	if (player == game.Players.LocalPlayer) then
+		teleporting = false;
+	end
+end);
+local Tab = YourTabObject;
+OrionLib:Init();
+local modelName = LUAOBFUSACTOR_DECRYPT_STR_0("\68\205\38\66\161\153\138\119\220\44\87\148\132\151\96\213\43", "\229\20\180\71\54\196\235");
+local workspace = game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\30\113\211\232\230\186\129\42\123", "\224\73\30\161\131\149\202"));
+local model = workspace:FindFirstChild(modelName);
 if model then
-    model:Destroy()
-    print(modelName .. " ")
+	model:Destroy();
+	print(modelName .. " ");
 else
-    print(modelName .. " ")
+	print(modelName .. " ");
 end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-local Players = game:GetService("Players")
-local player = Players.LocalPlayer
-
-OrionLib:MakeNotification({
-    Name = "Добро пожаловать, " .. player.Name .. "!",
-    Content = "Присоединяйтесь к нашему discord или telegram для получения уведомлений об обновлениях!",
-    Image = "rbxassetid://4483345998",
-    Time = 10
-})
+local Players = game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\193\233\240\73\244\247\226", "\48\145\133\145"));
+local player = Players.LocalPlayer;
+OrionLib:MakeNotification({[LUAOBFUSACTOR_DECRYPT_STR_0("\116\77\184\235", "\76\58\44\213\142\177")]=("Добро пожаловать, " .. player.Name .. "!"),[LUAOBFUSACTOR_DECRYPT_STR_0("\232\43\28\57\125\197\48", "\24\171\68\114\77")]="Присоединяйтесь к нашему discord или telegram для получения уведомлений об обновлениях!",[LUAOBFUSACTOR_DECRYPT_STR_0("\198\16\81\85\130", "\205\143\125\48\50\231\190\100")]=LUAOBFUSACTOR_DECRYPT_STR_0("\211\165\12\4\242\240\218\182\200\163\78\74\174\183\139\250\146\244\64\80\184\186\135", "\194\161\199\116\101\129\131\191"),[LUAOBFUSACTOR_DECRYPT_STR_0("\216\45\197\173", "\194\140\68\168\200\151")]=10});
